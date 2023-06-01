@@ -1,0 +1,28 @@
+dateModified: 1685644093
+email:
+  fromEmail: minh.tri.ha@student.howest.be
+  fromName: kultureX
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    3c3816f3-e10f-4183-beae-7ab3f1fbc5e6: kultureX # kultureX
+    35c69e63-d07d-4933-ac1c-4bcfdee0632e: Common # Common
+    346570d1-a361-4775-95ec-af7a9ee7592a: 'Public Schema' # Public Schema
+    ca98a93c-411a-4bbc-9174-0e0b3a88fb5e: kultureX # kultureX
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: pro
+  live: true
+  name: kultureX
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,8 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sites.ca98a93c-411a-4bbc-9174-0e0b3a88fb5e:read' # kultureX
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'usergroups.everyone:read'
