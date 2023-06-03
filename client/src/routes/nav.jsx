@@ -9,11 +9,23 @@ export default function Navbar() {
         </NavLink>
 
         <NavLink to="">
-          <li>About</li>
+          <li>Requirements</li>
         </NavLink>
 
         <NavLink to="">
-          <li>Test</li>
+          <li>Submit</li>
+        </NavLink>
+
+        <NavLink to="">
+          <li>Submissions</li>
+        </NavLink>
+
+        <NavLink to="">
+          <li>Last collection</li>
+        </NavLink>
+
+        <NavLink to="">
+          <li>Contact</li>
         </NavLink>
       </ul>
     </div>
