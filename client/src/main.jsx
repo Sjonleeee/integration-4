@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <h1>Home</h1>,
       },
       {
-        path: 'submitPage',
+        path: '/submitPage',
         element: <SubmitPage />,
         loader: submitPageLoader,
       },
