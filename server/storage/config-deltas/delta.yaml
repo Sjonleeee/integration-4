@@ -1,0 +1,14 @@
+dateApplied: '2023-06-01 11:28:14'
+changes:
+  -
+    message: 'Update timestamp for project config'
+    changed:
+      dateModified:
+        from: 1685642756
+        to: 1685644093
+  -
+    added:
+      plugins.vite.edition: standard
+      plugins.vite.enabled: true
+      plugins.vite.schemaVersion: 1.0.0
+    message: 'Install plugin “vite”'
