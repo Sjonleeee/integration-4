@@ -1,4 +1,4 @@
-dateModified: 1685644093
+dateModified: 1685795659
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
@@ -7,8 +7,11 @@ meta:
   __names__:
     3c3816f3-e10f-4183-beae-7ab3f1fbc5e6: kultureX # kultureX
     35c69e63-d07d-4933-ac1c-4bcfdee0632e: Common # Common
+    098bf40a-4116-4672-b3b5-303b57a938cd: designs # designs
     346570d1-a361-4775-95ec-af7a9ee7592a: 'Public Schema' # Public Schema
+    97163395-0194-4622-850e-b48d3d65be82: Default # Default
     ca98a93c-411a-4bbc-9174-0e0b3a88fb5e: kultureX # kultureX
+    d5b7ca04-6137-41bf-ab70-95818c16f640: story # story
 plugins:
   vite:
     edition: standard

@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: designs
+name: designs
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  ca98a93c-411a-4bbc-9174-0e0b3a88fb5e: # kultureX
+    enabledByDefault: true
+    hasUrls: true
+    template: designs/_entry
+    uriFormat: 'designs/{slug}'
+type: channel

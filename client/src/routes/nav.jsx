@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <div className="navlink">
+    <div className="navigation">
       <ul>
         <NavLink to="/">
           <li>Home</li>
@@ -12,7 +12,7 @@ export default function Navbar() {
           <li>Requirements</li>
         </NavLink>
 
-        <NavLink to="">
+        <NavLink to="../submitPage">
           <li>Submit</li>
         </NavLink>
 
