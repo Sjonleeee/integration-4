@@ -1,16 +1,32 @@
-dateApplied: '2023-06-03 05:34:19'
+dateApplied: '2023-06-04 08:19:10'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1685795627
-        to: 1685795659
+        from: 1685890432
+        to: 1685891950
   -
     added:
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.5: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.6: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.7: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.8: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.9: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.10: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.11: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
     message: 'Save GraphQL schema “Public Schema”'
+    changed:
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.4:
+        from: 'usergroups.everyone:read'
+        to: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:read'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.5:
+        from: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:read'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.6:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
+        to: 'usergroups.everyone:read'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.7:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
+        to: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.8:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.9:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'

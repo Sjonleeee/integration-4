@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -12,11 +12,11 @@ export default function Navbar() {
           <li>Requirements</li>
         </NavLink>
 
-        <NavLink to="../submitPage">
+        <NavLink to="../submit">
           <li>Submit</li>
         </NavLink>
 
-        <NavLink to="">
+        <NavLink to="../submissions">
           <li>Submissions</li>
         </NavLink>
 
@@ -29,5 +29,5 @@ export default function Navbar() {
         </NavLink>
       </ul>
     </div>
-  )
+  );
 }

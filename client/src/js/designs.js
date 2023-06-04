@@ -1,19 +1,19 @@
-import { graphQLRequest } from './utils/graphql'
+import { graphQLRequest } from "./utils/graphql";
 
-export const getDesigns = async (id) => {
+export const getSubmissions = async () => {
   const { data } = await graphQLRequest(
-    `
-    query getDesigns($id: ID!) {
-      designsEntry(id: $id) {
-        id
-        title
-        story
-      }
+    `query MyQuery {
+  designsEntries {
+    ... on designs_default_Entry {
+      id
+      title
+      story
     }
-    `,
-    { id: parseInt(id) }
-  );
-  console.log(data.designsEntry);
-  return [data.designsEntry]; 
-};
+  }
+}
 
+    `
+  );
+  console.log(data.designsEntries);
+  return data.designsEntries;
+};
