@@ -8,6 +8,8 @@ export const getSubmissions = async () => {
       id
       title
       story
+      designLinks
+      designAuthor
     }
   }
 }
@@ -18,25 +20,27 @@ export const getSubmissions = async () => {
   return data.designsEntries;
 };
 
-export const submitDesign = async (updates) => {
+export const submitDesign = async (updates, designLinks) => {
   const { data } = await graphQLRequest(
     `
-    mutation MyMutation ($title: String, $story: String, $designAuthor: String) {
+    mutation MyMutation ($title: String, $story: String, $designAuthor: String, $designLinks: String) {
   save_designs_default_Entry(
     authorId: "1"
     slug: "-"
     designAuthor: $designAuthor
     title: $title
     story: $story
+    designLinks: $designLinks
   ) {
     id
     designAuthor
     title
     story
+    designLinks
   }
 }
 `,
-    { ...updates }
+    { designLinks: designLinks, ...updates }
   );
   console.log(data);
   return data.save_designs_default_Entry;
