@@ -8,7 +8,7 @@ export default function Navbar() {
           <li>Home</li>
         </NavLink>
 
-        <NavLink to="">
+        <NavLink to="../requirements">
           <li>Requirements</li>
         </NavLink>
 
@@ -20,11 +20,11 @@ export default function Navbar() {
           <li>Submissions</li>
         </NavLink>
 
-        <NavLink to="">
+        <NavLink to="../last-collection">
           <li>Last collection</li>
         </NavLink>
 
-        <NavLink to="">
+        <NavLink to="../contact">
           <li>Contact</li>
         </NavLink>
       </ul>
