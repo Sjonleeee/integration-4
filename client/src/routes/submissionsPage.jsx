@@ -1,16 +1,16 @@
-import { useLoaderData } from "react-router-dom";
-import { getSubmissions } from "../js/designs.js";
+import { useLoaderData } from 'react-router-dom'
+import { getSubmissions } from '../js/designs.js'
 
 export async function loader() {
-  console.log("This is the root loader");
-  const result = await getSubmissions();
-  console.log(result);
-  return result;
+  console.log('This is the root loader')
+  const result = await getSubmissions()
+  console.log(result)
+  return result
 }
 
 export default function Submissions() {
-  const submissions = useLoaderData();
-  console.log(submissions);
+  const submissions = useLoaderData()
+  console.log(submissions)
   return (
     <div>
       <h1>SubmitPage</h1>
@@ -21,5 +21,5 @@ export default function Submissions() {
         </div>
       ))}
     </div>
-  );
+  )
 }
