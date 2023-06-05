@@ -14,6 +14,11 @@ export const action = async ({ request }) => {
   return result;
 };
 
+const readFile = (file) => {
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+};
+
 let filesJSON;
 
 export default function SubmitPage() {
@@ -28,11 +33,21 @@ export default function SubmitPage() {
     setFiles((previousFiles) => [
       ...previousFiles,
       ...acceptedFiles.map((file) =>
+        // readFile(file)
+        // new File([file], 'image', {type: file.type});
+        // object.assign
         Object.assign(file, {
           preview: URL.createObjectURL(file),
         })
       ),
     ]);
+    files.map((file) =>
+      file.preview.blob().then((blob) => {
+        readFile(blob);
+        const newFile = new File([blob], "image", { type: blob.type });
+        console.log(newFile);
+      })
+    );
   });
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
