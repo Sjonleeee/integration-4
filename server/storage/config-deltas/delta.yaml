@@ -1,32 +1,33 @@
-dateApplied: '2023-06-04 08:19:10'
+dateApplied: '2023-06-05 03:12:46'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1685890432
-        to: 1685891950
+        from: 1685959946
+        to: 1685959966
   -
     added:
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.10: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.11: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
-    message: 'Save GraphQL schema “Public Schema”'
-    changed:
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.4:
-        from: 'usergroups.everyone:read'
-        to: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:read'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.5:
-        from: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
-        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:read'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.6:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
-        to: 'usergroups.everyone:read'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.7:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
-        to: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.8:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
-        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.9:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
-        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.elementCondition: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.fieldUid: 9659a9aa-bb18-47b8-9f55-baed99d9bf6a
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.instructions: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.label: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.required: false
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.tip: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.type: craft\fieldlayoutelements\CustomField
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.uid: 0b01d333-2d28-438a-a523-f577308f1649
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.userCondition: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.warning: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.width: 100
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.elementCondition: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.fieldUid: ff55aa0c-39bb-4a7d-8901-87d77eda08fa
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.instructions: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.label: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.required: false
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.tip: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.type: craft\fieldlayoutelements\CustomField
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.uid: ae5c6636-f132-40d6-b0aa-b046338739e4
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.userCondition: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.warning: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.width: 100
+    message: 'Save entry type “default”'

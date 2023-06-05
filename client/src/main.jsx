@@ -6,7 +6,7 @@ import "./index.css";
 import Submissions, {
   loader as submissionsLoader,
 } from "./routes/submissionsPage";
-import SubmitPage, { loader as submitPageLoader } from "./routes/submitPage";
+import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import Home from "./routes/home";
 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/submit",
         element: <SubmitPage />,
-        loader: submitPageLoader,
+        action: submitAction,
       },
       {
         path: "/submissions",
