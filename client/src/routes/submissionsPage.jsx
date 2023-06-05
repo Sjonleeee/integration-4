@@ -4,7 +4,6 @@ import { getSubmissions } from '../js/designs.js'
 export async function loader() {
   console.log('This is the root loader')
   const result = await getSubmissions()
-  console.log(result)
   return result
 }
 
