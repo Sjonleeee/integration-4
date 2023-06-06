@@ -1,4 +1,4 @@
-import { graphQLRequest } from "./utils/graphql";
+import { graphQLRequest } from './utils/graphql'
 
 export const getSubmissions = async () => {
   const { data } = await graphQLRequest(
@@ -13,12 +13,11 @@ export const getSubmissions = async () => {
     }
   }
 }
-
-    `
-  );
-  console.log(data.designsEntries);
-  return data.designsEntries;
-};
+    `,
+  )
+  console.log(data.designsEntries)
+  return data.designsEntries
+}
 
 export const submitDesign = async (updates, designLinks) => {
   const { data } = await graphQLRequest(
@@ -40,8 +39,8 @@ export const submitDesign = async (updates, designLinks) => {
   }
 }
 `,
-    { designLinks: designLinks, ...updates }
-  );
-  console.log(data);
-  return data.save_designs_default_Entry;
-};
+    { designLinks: designLinks, ...updates },
+  )
+  console.log(data)
+  return data.save_designs_default_Entry
+}
