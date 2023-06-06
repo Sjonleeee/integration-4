@@ -21,9 +21,7 @@ export default function SubmitPage() {
   const [imageJSON, setImageJSON] = useState();
   console.log(imageJSON);
 
-  const imageInfo = {
-    data: imageJSON,
-  };
+  const imageInfo = imageJSON;
 
   imageData = JSON.stringify(imageInfo);
 

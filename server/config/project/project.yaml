@@ -1,30 +1,72 @@
-dateModified: 1685979885
+dateModified: 1686045498
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
   transportType: craft\mail\transportadapters\Sendmail
-fs:
-  uploads:
-    hasUrls: true
-    name: uploads
-    settings:
-      path: '@webroot'
-    type: craft\fs\Local
-    url: $PRIMARY_SITE_URL
 meta:
   __names__:
+    1afb17a2-eda3-40e4-bb7d-22cf4912fd95: designAuthor # designAuthor
     3c3816f3-e10f-4183-beae-7ab3f1fbc5e6: kultureX # kultureX
     35c69e63-d07d-4933-ac1c-4bcfdee0632e: Common # Common
     098bf40a-4116-4672-b3b5-303b57a938cd: designs # designs
+    296c3e3c-1354-4114-a2ba-86e0b4e9a8cd: 'design Links' # design Links
     346570d1-a361-4775-95ec-af7a9ee7592a: 'Public Schema' # Public Schema
+    17688985-a8f9-4bcf-b2e8-131053d1f7d7: Senne # Senne
     97163395-0194-4622-850e-b48d3d65be82: Default # Default
-    a1366050-4ee0-4092-84e3-aab3987fe5b5: designLinks # designLinks
+    b0fe49ca-cc76-423d-85b1-5114b12dad38: Dummy # Dummy
     ca98a93c-411a-4bbc-9174-0e0b3a88fb5e: kultureX # kultureX
     d5b7ca04-6137-41bf-ab70-95818c16f640: story # story
-    d5b587e7-d2cc-459b-b492-018649d65519: 'uploaded Images' # uploaded Images
-    fa8df9d2-3be6-4094-ae49-1423eb54ae05: design # design
-    ff55aa0c-39bb-4a7d-8901-87d77eda08fa: designAuthor # designAuthor
+    ee9b1680-d7fc-47ea-a3ec-691fe2dc77e3: New # New
 plugins:
+  commerce:
+    edition: lite
+    enabled: true
+    licenseKey: 6R4O7N9Y66GW5IQUXG523KMF
+    schemaVersion: 4.2.3
+    settings:
+      activeCartDuration: 3600
+      allowCheckoutWithoutPayment: false
+      allowEmptyCartOnCheckout: false
+      allowPartialPaymentOnCheckout: false
+      autoSetCartShippingMethodOption: false
+      autoSetNewCartAddresses: true
+      autoSetPaymentSource: false
+      cartVariable: cart
+      defaultView: commerce/products
+      dimensionUnits: mm
+      emailSenderAddress: null
+      emailSenderAddressPlaceholder: null
+      emailSenderName: null
+      emailSenderNamePlaceholder: null
+      freeOrderPaymentStrategy: complete
+      gatewayPostRedirectTemplate: ''
+      loadCartRedirectUrl: null
+      minimumTotalPriceStrategy: default
+      orderReferenceFormat: '{{number[:7]}}'
+      paymentCurrency: null
+      pdfAllowRemoteImages: false
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      purgeInactiveCarts: true
+      purgeInactiveCartsDuration: 7776000
+      requireBillingAddressAtCheckout: false
+      requireShippingAddressAtCheckout: false
+      requireShippingMethodSelectionAtCheckout: false
+      showEditUserCommerceTab: true
+      updateBillingDetailsUrl: ''
+      updateCartSearchIndexes: true
+      useBillingAddressForTax: false
+      validateBusinessTaxIdAsVatId: false
+      validateCartCustomFieldsOnSubmission: false
+      weightUnits: g
+  commerce-stripe:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
   vite:
     edition: standard
     enabled: true

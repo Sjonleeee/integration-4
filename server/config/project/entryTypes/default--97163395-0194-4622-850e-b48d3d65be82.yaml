@@ -44,37 +44,25 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: fa8df9d2-3be6-4094-ae49-1423eb54ae05 # design
+            fieldUid: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95 # designAuthor
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3d13652f-cfcd-4166-845f-c1695307eb98
+            uid: da55c5a5-7519-4c07-9958-86460d127422
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: ff55aa0c-39bb-4a7d-8901-87d77eda08fa # designAuthor
+            fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd # design Links
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae5c6636-f132-40d6-b0aa-b046338739e4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: a1366050-4ee0-4092-84e3-aab3987fe5b5 # designLinks
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 50532814-4f3b-467b-b220-38bb0f1da899
+            uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
             userCondition: null
             warning: null
             width: 100

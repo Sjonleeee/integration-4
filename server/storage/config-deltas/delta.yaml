@@ -1,17 +1,45 @@
-dateApplied: '2023-06-05 08:44:46'
+dateApplied: '2023-06-06 02:58:18'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1685979875
-        to: 1685979885
+        from: 1686045450
+        to: 1686045498
   -
-    message: 'Save entry type “default”'
+    added:
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.availableTransforms: ''
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.availableVolumes: ''
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.configSelectionMode: choose
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.defaultTransform: ''
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.manualConfig: ''
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.purifierConfig: null
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.purifyHtml: true
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.redactorConfig: null
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.removeEmptyTags: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.removeInlineStyles: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.removeNbsp: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.showHtmlButtonForNonAdmins: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.showUnpermittedFiles: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.showUnpermittedVolumes: false
+    removed:
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.byteLimit: null
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.charLimit: null
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.code: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.initialRows: 4
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.multiline: false
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.placeholder: null
+    message: 'Save field “designLinks”'
     changed:
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.fieldUid:
-        from: 9659a9aa-bb18-47b8-9f55-baed99d9bf6a
-        to: fa8df9d2-3be6-4094-ae49-1423eb54ae05
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.uid:
-        from: 0b01d333-2d28-438a-a523-f577308f1649
-        to: 3d13652f-cfcd-4166-845f-c1695307eb98
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.contentColumnType:
+        from: text
+        to: mediumtext
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.columnType:
+        from: null
+        to: mediumtext
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.settings.uiMode:
+        from: normal
+        to: enlarged
+      fields.296c3e3c-1354-4114-a2ba-86e0b4e9a8cd.type:
+        from: craft\fields\PlainText
+        to: craft\redactor\Field
