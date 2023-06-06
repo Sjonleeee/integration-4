@@ -11,19 +11,18 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-    - pdf
   branchLimit: null
-  defaultUploadLocationSource: null
+  defaultUploadLocationSource: 'volume:d5b587e7-d2cc-459b-b492-018649d65519' # uploaded Images
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 2
   minRelations: null
   previewMode: full
   restrictFiles: true
-  restrictLocation: true
+  restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: null
+  restrictedLocationSource: 'volume:d5b587e7-d2cc-459b-b492-018649d65519' # uploaded Images
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
@@ -37,7 +36,7 @@ settings:
         - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

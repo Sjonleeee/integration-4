@@ -1,22 +1,17 @@
-dateApplied: '2023-06-05 05:36:26'
+dateApplied: '2023-06-05 08:44:46'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1685968573
-        to: 1685968586
+        from: 1685979875
+        to: 1685979885
   -
-    added:
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.elementCondition: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.fieldUid: a1366050-4ee0-4092-84e3-aab3987fe5b5
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.instructions: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.label: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.required: false
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.tip: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.type: craft\fieldlayoutelements\CustomField
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.uid: 50532814-4f3b-467b-b220-38bb0f1da899
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.userCondition: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.warning: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.width: 100
     message: 'Save entry type “default”'
+    changed:
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.fieldUid:
+        from: 9659a9aa-bb18-47b8-9f55-baed99d9bf6a
+        to: fa8df9d2-3be6-4094-ae49-1423eb54ae05
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.uid:
+        from: 0b01d333-2d28-438a-a523-f577308f1649
+        to: 3d13652f-cfcd-4166-845f-c1695307eb98

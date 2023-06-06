@@ -24,8 +24,8 @@ CRAFT_DB_TABLE_PREFIX=
 DEV_MODE=true
 ALLOW_ADMIN_CHANGES=true
 DISALLOW_ROBOTS=true
-PRIMARY_SITE_URL=https://integration4.ddev.site
 
+PRIMARY_SITE_URL=https://integration4.ddev.site
 
 MAILHOG_SMTP_HOSTNAME=localhost
 MAILHOG_SMTP_PORT=1025

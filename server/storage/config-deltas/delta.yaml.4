@@ -1,22 +1,16 @@
-dateApplied: '2023-06-05 03:12:26'
+dateApplied: '2023-06-05 08:44:01'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1685959764
-        to: 1685959946
+        from: 1685979482
+        to: 1685979841
   -
-    message: 'Save field “designAuthor”'
-    changed:
-      fields.ff55aa0c-39bb-4a7d-8901-87d77eda08fa.handle:
-        from: author
-        to: designAuthor
-      fields.ff55aa0c-39bb-4a7d-8901-87d77eda08fa.name:
-        from: author
-        to: designAuthor
-  -
-    changed:
-      meta.__names__.ff55aa0c-39bb-4a7d-8901-87d77eda08fa:
-        from: author
-        to: designAuthor
+    added:
+      fs.uploads.hasUrls: true
+      fs.uploads.name: uploads
+      fs.uploads.settings.path: '@webroot'
+      fs.uploads.type: craft\fs\Local
+      fs.uploads.url: $PRIMARY_SITE_URL
+    message: 'Save the “uploads” filesystem'
