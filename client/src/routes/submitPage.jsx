@@ -96,24 +96,31 @@ export default function SubmitPage() {
             type="file"
             accept="image/jpg"
             onChange={(e) => {
-              const file = e.target.files[0];
-              const reader = new FileReader();
-              reader.onload = (event) => {
-                const base64image = event.target.result;
-                const image = new Image();
-                image.onload = () => {
-                  const canvas = document.createElement("canvas");
-                  canvas.width = image.width;
-                  canvas.height = image.height;
-                  const context = canvas.getContext("2d");
-                  context.drawImage(image, 0, 0);
-                  const image64 = canvas.toDataURL("image");
-                  setImageJSON(image64);
-                };
+              handleImageChange(e);
+              // if (e.target.files  length > 1048576) {
+              //   alert("File is too big!");
+              //   e.target.value = "";
+              // }
 
-                image.src = base64image;
-              };
-              reader.readAsDataURL(file);
+              // (e) => {
+              // const file = e.target.files[0];
+              // const reader = new FileReader();
+              // reader.onload = (event) => {
+              //   const base64image = event.target.result;
+              //   const image = new Image();
+              //   image.onload = () => {
+              //     const canvas = document.createElement("canvas");
+              //     canvas.width = image.width;
+              //     canvas.height = image.height;
+              //     const context = canvas.getContext("2d");
+              //     context.drawImage(image, 0, 0);
+              //     const image64 = canvas.toDataURL("image");
+              //     setImageJSON(image64);
+              //   };
+
+              //   image.src = base64image;
+              // };
+              // reader.readAsDataURL(file);
             }}
           />
           <label htmlFor="designAuthor">Your name</label>
