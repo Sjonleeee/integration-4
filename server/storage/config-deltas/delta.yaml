@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 dateApplied: '2023-06-06 07:24:28'
+=======
+dateApplied: '2023-06-07 04:00:08'
+>>>>>>> like
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
+<<<<<<< HEAD
         from: 1686044447
         to: 1686061468
   -
@@ -30,3 +35,40 @@ changes:
   -
     added:
       meta.__names__.c94a0b06-4385-4a7b-9494-af296fa8d782: designAuthor
+=======
+        from: 1686135354
+        to: 1686135608
+  -
+    added:
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.elementCondition: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.instructions: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.label: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.required: false
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.tip: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.type: craft\fieldlayoutelements\CustomField
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.userCondition: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.warning: null
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.width: 100
+    message: 'Save entry type “default”'
+    changed:
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.1.fieldUid:
+        from: d5b7ca04-6137-41bf-ab70-95818c16f640
+        to: 9bab4509-fd86-4432-9349-b485ad305ff7
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.1.uid:
+        from: 3ccbc357-69a3-470f-8d71-1596c5f605ed
+        to: c2aa09ad-53ee-4789-b00b-9b5feea2113e
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.fieldUid:
+        from: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95
+        to: d5b7ca04-6137-41bf-ab70-95818c16f640
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.uid:
+        from: da55c5a5-7519-4c07-9958-86460d127422
+        to: 3ccbc357-69a3-470f-8d71-1596c5f605ed
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.fieldUid:
+        from: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd
+        to: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95
+      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.uid:
+        from: e57e0415-09a2-4080-af8e-6697ff8b4f65
+        to: da55c5a5-7519-4c07-9958-86460d127422
+>>>>>>> like

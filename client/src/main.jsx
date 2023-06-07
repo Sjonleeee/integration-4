@@ -5,6 +5,7 @@ import Root from "./layouts/rootLayout";
 import "./index.css";
 import Submissions, {
   loader as submissionsLoader,
+  action as likeAction,
 } from "./routes/submissionsPage";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import Home from "./routes/home";
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
         path: "/submissions",
         element: <Submissions />,
         loader: submissionsLoader,
+        action: likeAction,
       },
     ],
   },

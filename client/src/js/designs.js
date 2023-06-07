@@ -10,6 +10,7 @@ export const getSubmissions = async () => {
       story
       designLinks
       designAuthor
+      likeAmount
     }
   }
 }
@@ -39,8 +40,33 @@ export const submitDesign = async (updates, designLinks) => {
   }
 }
 `,
+<<<<<<< HEAD
     { designLinks: designLinks, ...updates },
   )
   console.log(data)
   return data.save_designs_default_Entry
 }
+=======
+    { designLinks: designLinks, ...updates }
+  );
+  console.log(data);
+  return data.save_designs_default_Entry;
+};
+
+export const addLike = async (id, likeAmount) => {
+  const { data } = await graphQLRequest(
+    `
+       mutation MyMutation($likeAmount: Number) {
+  save_designs_default_Entry(id: "${id}", likeAmount: $likeAmount) {
+    ... on designs_default_Entry {
+      likeAmount
+    }
+  }
+}
+    `,
+    { likeAmount: likeAmount }
+  );
+  console.log(data);
+  return data.likeDesign;
+};
+>>>>>>> like
