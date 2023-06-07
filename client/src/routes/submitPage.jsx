@@ -27,7 +27,7 @@ export default function SubmitPage() {
 
   const handleSubmit = async () => {
     await submitDesign();
-    // navigate("/submissions");
+    navigate("/submissions");
   };
 
   const handleImageChange = (e) => {

@@ -32,6 +32,30 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 1bf328af-e246-4426-a514-b5c26a093a51 # designLinks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93d24c56-44da-485e-bb62-fb72f4083c6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c94a0b06-4385-4a7b-9494-af296fa8d782 # designAuthor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c839531-ef47-41a9-85d0-5225c0dead0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: d5b7ca04-6137-41bf-ab70-95818c16f640 # story
             instructions: null
             label: null
@@ -39,30 +63,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 3ccbc357-69a3-470f-8d71-1596c5f605ed
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95 # designAuthor
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: da55c5a5-7519-4c07-9958-86460d127422
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd # design Links
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
             userCondition: null
             warning: null
             width: 100
