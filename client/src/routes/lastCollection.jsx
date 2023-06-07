@@ -18,6 +18,8 @@ export default function LastCollection() {
           <p> title: {item.title}</p>
           <p> designAuthor: {item.designAuthor}</p>
           <p> story: {item.story}</p>
+          <p> Price: {item.defaultPrice} euro</p>
+
           <img src={item.productImage[0].url} width={100} />
         </div>
       ))}

@@ -1,49 +1,49 @@
-import { Form, useNavigate } from "react-router-dom";
-import React, { useCallback, useState } from "react";
-import { useDropzone } from "react-dropzone";
-import { submitDesign } from "../js/designs";
+import { Form, useNavigate } from 'react-router-dom'
+import React, { useCallback, useState } from 'react'
+import { useDropzone } from 'react-dropzone'
+import { submitDesign } from '../js/designs'
 
-let imageData;
+let imageData
 
 // // Action
 export const action = async ({ request }) => {
-  console.log("Submit action");
-  const formData = await request.formData();
-  const updates = Object.fromEntries(formData);
-  console.log(imageData);
-  const result = await submitDesign(updates, imageData);
-  console.log(result);
-  return result;
-};
+  console.log('Submit action')
+  const formData = await request.formData()
+  const updates = Object.fromEntries(formData)
+  // console.log(imageData)
+  const result = await submitDesign(updates, imageData)
+  // console.log(result)
+  return result
+}
 
 export default function SubmitPage() {
   // const [files, setFiles] = useState([]);
-  const [imageJSON, setImageJSON] = useState();
-  console.log(imageJSON);
+  const [imageJSON, setImageJSON] = useState()
+  console.log(imageJSON)
 
-  const imageInfo = imageJSON;
+  const imageInfo = imageJSON
 
-  imageData = JSON.stringify(imageInfo);
+  imageData = JSON.stringify(imageInfo)
 
   const handleSubmit = async () => {
-    await submitDesign();
-    navigate("/submissions");
-  };
+    await submitDesign()
+    navigate('/submissions')
+  }
 
   const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    const reader = new FileReader();
+    const file = e.target.files[0]
+    const reader = new FileReader()
     reader.onload = (event) => {
-      const base64image = event.target.result;
-      const image = new Image();
+      const base64image = event.target.result
+      const image = new Image()
       image.onload = () => {
-        const canvas = document.createElement("canvas");
-        canvas.width = image.width;
-        canvas.height = image.height;
-        const context = canvas.getContext("2d");
-        context.drawImage(image, 0, 0);
-        const image64 = canvas.toDataURL("image");
-        setImageJSON(image64);
+        const canvas = document.createElement('canvas')
+        canvas.width = image.width
+        canvas.height = image.height
+        const context = canvas.getContext('2d')
+        context.drawImage(image, 0, 0)
+        const image64 = canvas.toDataURL('image')
+        setImageJSON(image64)
 
         // const imageData = context.getImageData(
         //   0,
@@ -55,12 +55,12 @@ export default function SubmitPage() {
         // console.log(imageData);
         // const imageDataArray = Array.from(imageData.data);
         // setImageJSON(imageDataArray);
-      };
+      }
 
-      image.src = base64image;
-    };
-    reader.readAsDataURL(file);
-  };
+      image.src = base64image
+    }
+    reader.readAsDataURL(file)
+  }
 
   // const onDrop = useCallback((acceptedFiles) => {
   //   setFiles(() => [
@@ -84,7 +84,7 @@ export default function SubmitPage() {
         <p>
           Submit your design and share your unique perspective on Kortrijk's
           culture. Let your creativity take flight, for this is where your
-          vision becomes part of the fabric that weaves our city's story.{" "}
+          vision becomes part of the fabric that weaves our city's story.{' '}
         </p>
       </div>
       <div className="submission-drop">
@@ -96,7 +96,7 @@ export default function SubmitPage() {
             type="file"
             accept="image/jpg"
             onChange={(e) => {
-              handleImageChange(e);
+              handleImageChange(e)
               // if (e.target.files  length > 1048576) {
               //   alert("File is too big!");
               //   e.target.value = "";
@@ -135,5 +135,5 @@ export default function SubmitPage() {
         </Form>
       </div>
     </section>
-  );
+  )
 }

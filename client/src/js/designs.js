@@ -55,6 +55,7 @@ export const getProducts = async () => {
       title
       designAuthor
       story
+      defaultPrice
       productImage {
         id
         ... on productImages_Asset {
