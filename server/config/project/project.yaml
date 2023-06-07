@@ -1,4 +1,4 @@
-dateModified: 1686130373
+dateModified: 1686135608
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
@@ -7,6 +7,7 @@ meta:
   __names__:
     1afb17a2-eda3-40e4-bb7d-22cf4912fd95: designAuthor # designAuthor
     3c3816f3-e10f-4183-beae-7ab3f1fbc5e6: kultureX # kultureX
+    9bab4509-fd86-4432-9349-b485ad305ff7: 'like Amount' # like Amount
     35c69e63-d07d-4933-ac1c-4bcfdee0632e: Common # Common
     098bf40a-4116-4672-b3b5-303b57a938cd: designs # designs
     296c3e3c-1354-4114-a2ba-86e0b4e9a8cd: 'design Links' # design Links
