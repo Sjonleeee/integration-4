@@ -18,6 +18,7 @@ export const action = async ({ request }) => {
 
 export default function SubmitPage() {
   // const [files, setFiles] = useState([]);
+  const navigate = useNavigate();
   const [imageJSON, setImageJSON] = useState();
   console.log(imageJSON);
 
@@ -27,7 +28,7 @@ export default function SubmitPage() {
 
   const handleSubmit = async () => {
     await submitDesign();
-    // navigate("/submissions");
+    navigate("/submissions");
   };
 
   const handleImageChange = (e) => {

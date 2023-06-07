@@ -44,6 +44,57 @@ export default function Home() {
           <button></button>
         </div>
       </div>
+      <div className="concept">
+        <div className="concept-deco">
+          <img src="" alt="" />
+          <p className="">express your</p>
+          <p className="">journey</p>
+          <p className="">journey</p>
+          <p className="">journey</p>
+        </div>
+        <div className="concept-text">
+          <h2 className="hidden">Concept</h2>
+          <p>
+            Each year we try to guide the community to use a certain style to
+            create a coherent clothing line.{" "}
+          </p>
+          <p>
+            <span>How do we pick the designs?</span> <br /> Well actually, we
+            don’t ... You do! We provide a list of submissions where you can
+            pick your favourite story and design!
+          </p>
+          {/* <Button></Button>
+          <Button></Button> */}
+          <div className="concept-text__deco">
+            <img src="" alt="" />
+            {/* svg */}
+          </div>
+        </div>
+        <div className="workshops">
+          <div className="workshops-text">
+            <h2 className="hidden">Workshops</h2>
+            <p>
+              Don’t know how to design? Don’t worry! We offer workshops at
+              Tranzit and The Palace in Kortrijk, to help you get started!
+              <br />
+              <br />
+              In our workshops we provide a professional who gives you info
+              about starting such a design process and KLTR X provides all the
+              tools necessary to be able to start designing fantastic T-shirt
+              designs.
+              <br />
+              <br />
+              Join or request a workshop as a group!
+            </p>
+            {/* <button></button>
+            <button></button> */}
+          </div>
+          <div className="workshop-deco">
+            <img src="" alt="" />
+            {/* svg */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
