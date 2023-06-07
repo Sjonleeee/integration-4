@@ -7,7 +7,9 @@ scope:
   - 'elements.inactive:read'
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:read' # designs
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:read' # Default
+  - 'volumes.0c51f0f3-64c9-42fa-86a4-e3f15df247f0:read' # productImages
   - 'usergroups.everyone:read'
+  - 'productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27:read' # shirts
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit' # designs
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create' # Default

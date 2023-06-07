@@ -13,12 +13,12 @@ export default function LastCollection() {
   return (
     <div>
       <h1>SubmitPage</h1>
-      {lastCollection.map(() => (
-        <div key={lastCollection.id}>
-          title={lastCollection.title}
-          designAuthor={lastCollection.designAuthor}
-          story={lastCollection.story}
-          designLinks={lastCollection.productImage}
+      {lastCollection.map((item) => (
+        <div key={item.id}>
+          <p> title: {item.title}</p>
+          <p> designAuthor: {item.designAuthor}</p>
+          <p> story: {item.story}</p>
+          <img src={item.productImage[0].url} width={100} />
         </div>
       ))}
     </div>
