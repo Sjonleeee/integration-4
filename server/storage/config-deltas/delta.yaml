@@ -1,29 +1,43 @@
-dateApplied: '2023-06-07 03:08:11'
+dateApplied: '2023-06-07 05:51:33'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1686062273
-        to: 1686132491
+        from: 1686142251
+        to: 1686142293
   -
-    message: 'Save field “designLinks”'
+    added:
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.1.fieldUid: 03da7e37-1e7f-46be-8fae-c03eea6fab88
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.1.width: 100
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.elementCondition: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.instructions: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.label: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.required: false
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.tip: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.type: craft\commerce\fieldlayoutelements\VariantsField
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.uid: cf9b288b-d18f-47a3-b739-51289b326466
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.userCondition: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.4.warning: null
     changed:
-      fields.1bf328af-e246-4426-a514-b5c26a093a51.contentColumnType:
-        from: text
-        to: mediumtext
-      fields.1bf328af-e246-4426-a514-b5c26a093a51.settings.availableTransforms:
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.1.type:
+        from: craft\commerce\fieldlayoutelements\VariantsField
+        to: craft\fieldlayoutelements\CustomField
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.1.uid:
+        from: cf9b288b-d18f-47a3-b739-51289b326466
+        to: 48636159-c671-411f-87de-0589f0642224
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.2.fieldUid:
+        from: 03da7e37-1e7f-46be-8fae-c03eea6fab88
+        to: c94a0b06-4385-4a7b-9494-af296fa8d782
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productFieldLayouts.a9a9b057-2c32-4fcf-b1af-1341c231df73.tabs.0.elements.2.uid:
+        from: 48636159-c671-411f-87de-0589f0642224
+        to: c0bed254-e6df-4d56-b6d4-0d8c70e490b9
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productTitleFormat:
         from: null
         to: ''
-      fields.1bf328af-e246-4426-a514-b5c26a093a51.settings.availableVolumes:
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.siteSettings.ca98a93c-411a-4bbc-9174-0e0b3a88fb5e.template:
         from: null
         to: ''
-      fields.1bf328af-e246-4426-a514-b5c26a093a51.settings.columnType:
-        from: text
-        to: mediumtext
-      fields.1bf328af-e246-4426-a514-b5c26a093a51.settings.defaultTransform:
-        from: null
-        to: ''
-      fields.1bf328af-e246-4426-a514-b5c26a093a51.settings.manualConfig:
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.skuFormat:
         from: null
         to: ''

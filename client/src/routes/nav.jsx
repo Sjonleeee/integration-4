@@ -20,7 +20,7 @@ export default function Navbar() {
           <li>Submissions</li>
         </NavLink>
 
-        <NavLink to="../last-collection">
+        <NavLink to="../lastCollection">
           <li>Last collection</li>
         </NavLink>
 

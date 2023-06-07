@@ -1,17 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./layouts/rootLayout";
-import "./index.css";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Root from './layouts/rootLayout'
+import LastCollection, {
+  loader as lastCollectionLoader,
+} from './routes/lastCollection'
 import Submissions, {
   loader as submissionsLoader,
-} from "./routes/submissionsPage";
-import SubmitPage, { action as submitAction } from "./routes/submitPage";
-import Home from "./routes/home";
+} from './routes/submissionsPage'
+import SubmitPage, { action as submitAction } from './routes/submitPage'
+import Home from './routes/home'
+
+import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Root />,
     children: [
       {
@@ -19,21 +23,26 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/submit",
+        path: '/submit',
         element: <SubmitPage />,
         action: submitAction,
       },
       {
-        path: "/submissions",
+        path: '/submissions',
         element: <Submissions />,
         loader: submissionsLoader,
       },
+      {
+        path: '/lastCollection',
+        element: <LastCollection />,
+        loader: lastCollectionLoader,
+      },
     ],
   },
-]);
+])
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)
