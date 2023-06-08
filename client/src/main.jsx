@@ -9,7 +9,8 @@ import Submissions, {
 } from "./routes/submissionsPage";
 import Requirements from "./routes/requirements";
 import Contact from "./routes/contact";
-import Workshops from "./routes/workshops";
+import Workshops, { loader as workshopsLoader } from "./routes/workshops";
+import Request, { action as requestAction } from "./routes/workshopRequest";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import Home from "./routes/home";
 
@@ -44,6 +45,16 @@ const router = createBrowserRouter([
       {
         path: "/workshops",
         element: <Workshops />,
+        loader: workshopsLoader,
+      },
+      {
+        path: "/workshops/request",
+        element: <Request />,
+        action: requestAction,
+      },
+      {
+        path: "/workshops/request/confirmation",
+        // element: <Confirmation />,
       },
     ],
   },
