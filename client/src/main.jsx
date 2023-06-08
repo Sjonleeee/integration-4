@@ -9,6 +9,7 @@ import Submissions, {
 } from "./routes/submissionsPage";
 import Requirements from "./routes/requirements";
 import Contact from "./routes/contact";
+import Workshops from "./routes/workshops";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import Home from "./routes/home";
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/workshops",
+        element: <Workshops />,
       },
     ],
   },

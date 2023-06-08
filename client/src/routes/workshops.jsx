@@ -20,6 +20,7 @@ export default function Workshops() {
           <Button>Request a workshop</Button>
         </Link>
       </div>
+      <div className="workshops-join"></div>
     </div>
   );
 }
