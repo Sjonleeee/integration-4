@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-dateModified: 1686061468
-=======
 dateModified: 1686135608
->>>>>>> like
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
@@ -10,10 +6,10 @@ email:
 meta:
   __names__:
     3c3816f3-e10f-4183-beae-7ab3f1fbc5e6: kultureX # kultureX
-    9bab4509-fd86-4432-9349-b485ad305ff7: 'like Amount' # like Amount
+    9bab4509-fd86-4432-9349-b485ad305ff7: "like Amount" # like Amount
     35c69e63-d07d-4933-ac1c-4bcfdee0632e: Common # Common
     098bf40a-4116-4672-b3b5-303b57a938cd: designs # designs
-    346570d1-a361-4775-95ec-af7a9ee7592a: 'Public Schema' # Public Schema
+    346570d1-a361-4775-95ec-af7a9ee7592a: "Public Schema" # Public Schema
     17688985-a8f9-4bcf-b2e8-131053d1f7d7: Senne # Senne
     97163395-0194-4622-850e-b48d3d65be82: Default # Default
     b0fe49ca-cc76-423d-85b1-5114b12dad38: Dummy # Dummy
@@ -43,10 +39,10 @@ plugins:
       emailSenderName: null
       emailSenderNamePlaceholder: null
       freeOrderPaymentStrategy: complete
-      gatewayPostRedirectTemplate: ''
+      gatewayPostRedirectTemplate: ""
       loadCartRedirectUrl: null
       minimumTotalPriceStrategy: default
-      orderReferenceFormat: '{{number[:7]}}'
+      orderReferenceFormat: "{{number[:7]}}"
       paymentCurrency: null
       pdfAllowRemoteImages: false
       pdfPaperOrientation: portrait
@@ -57,7 +53,7 @@ plugins:
       requireShippingAddressAtCheckout: false
       requireShippingMethodSelectionAtCheckout: false
       showEditUserCommerceTab: true
-      updateBillingDetailsUrl: ''
+      updateBillingDetailsUrl: ""
       updateCartSearchIndexes: true
       useBillingAddressForTax: false
       validateBusinessTaxIdAsVatId: false
