@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { getProducts } from '../js/designs.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 export async function loader() {
   console.log('This is the root loader')
@@ -65,9 +63,6 @@ export default function LastCollection() {
       ))}
 
       <div>
-        <h2>
-          <FontAwesomeIcon icon={faShoppingCart} /> Shopping Cart
-        </h2>
         <ul>
           {cartItems.map((item) => (
             <li key={item.id}>
@@ -83,3 +78,42 @@ export default function LastCollection() {
     </div>
   )
 }
+
+
+// import { useLoaderData } from 'react-router-dom'
+// import { getProducts } from '../js/designs.js'
+// import { useState } from 'react'
+
+// export async function loader() {
+//   console.log('This is the root loader')
+//   const result = await getProducts()
+//   return result
+// }
+
+// export default function LastCollection() {
+//   const lastCollection = useLoaderData()
+//   const [cartItems, setCartItems] = useState([])
+
+//   const addToCart = (item) => {
+//     setCartItems((prevCartItems) => [...prevCartItems, item])
+//     console.log(`Added ${item.title} to the cart.`)
+//   }
+
+//   return (
+//     <div>
+//       <h1>SubmitPage</h1>
+//       {lastCollection.map((item) => (
+//         <div key={item.id}>
+//           <p> title: {item.title}</p>
+//           <p> designAuthor: {item.designAuthor}</p>
+//           <p> story: {item.story}</p>
+//           <p> Price: {item.defaultPrice} euro</p>
+
+//           <img src={item.productImage[0].url} width={100} />
+
+//           <button onClick={() => addToCart(item)}>Add to cart</button>
+//         </div>
+//       ))}
+//     </div>
+//   )
+// }

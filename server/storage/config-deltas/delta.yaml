@@ -1,32 +1,52 @@
-dateApplied: '2023-06-07 07:21:26'
+dateApplied: '2023-06-09 05:05:14'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1686144846
-        to: 1686147686
+        from: 1686312300
+        to: 1686312314
   -
     added:
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.12: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.13: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
-    message: 'Save GraphQL schema “Public Schema”'
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elementCondition: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.autocapitalize: true
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.autocomplete: false
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.autocorrect: true
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.class: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.disabled: false
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.elementCondition: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.id: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.instructions: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.label: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.max: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.min: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.name: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.orientation: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.placeholder: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.readonly: false
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.requirable: false
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.size: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.step: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.tip: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.title: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.type: craft\commerce\fieldlayoutelements\VariantTitleField
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.uid: d6433085-1535-4c17-8b64-97bd88a83b7c
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.userCondition: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.warning: null
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.elements.0.width: 100
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.name: Content
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.uid: dda2adce-d9cf-4665-9c2a-421b147eb96a
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.variantFieldLayouts.9308dc7d-d517-4040-8879-ffc0f1f13d9a.tabs.0.userCondition: null
     changed:
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.6:
-        from: 'usergroups.everyone:read'
-        to: 'volumes.0c51f0f3-64c9-42fa-86a4-e3f15df247f0:read'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.7:
-        from: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
-        to: 'usergroups.everyone:read'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.8:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
-        to: 'productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27:read'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.9:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
-        to: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.10:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
-        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
-      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.11:
-        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
-        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.hasVariants:
+        from: false
+        to: true
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.productTitleFormat:
+        from: null
+        to: ''
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.siteSettings.ca98a93c-411a-4bbc-9174-0e0b3a88fb5e.template:
+        from: null
+        to: ''
+      commerce.productTypes.80dae144-c6c0-4b5c-a314-b3aff8fcef27.skuFormat:
+        from: null
+        to: ''

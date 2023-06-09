@@ -3,7 +3,7 @@ handle: shirts
 hasDimensions: false
 hasProductTitleField: true
 hasVariantTitleField: false
-hasVariants: false
+hasVariants: true
 name: shirts
 productFieldLayouts:
   a9a9b057-2c32-4fcf-b1af-1341c231df73:
@@ -76,7 +76,7 @@ productFieldLayouts:
           -
             elementCondition: null
             instructions: null
-            label: null
+            label: varients
             required: false
             tip: null
             type: craft\commerce\fieldlayoutelements\VariantsField
@@ -93,4 +93,39 @@ siteSettings:
     template: ''
     uriFormat: 'shirts/{slug}'
 skuFormat: ''
+variantFieldLayouts:
+  9308dc7d-d517-4040-8879-ffc0f1f13d9a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: d6433085-1535-4c17-8b64-97bd88a83b7c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dda2adce-d9cf-4665-9c2a-421b147eb96a
+        userCondition: null
 variantTitleFormat: '{product.title}'
