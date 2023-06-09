@@ -1,0 +1,19 @@
+columnSuffix: llhjposw
+contentColumnType: text
+fieldGroup: bc48d364-fd3d-48d8-be8a-aca32725088f # workshops
+handle: workshopPlace
+instructions: null
+name: 'workshop place'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

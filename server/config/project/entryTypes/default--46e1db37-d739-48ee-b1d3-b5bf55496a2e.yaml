@@ -1,5 +1,5 @@
 fieldLayouts:
-  dae3a5c9-9d6c-4970-94ad-b75b08df7d05:
+  225818fa-869d-472f-8ae4-0897f90bf7bc:
     tabs:
       -
         elementCondition: null
@@ -26,65 +26,65 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: cf43cba7-e953-4a21-af75-17f404138c5b
+            uid: 283b1aae-b552-42a7-b0d0-d8d14d1838e2
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 9bab4509-fd86-4432-9349-b485ad305ff7 # like Amount
+            fieldUid: 8d96726f-8744-4b23-a6a5-49432ca9008e # workshop attendees
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c2aa09ad-53ee-4789-b00b-9b5feea2113e
+            uid: a5962be5-3971-4a2e-907c-16a4b803abea
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d5b7ca04-6137-41bf-ab70-95818c16f640 # story
+            fieldUid: 7065b1b6-c2b2-4332-99e5-82d8f4f134c2 # workshop date
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3ccbc357-69a3-470f-8d71-1596c5f605ed
+            uid: 79305020-371f-4c99-adb1-3192f3e9cf52
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95 # designAuthor
+            fieldUid: b0dd6f1c-00ba-4436-bc05-84297ddd81de # workshop info
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: da55c5a5-7519-4c07-9958-86460d127422
+            uid: 0a50099a-9dce-4d33-83f9-9758e6e30552
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd # design Links
+            fieldUid: 2fa98a8a-0943-4d4e-bdff-ae4f55e124c5 # workshop place
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
+            uid: d38dfa7a-c3b0-493b-b38a-127c4874bdf4
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 2d3b04ba-04de-49c4-8d1b-a1036d3f1c9f
+        uid: 45b37f66-2cdc-451c-ac3b-8ec98031710c
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: 098bf40a-4116-4672-b3b5-303b57a938cd # designs
+section: a961ce14-1fcb-4209-92db-aa58b55893ba # workshops
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

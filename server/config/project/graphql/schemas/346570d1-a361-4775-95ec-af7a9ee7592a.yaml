@@ -7,9 +7,23 @@ scope:
   - 'elements.inactive:read'
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:read' # designs
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:read' # Default
+  - 'sections.96175363-fb95-400e-81ca-6e4da39ee2ea:read' # workshop Requests
+  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:read' # Default
+  - 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:read' # workshops
+  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:read' # Default
   - 'usergroups.everyone:read'
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit' # designs
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete' # Default
+  - 'sections.96175363-fb95-400e-81ca-6e4da39ee2ea:edit' # workshop Requests
+  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:edit' # Default
+  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:create' # Default
+  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:save' # Default
+  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:delete' # Default
+  - 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:edit' # workshops
+  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:edit' # Default
+  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:create' # Default
+  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:save' # Default
+  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:delete' # Default

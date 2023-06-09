@@ -1,74 +1,52 @@
-<<<<<<< HEAD
-dateApplied: '2023-06-06 07:24:28'
-=======
-dateApplied: '2023-06-07 04:00:08'
->>>>>>> like
+dateApplied: '2023-06-08 15:32:08'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-<<<<<<< HEAD
-        from: 1686044447
-        to: 1686061468
+        from: 1686262216
+        to: 1686263528
   -
     added:
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.columnSuffix: xyudaqqa
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.contentColumnType: text
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.fieldGroup: 35c69e63-d07d-4933-ac1c-4bcfdee0632e
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.handle: designauthor
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.instructions: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.name: designAuthor
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.searchable: false
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.byteLimit: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.charLimit: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.code: false
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.columnType: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.initialRows: 4
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.multiline: false
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.placeholder: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.uiMode: normal
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.translationKeyFormat: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.translationMethod: none
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.type: craft\fields\PlainText
-    message: 'Save field “designauthor”'
-  -
-    added:
-      meta.__names__.c94a0b06-4385-4a7b-9494-af296fa8d782: designAuthor
-=======
-        from: 1686135354
-        to: 1686135608
-  -
-    added:
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.elementCondition: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.instructions: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.label: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.required: false
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.tip: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.type: craft\fieldlayoutelements\CustomField
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.userCondition: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.warning: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.width: 100
-    message: 'Save entry type “default”'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.19: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:save'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.20: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:delete'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.21: 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.22: 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.23: 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:create'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.24: 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:save'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.25: 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:delete'
+    message: 'Save GraphQL schema “Public Schema”'
     changed:
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.1.fieldUid:
-        from: d5b7ca04-6137-41bf-ab70-95818c16f640
-        to: 9bab4509-fd86-4432-9349-b485ad305ff7
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.1.uid:
-        from: 3ccbc357-69a3-470f-8d71-1596c5f605ed
-        to: c2aa09ad-53ee-4789-b00b-9b5feea2113e
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.fieldUid:
-        from: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95
-        to: d5b7ca04-6137-41bf-ab70-95818c16f640
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.uid:
-        from: da55c5a5-7519-4c07-9958-86460d127422
-        to: 3ccbc357-69a3-470f-8d71-1596c5f605ed
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.fieldUid:
-        from: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd
-        to: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.uid:
-        from: e57e0415-09a2-4080-af8e-6697ff8b4f65
-        to: da55c5a5-7519-4c07-9958-86460d127422
->>>>>>> like
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.8:
+        from: 'usergroups.everyone:read'
+        to: 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:read'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.9:
+        from: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
+        to: 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:read'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.10:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
+        to: 'usergroups.everyone:read'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.11:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
+        to: 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.12:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.13:
+        from: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.14:
+        from: 'sections.96175363-fb95-400e-81ca-6e4da39ee2ea:edit'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.15:
+        from: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:edit'
+        to: 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.16:
+        from: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:create'
+        to: 'sections.96175363-fb95-400e-81ca-6e4da39ee2ea:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.17:
+        from: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:save'
+        to: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:edit'
+      graphql.schemas.346570d1-a361-4775-95ec-af7a9ee7592a.scope.18:
+        from: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:delete'
+        to: 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:create'

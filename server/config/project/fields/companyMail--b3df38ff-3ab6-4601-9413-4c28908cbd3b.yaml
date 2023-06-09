@@ -1,9 +1,9 @@
-columnSuffix: xyudaqqa
+columnSuffix: rcvrkytd
 contentColumnType: text
-fieldGroup: 35c69e63-d07d-4933-ac1c-4bcfdee0632e # Common
-handle: designauthor
+fieldGroup: 22cbf7f0-abdf-473d-9ff8-5bd634f5f69c # workshopRequests
+handle: companyMail
 instructions: null
-name: designAuthor
+name: 'company mail'
 searchable: false
 settings:
   byteLimit: null

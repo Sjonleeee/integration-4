@@ -1,4 +1,4 @@
-import { graphQLRequest } from './utils/graphql'
+import { graphQLRequest } from "./utils/graphql";
 
 export const getSubmissions = async () => {
   const { data } = await graphQLRequest(
@@ -14,11 +14,11 @@ export const getSubmissions = async () => {
     }
   }
 }
-    `,
-  )
-  console.log(data.designsEntries)
-  return data.designsEntries
-}
+    `
+  );
+  console.log(data.designsEntries);
+  return data.designsEntries;
+};
 
 export const submitDesign = async (updates, designLinks) => {
   const { data } = await graphQLRequest(
@@ -40,13 +40,6 @@ export const submitDesign = async (updates, designLinks) => {
   }
 }
 `,
-<<<<<<< HEAD
-    { designLinks: designLinks, ...updates },
-  )
-  console.log(data)
-  return data.save_designs_default_Entry
-}
-=======
     { designLinks: designLinks, ...updates }
   );
   console.log(data);
@@ -69,4 +62,77 @@ export const addLike = async (id, likeAmount) => {
   console.log(data);
   return data.likeDesign;
 };
->>>>>>> like
+
+export const submitRequest = async (updates) => {
+  const { data } = await graphQLRequest(
+    `
+    mutation MyMutation($title: String, $companyMail: String, $companyTelephone: String, $companyAdres: String, $companyPostcode: String, $companyCountry: String, $requestAmount: String, $requestDate: String, $requestDuration: String) {
+  save_workshopRequests_default_Entry(
+    authorId:"1"
+    slug:"-"
+    companyAdres: $companyAdres
+    companyCountry: $companyCountry
+    companyMail: $companyMail
+    title: $title
+    companyPostcode: $companyPostcode
+    companyTelephone: $companyTelephone
+    requestAmount: $requestAmount
+    requestDate: $requestDate
+    requestDuration: $requestDuration
+  ) {
+    id
+    title
+    companyAdres
+    companyCountry
+    companyMail
+    companyPostcode
+    companyTelephone
+    requestAmount
+    requestDate
+    requestDuration
+  }
+}
+`,
+    { ...updates }
+  );
+  console.log(data);
+  return data.save_workshopRequests_default_Entry;
+};
+
+export const getWorkshops = async () => {
+  const { data } = await graphQLRequest(
+    `query MyQuery {
+  workshopsEntries {
+    ... on workshops_default_Entry {
+      id
+      workshopAttendees
+      workshopDate
+      workshopInfo
+      workshopPlace
+      title
+    }
+  }
+}
+
+    `
+  );
+  console.log(data);
+  return data.workshopsEntries;
+};
+
+export const joinWorkshop = async (id, workshopAttendees) => {
+  const { data } = await graphQLRequest(
+    `
+       mutation MyMutation($workshopAttendees: Number) {
+  save_workshops_default_Entry(id: "${id}", workshopAttendees: $workshopAttendees) {
+    ... on workshops_default_Entry {
+      workshopAttendees
+    }
+  }
+}
+    `,
+    { workshopAttendees: workshopAttendees }
+  );
+  console.log(data);
+  return data;
+};

@@ -1,0 +1,19 @@
+columnSuffix: uiswbgte
+contentColumnType: text
+fieldGroup: 22cbf7f0-abdf-473d-9ff8-5bd634f5f69c # workshopRequests
+handle: requestDate
+instructions: null
+name: 'request Date'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

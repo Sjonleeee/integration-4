@@ -7,6 +7,10 @@ import Submissions, {
   loader as submissionsLoader,
   action as likeAction,
 } from "./routes/submissionsPage";
+import Requirements from "./routes/requirements";
+import Contact from "./routes/contact";
+import Workshops, { loader as workshopsLoader } from "./routes/workshops";
+import Request, { action as requestAction } from "./routes/workshopRequest";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import Home from "./routes/home";
 
@@ -29,6 +33,28 @@ const router = createBrowserRouter([
         element: <Submissions />,
         loader: submissionsLoader,
         action: likeAction,
+      },
+      {
+        path: "/requirements",
+        element: <Requirements />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/workshops",
+        element: <Workshops />,
+        loader: workshopsLoader,
+      },
+      {
+        path: "/workshops/request",
+        element: <Request />,
+        action: requestAction,
+      },
+      {
+        path: "/workshops/request/confirmation",
+        // element: <Confirmation />,
       },
     ],
   },

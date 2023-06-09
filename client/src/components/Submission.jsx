@@ -8,7 +8,7 @@ const Submission = ({ title, story, designAuthor, designLinks }) => {
         <h2>{title}</h2>
         <p>{story}</p>
         <p>{designAuthor}</p>
-        <img src={design} alt="design" width={100} />
+        <img src={design} alt="design" width={600} />
       </div>
     </>
   );
