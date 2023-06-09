@@ -12,10 +12,7 @@ import Contact from "./routes/contact";
 import Workshops, { loader as workshopsLoader } from "./routes/workshops";
 import Request, { action as requestAction } from "./routes/workshopRequest";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
-import LastCollection, {
-  loader as lastCollectionLoader,
-  cartloader,
-} from "./routes/lastCollection";
+import LastCollection from "./routes/lastCollection";
 import Home from "./routes/home";
 
 const router = createBrowserRouter([
@@ -63,8 +60,6 @@ const router = createBrowserRouter([
       {
         path: "/last-collection",
         element: <LastCollection />,
-        loader: lastCollectionLoader,
-        cartloader: cartloader,
       },
     ],
   },

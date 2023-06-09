@@ -1,5 +1,8 @@
+@import url(css/contact.css);
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,11 +21,24 @@
   --color-green: #40ff99;
 }
 
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -66,20 +82,57 @@ button:focus-visible {
 
 /* index.css */
 
-.navigation {
-  padding: 10px;
+.mobile-hidden {
+  display: none;
 }
 
-.navigation ul {
+.navigation {
+  padding: 24px;
+}
+
+.navigation-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-mobile a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+.navigation-burger {
+  transform: scaleX(-1);
+}
+
+.navigation-burger div {
+  transition: ease width 0.5s;
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-black);
+  margin: 5px 0;
+}
+
+.navigation-links {
   list-style: none;
   margin: 0;
+  margin-block: 80px;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  height: 400px;
+  justify-content: space-evenly;
+  margin-inline-end: 0;
 }
 
 .navigation li {
-  margin: 0 30px;
+  margin: 0 0px;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .navigation a {

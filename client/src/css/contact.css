@@ -1,0 +1,58 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5rem repeat(3, 1fr) 1fr;
+  margin-inline: 24px;
+  height: 100vh;
+}
+
+.contact svg {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+
+  position: relative;
+  right: 30px;
+  scale: 1.2;
+  justify-self: start;
+  align-self: center;
+  z-index: 1;
+}
+
+.contact h1 {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  font-size: 62vw;
+  position: relative;
+  right: 30px;
+  background-color: var(--color-green);
+  width: 120vw;
+  font-weight: 500;
+  margin-block: 0;
+  font-family: Superline-Regular, Inter;
+}
+
+.contact-info-title {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+  justify-self: start;
+
+  font-size: 2.5rem;
+  width: 5ch;
+  line-height: 1;
+}
+
+.contact-info-title span {
+  font-weight: 500;
+}
+
+.contact-info {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  justify-self: start;
+  align-self: start;
+}
+
+.contact-partners {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
