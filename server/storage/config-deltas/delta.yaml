@@ -1,74 +1,52 @@
-<<<<<<< HEAD
-dateApplied: '2023-06-06 07:24:28'
-=======
-dateApplied: '2023-06-07 04:00:08'
->>>>>>> like
+dateApplied: '2023-06-09 05:04:23'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-<<<<<<< HEAD
-        from: 1686044447
-        to: 1686061468
+        from: 1686312238
+        to: 1686312262
   -
     added:
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.columnSuffix: xyudaqqa
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.contentColumnType: text
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.fieldGroup: 35c69e63-d07d-4933-ac1c-4bcfdee0632e
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.handle: designauthor
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.instructions: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.name: designAuthor
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.searchable: false
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.byteLimit: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.charLimit: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.code: false
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.columnType: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.initialRows: 4
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.multiline: false
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.placeholder: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.settings.uiMode: normal
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.translationKeyFormat: null
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.translationMethod: none
-      fields.c94a0b06-4385-4a7b-9494-af296fa8d782.type: craft\fields\PlainText
-    message: 'Save field “designauthor”'
-  -
-    added:
-      meta.__names__.c94a0b06-4385-4a7b-9494-af296fa8d782: designAuthor
-=======
-        from: 1686135354
-        to: 1686135608
-  -
-    added:
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.elementCondition: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.instructions: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.label: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.required: false
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.tip: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.type: craft\fieldlayoutelements\CustomField
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.userCondition: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.warning: null
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.4.width: 100
-    message: 'Save entry type “default”'
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elementCondition: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.autocapitalize: true
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.autocomplete: false
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.autocorrect: true
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.class: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.disabled: false
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.elementCondition: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.id: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.instructions: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.label: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.max: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.min: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.name: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.orientation: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.placeholder: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.readonly: false
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.requirable: false
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.size: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.step: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.tip: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.title: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.type: craft\commerce\fieldlayoutelements\VariantTitleField
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.uid: a9de44d3-a7f1-4a5b-8e2c-4ec438914d34
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.userCondition: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.warning: null
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.elements.0.width: 100
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.name: Content
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.uid: 16e5cec2-5602-4524-89de-e218a3ab1d91
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.variantFieldLayouts.ea138db3-54ca-40fb-8915-2d4c39c5b8b5.tabs.0.userCondition: null
     changed:
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.1.fieldUid:
-        from: d5b7ca04-6137-41bf-ab70-95818c16f640
-        to: 9bab4509-fd86-4432-9349-b485ad305ff7
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.1.uid:
-        from: 3ccbc357-69a3-470f-8d71-1596c5f605ed
-        to: c2aa09ad-53ee-4789-b00b-9b5feea2113e
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.fieldUid:
-        from: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95
-        to: d5b7ca04-6137-41bf-ab70-95818c16f640
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.2.uid:
-        from: da55c5a5-7519-4c07-9958-86460d127422
-        to: 3ccbc357-69a3-470f-8d71-1596c5f605ed
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.fieldUid:
-        from: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd
-        to: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95
-      entryTypes.97163395-0194-4622-850e-b48d3d65be82.fieldLayouts.dae3a5c9-9d6c-4970-94ad-b75b08df7d05.tabs.0.elements.3.uid:
-        from: e57e0415-09a2-4080-af8e-6697ff8b4f65
-        to: da55c5a5-7519-4c07-9958-86460d127422
->>>>>>> like
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.hasVariants:
+        from: false
+        to: true
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.productTitleFormat:
+        from: null
+        to: ''
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.siteSettings.ca98a93c-411a-4bbc-9174-0e0b3a88fb5e.template:
+        from: null
+        to: ''
+      commerce.productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7.skuFormat:
+        from: null
+        to: ''

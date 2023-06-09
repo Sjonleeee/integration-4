@@ -1,0 +1,131 @@
+descriptionFormat: '{product.title} - {title}'
+handle: shirts
+hasDimensions: false
+hasProductTitleField: true
+hasVariantTitleField: false
+hasVariants: true
+name: shirts
+productFieldLayouts:
+  65f3286d-488c-4174-86a7-f1b2cc8cd216:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            uid: 843ea16f-44a6-4e7e-a228-1be35dfabe86
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd # design Links
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8b045a8-aa46-47f7-a4d7-05e6a1bb746a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95 # designAuthor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1cf31180-d400-4289-b27c-49bb813d14ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d5b7ca04-6137-41bf-ab70-95818c16f640 # story
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5222de09-22e9-48aa-87bb-cf3cd36a4e1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            instructions: null
+            label: variants
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            uid: 4d7283fc-d87e-4f8e-be89-b613dbd4695d
+            userCondition: null
+            warning: null
+        name: Content
+        uid: 05816368-22c7-4698-8d1f-28187b2b9156
+        userCondition: null
+productTitleFormat: ''
+siteSettings:
+  ca98a93c-411a-4bbc-9174-0e0b3a88fb5e: # kultureX
+    hasUrls: true
+    template: ''
+    uriFormat: 'shirts/{slug}'
+skuFormat: ''
+variantFieldLayouts:
+  ea138db3-54ca-40fb-8915-2d4c39c5b8b5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            uid: a9de44d3-a7f1-4a5b-8e2c-4ec438914d34
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 16e5cec2-5602-4524-89de-e218a3ab1d91
+        userCondition: null
+variantTitleFormat: '{product.title}'

@@ -1,0 +1,43 @@
+tabs:
+  -
+    elementCondition: null
+    elements:
+      -
+        elementCondition: null
+        fieldUid: d5b7ca04-6137-41bf-ab70-95818c16f640 # story
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 56bb6d2a-f696-4b5a-9b4d-3cc10f6b55e9
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95 # designAuthor
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 6f56f17d-86dc-42b1-81ef-d1f9d5303148
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd # design Links
+        instructions: null
+        label: null
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 8067e94e-8621-4a4d-be45-a6f2175cabdb
+        userCondition: null
+        warning: null
+        width: 100
+    name: orders
+    uid: 13b22fab-a266-421a-a8de-f2bfc0f54317
+    userCondition: null

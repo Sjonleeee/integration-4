@@ -19,3 +19,18 @@ export const graphQLRequest = async (query, variables = {}) => {
   }
   return result;
 };
+
+export const getCart = async () => {
+  const result = await fetch(`${BASE_URL}/actions/commerce/cart/get-cart`, {
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((r) => r.json())
+    .then(console.log);
+  if (!result.data) {
+    console.log(result);
+    throw new Error(result.errors[0].message);
+  }
+  return result;
+};

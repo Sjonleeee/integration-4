@@ -1,4 +1,5 @@
 import { graphQLRequest } from "./utils/graphql";
+import { getCart } from "./utils/commerce";
 
 export const getSubmissions = async () => {
   const { data } = await graphQLRequest(
@@ -135,4 +136,29 @@ export const joinWorkshop = async (id, workshopAttendees) => {
   );
   console.log(data);
   return data;
+};
+
+export const getProducts = async () => {
+  const { data } = await graphQLRequest(
+    `query getProducts {
+  products {
+    ... on shirts_Product {
+      id
+      title
+      designAuthor
+      story
+      defaultPrice
+        }
+      }
+    
+}`
+  );
+  console.log(data.products);
+  return data.products;
+};
+
+export const getCartItems = async () => {
+  const cart = await getCart();
+  console.log(cart);
+  return cart;
 };
