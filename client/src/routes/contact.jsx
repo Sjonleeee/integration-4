@@ -23,7 +23,7 @@ export default function Contact() {
       <div className="contact-info">
         <div>
           <p>e-mail:</p>
-          <a href="mailto:contact@kltrx.be"></a>
+          <a href="mailto:contact@kltrx.be">contact@kltrx.be</a>
         </div>
         <div>
           <p>our socials:</p>

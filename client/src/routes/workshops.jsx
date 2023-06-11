@@ -3,6 +3,7 @@ import Button from "../components/Button.jsx";
 import { getWorkshops, joinWorkshop } from "../js/designs.js";
 import { useLoaderData } from "react-router-dom";
 import React from "react";
+// import styled from "styled-components";
 
 export async function loader() {
   console.log("This is the root loader");
@@ -30,6 +31,12 @@ export default function Workshops() {
     const idsplit2 = idsplit[1].split("<");
     const id = Number(idsplit2[0]);
     console.log(id);
+    const styledButton = document.getElementById(id);
+    styledButton.style.backgroundColor = "#40ff99";
+    styledButton.style.color = "#101010";
+    styledButton.innerHTML = `You joined!`;
+    styledButton.borderstyle = "none";
+
     await joinWorkshop(id, newAttendees);
   };
   return (
@@ -78,13 +85,17 @@ export default function Workshops() {
         <h2>Upcoming workshops</h2>
         {workshops.map((workshop) => (
           <div className="workshop-item" key={workshop.id}>
-            <h2>{workshop.title}</h2>
+            <h3>{workshop.title}</h3>
             <div>
               <p>{workshop.workshopInfo}</p>
-              <p>{workshop.workshopDate}</p>
-              <p>{workshop.workshopPlace}</p>
+              <p>When: {workshop.workshopDate}</p>
+              <p>Where: {workshop.workshopPlace}</p>
             </div>
-            <button className="button-primary" onClick={handleClick}>
+            <button
+              id={workshop.id}
+              className="button-primary"
+              onClick={handleClick}
+            >
               {workshop.workshopAttendees}/30 Free Join Workshop
               <span className="hidden">{workshop.id}</span>
             </button>

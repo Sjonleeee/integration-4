@@ -12,6 +12,7 @@ export default function Navbar() {
       <div>
         <div className="navigation-mobile">
           <NavLink
+            className="navigation-logo"
             onClick={() => {
               if (showMenu) {
                 handleMenu();
@@ -73,8 +74,12 @@ export default function Navbar() {
             <div></div>
           </div>
         </div>
-        <div className="navigation-links" active>
-          <NavLink onClick={handleMenu} to="../requirements">
+        <div className="navigation-links">
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../requirements"
+          >
             <svg
               className="mobile-hidden"
               width="23"
@@ -94,7 +99,11 @@ export default function Navbar() {
             <li>Requirements</li>
           </NavLink>
 
-          <NavLink onClick={handleMenu} to="../submit">
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../submit"
+          >
             <svg
               className="mobile-hidden"
               width="24"
@@ -125,7 +134,11 @@ export default function Navbar() {
             <li>Submit</li>
           </NavLink>
 
-          <NavLink onClick={handleMenu} to="../submissions">
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../submissions"
+          >
             <svg
               className="mobile-hidden"
               width="24"
@@ -175,7 +188,11 @@ export default function Navbar() {
             <li>Submissions</li>
           </NavLink>
 
-          <NavLink onClick={handleMenu} to="../last-collection">
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../last-collection"
+          >
             <svg
               className="mobile-hidden"
               width="28"
@@ -193,7 +210,11 @@ export default function Navbar() {
             <li>Last collection</li>
           </NavLink>
 
-          <NavLink onClick={handleMenu} to="../contact">
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../contact"
+          >
             <svg
               className="mobile-hidden"
               width="24"
@@ -212,7 +233,11 @@ export default function Navbar() {
             <li>Contact</li>
           </NavLink>
 
-          <NavLink onClick={handleMenu} to="../workshops">
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../workshops"
+          >
             <svg
               className="mobile-hidden"
               width="25"
@@ -241,6 +266,7 @@ export default function Navbar() {
       </div>
       <style>
         {`
+        @media screen and (max-width: 1279px) {
           .navigation {
             background-color: ${showMenu ? "#fff" : "transparent"};
             height: ${showMenu ? "100vh" : "3rem"};
@@ -265,6 +291,7 @@ export default function Navbar() {
             opacity: ${showMenu ? "1" : "0"};
             transform: translateY(${showMenu ? "0" : "-200%"});
           }
+        }
         `}
       </style>
     </div>
