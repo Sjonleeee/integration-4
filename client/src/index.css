@@ -49,18 +49,6 @@ h1 {
   line-height: 1.1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 .mobile-hidden {
   display: none;
 }
@@ -129,7 +117,8 @@ h1 {
 
 .button-primary {
   margin-block-start: 8px;
-  display: block;
+  display: flex;
+  align-items: center;
   background-color: var(--color-white);
   color: var(--color-black);
   border-radius: 30px;
@@ -140,9 +129,14 @@ h1 {
   justify-self: center;
 }
 
+.button-primary svg {
+  margin-inline: 1rem;
+}
+
 .button-secondary {
   margin-block-start: 8px;
-  display: block;
+  display: flex;
+  align-items: center;
   background-color: var(--color-black);
   color: var(--color-white);
   border-radius: 30px;
@@ -151,6 +145,13 @@ h1 {
   padding-inline: 1rem;
   width: calc(100vw - 48px - 2rem);
   align-self: center;
+}
+
+button {
+  font-size: 1rem;
+  font-family: Roc Grotesk;
+  background-color: inherit;
+  border: none;
 }
 
 .hide-preloader {
@@ -275,5 +276,36 @@ h1 {
 
   .navigation a:hover {
     color: #40ff99;
+  }
+  .button-primary {
+    margin-block-start: 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: 30px;
+    border: 2px solid var(--color-black);
+    padding-block: 0.8rem;
+    padding-inline: 1rem;
+    width: 320px;
+    justify-self: center;
+  }
+
+  .button-primary svg {
+    margin-inline: 1rem;
+  }
+
+  .button-secondary {
+    margin-block-start: 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 30px;
+    border: 2px solid var(--color-black);
+    padding-block: 0.8rem;
+    padding-inline: 1rem;
+    width: 320px;
+    align-self: center;
   }
 }
