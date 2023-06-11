@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./layouts/rootLayout";
-import "./index.css";
 import Submissions, {
   loader as submissionsLoader,
   action as likeAction,
@@ -14,6 +13,7 @@ import Request, { action as requestAction } from "./routes/workshopRequest";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import LastCollection from "./routes/lastCollection";
 import Home from "./routes/home";
+import "./index.css";
 
 const router = createBrowserRouter([
   {

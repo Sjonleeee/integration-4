@@ -11,7 +11,14 @@ export default function Navbar() {
     <div className="navigation">
       <div>
         <div className="navigation-mobile">
-          <NavLink onClick={handleMenu} to="/">
+          <NavLink
+            onClick={() => {
+              if (showMenu) {
+                handleMenu();
+              }
+            }}
+            to="/"
+          >
             <svg
               width="51"
               height="54"
