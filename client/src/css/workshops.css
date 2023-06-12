@@ -3,7 +3,7 @@
   grid-template-rows: 6rem auto repeat(auto, 25vh);
   margin-inline: 24px;
   width: calc(100vw - 48px);
-  margin-block-start: 6rem;
+  margin-block: 6rem;
 }
 
 .workshops h1 {
@@ -139,6 +139,10 @@
   margin-block-end: 1rem;
 }
 
+input:focus {
+  border: 1px solid var(--color-green);
+}
+
 #companyPostal {
   width: 150px;
 }
@@ -198,13 +202,43 @@
   margin-block-end: 1rem;
 }
 
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+}
+
+.confirmation img {
+  max-width: 250px;
+  width: 40vw;
+  height: auto;
+  margin-block: 2rem;
+  align-self: center;
+}
+
+.confirmation p:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.confirmation p:nth-child(2) {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-block: 1rem;
+}
+
 @media screen and (min-width: 1280px) {
   .workshops {
     display: grid;
     grid-template-columns: repeat(2, 45vw);
     margin-inline: 3rem;
     width: calc(100vw - 6rem);
-    margin-block-start: 3rem;
+    height: 100vh;
+    margin-block: 3rem;
   }
 
   .workshops h1 {
@@ -228,7 +262,7 @@
   }
 
   .workshops-info {
-    grid-row: 3;
+    grid-row: 2;
     width: 30vw;
     font-size: 1rem;
     justify-self: start;
@@ -262,7 +296,7 @@
     height: auto;
     /* background-color: var(--color-green); */
     color: var(--color-black);
-    border: 2px solid var(--color-black);
+    border: 1px solid var(--color-black);
     padding: 1rem;
     text-decoration: none;
   }
@@ -275,13 +309,13 @@
 
   .workshop-item p:nth-child(2),
   .workshop-item p:nth-child(3) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--color-black);
   }
 
   .workshop-item p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     margin-block: 1rem;
   }
@@ -295,12 +329,54 @@
     margin-block-start: 6rem;
     margin-inline: 1.5rem;
     width: calc(100vw - 3rem);
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    height: calc(100vh - 6rem);
+  }
+
+  .request > .request-deco {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 40vw;
+    height: 40vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 10rem;
+    font-weight: 500;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 6rem;
+    right: 3rem;
+    z-index: 1;
+  }
+
+  .request-deco p {
+    font-family: var(--font-title);
+    font-style: italic;
+    font-variant-ligatures: none;
+    z-index: 2;
+    font-size: 14rem;
+    color: var(--color-green);
+    grid-row: 1;
+    grid-column: 1;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+
+  .request-deco img {
+    grid-row: 1;
+    grid-column: 1;
+    height: 100vh;
+    width: 42vw;
+    object-fit: cover;
   }
 
   .request-info p:first-child {
     font-size: 1.5rem;
     font-weight: 500;
-    width: 16ch;
+    width: 30ch;
     line-height: 1.2;
   }
 
@@ -308,14 +384,15 @@
     font-size: 1.25rem;
     font-weight: 400;
     margin-block: 1rem;
-    width: 24ch;
+    width: 30ch;
   }
 
   .request-form {
+    z-index: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: calc((100vw - 3rem) * 2);
     height: auto;
     /* background-color: var(--color-green); */
@@ -325,7 +402,7 @@
   }
 
   .form-one {
-    width: calc(100vw - 5rem);
+    width: calc(45vw - 5rem);
     margin-inline-end: 5rem;
   }
 
@@ -336,7 +413,7 @@
   }
 
   .form-one input {
-    width: 280px;
+    width: 320px;
     background-color: var(--color-white);
     border: 1px solid var(--color-black);
     font-size: 1rem;
@@ -346,8 +423,12 @@
     margin-block-end: 1rem;
   }
 
+  .form-one label {
+    display: block;
+  }
+
   #companyPostal {
-    width: 150px;
+    width: 200px;
   }
 
   #companyCountry {
@@ -368,7 +449,7 @@
   .two-fields {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
   }
 

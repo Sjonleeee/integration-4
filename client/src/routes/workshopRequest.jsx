@@ -28,9 +28,9 @@ export default function WorkshopRequest() {
   return (
     <div className="request">
       <h1 className="hidden">Workshop Request</h1>
-      <div className="request-deco mobile-hidden">
-        <img src="" alt="" />
-        <p>Request...</p>
+      <div className="mobile-hidden request-deco ">
+        <img src="../src/assets/img/requestpage.jpg" alt="" />
+        <p>Requesting...</p>
       </div>
       <div className="request-info">
         <p>Fill in the form to get in contact!</p>
@@ -94,6 +94,7 @@ export default function WorkshopRequest() {
         <div className="form-two">
           <p>Practical info</p>
           <label htmlFor="requestDate">Preferred date for workshop</label>
+          <br />
           <input type="date" id="requestDate" name="requestDate" required />
           <p>Duration</p>
           <input
@@ -114,10 +115,13 @@ export default function WorkshopRequest() {
           <label htmlFor="requestDuration">4 hours</label>
           <br />
           <label htmlFor="requestAmount">Amount of people attending</label>
+          <br />
           <input
             type="number"
             id="requestAmount"
             name="requestAmount"
+            min="10"
+            max="50"
             required
           />
           <div onClick={handleSecondStep} className="button-primary">
@@ -156,7 +160,12 @@ export default function WorkshopRequest() {
         {`
           .request-form {
             transform: ${secondStep ? "translateX(-100vw)" : "translateX(0)"};
-          }    
+          }   
+          
+          @media screen and (min-width: 1280px) {
+            .request-form {
+              transform: ${secondStep ? "translateX(-128vw)" : "translateX(0)"};
+            }
             `}
       </style>
     </div>

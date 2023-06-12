@@ -70,7 +70,7 @@ export default function Workshops() {
           your school or youth movement? Click the button below!
         </p>
         <Link
-          className="button-primary"
+          className="button-primary desktop-hidden"
           onClick={() => {
             window.scrollTo(0, 800);
           }}

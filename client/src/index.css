@@ -1,5 +1,6 @@
 @import url(css/contact.css);
 @import url(css/workshops.css);
+@import url(css/home.css);
 
 :root {
   font-family: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
@@ -20,12 +21,18 @@
   --color-white: #ffffff;
   --color-black: #101010;
   --color-green: #40ff99;
+
+  --font-title: Superline-Regular, Inter;
+  --font-text: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
 }
 
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+
+  font-variant-ligatures: none;
 }
 
 #root {
@@ -49,11 +56,33 @@ h1 {
   line-height: 1.1;
 }
 
+.green-text {
+  color: var(--color-green);
+}
+
+.arrow-button-white {
+  padding: 1rem;
+  padding-block-start: 1.4rem;
+  border: 2px solid var(--color-white);
+  border-radius: 30px;
+}
+
+.arrow-button-black {
+  padding: 1rem;
+  padding-block-start: 1.4rem;
+  border: 2px solid var(--color-black);
+  border-radius: 30px;
+  width: 20px;
+  justify-self: center;
+}
+
 .mobile-hidden {
   display: none;
 }
 .navigation {
   padding: 24px;
+  background-color: var(--color-white);
+  z-index: 5;
 }
 
 .navigation-mobile {
@@ -147,11 +176,21 @@ h1 {
   align-self: center;
 }
 
+.button-secondary svg {
+  margin-inline: 1rem;
+}
 button {
   font-size: 1rem;
   font-family: Roc Grotesk;
   background-color: inherit;
   border: none;
+}
+
+.title {
+  font-size: 8rem;
+  font-family: var(--font-title);
+  line-height: 1;
+  margin-block: 0.5rem;
 }
 
 .hide-preloader {
@@ -164,7 +203,7 @@ button {
   width: 100vw;
   height: 100vh;
   transition: ease 0.5s all;
-  z-index: 3;
+  z-index: 7;
 }
 
 .preloader > img {
@@ -174,6 +213,11 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: ease 0.5s all;
+}
+
+.footer {
+  background-color: var(--color-green);
+  padding: 2rem;
 }
 
 @media screen and (min-width: 1280px) {
@@ -289,10 +333,17 @@ button {
     padding-inline: 1rem;
     width: 320px;
     justify-self: center;
+    cursor: pointer;
   }
 
   .button-primary svg {
     margin-inline: 1rem;
+  }
+
+  .button-primary:hover {
+    background-color: var(--color-green);
+    color: var(--color-black);
+    border: 2px solid var(--color-green);
   }
 
   .button-secondary {
@@ -307,5 +358,15 @@ button {
     padding-inline: 1rem;
     width: 320px;
     align-self: center;
+  }
+
+  .button-secondary:hover {
+    background-color: var(--color-green);
+    color: var(--color-black);
+    border: 2px solid var(--color-green);
+  }
+
+  .desktop-hidden {
+    display: none;
   }
 }

@@ -12,6 +12,7 @@ import Workshops, { loader as workshopsLoader } from "./routes/workshops";
 import Request, { action as requestAction } from "./routes/workshopRequest";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import LastCollection from "./routes/lastCollection";
+import Confirmation from "./routes/confirmation";
 import Home from "./routes/home";
 import "./index.css";
 
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/workshops/request/confirmation",
-        // element: <Confirmation />,
+        element: <Confirmation />,
       },
       {
         path: "/last-collection",

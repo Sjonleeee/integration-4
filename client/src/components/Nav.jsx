@@ -268,11 +268,11 @@ export default function Navbar() {
         {`
         @media screen and (max-width: 1279px) {
           .navigation {
-            background-color: ${showMenu ? "#fff" : "transparent"};
+            background-color: #fff;
             height: ${showMenu ? "100vh" : "3rem"};
             position: ${showMenu ? "fixed" : "absolute"};
             width: calc(100vw - 48px);
-            z-index: 1;
+            z-index: 5;
             transition: background-color 0.5s ease;
           }
 
