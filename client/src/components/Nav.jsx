@@ -213,29 +213,6 @@ export default function Navbar() {
           <NavLink
             className="navigation-item"
             onClick={handleMenu}
-            to="../contact"
-          >
-            <svg
-              className="mobile-hidden"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.4144 19.9146L6.9664 19.7309L6.54446 19.9685L2.95986 21.9865L4.16011 18.7099L4.38388 18.099L3.91608 17.6469C2.09311 15.885 1 13.5475 1 10.9956C1 5.67489 5.82368 1.1875 11.9991 1.1875C18.1747 1.1875 23 5.67509 23 10.9956C23 16.3181 18.1763 20.8055 11.9991 20.8055C10.3587 20.8055 8.80614 20.4853 7.4144 19.9146Z"
-                stroke="black"
-                stroke-width="2"
-              />
-            </svg>
-
-            <li>Contact</li>
-          </NavLink>
-
-          <NavLink
-            className="navigation-item"
-            onClick={handleMenu}
             to="../workshops"
           >
             <svg
@@ -261,6 +238,28 @@ export default function Navbar() {
             </svg>
 
             <li>Workshops</li>
+          </NavLink>
+          <NavLink
+            className="navigation-item"
+            onClick={handleMenu}
+            to="../contact"
+          >
+            <svg
+              className="mobile-hidden"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.4144 19.9146L6.9664 19.7309L6.54446 19.9685L2.95986 21.9865L4.16011 18.7099L4.38388 18.099L3.91608 17.6469C2.09311 15.885 1 13.5475 1 10.9956C1 5.67489 5.82368 1.1875 11.9991 1.1875C18.1747 1.1875 23 5.67509 23 10.9956C23 16.3181 18.1763 20.8055 11.9991 20.8055C10.3587 20.8055 8.80614 20.4853 7.4144 19.9146Z"
+                stroke="black"
+                stroke-width="2"
+              />
+            </svg>
+
+            <li>Contact</li>
           </NavLink>
         </div>
       </div>
