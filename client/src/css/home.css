@@ -9,7 +9,6 @@
   display: grid;
   grid-column: 1;
   grid-row: 1;
-  padding-block-start: 4rem;
 }
 
 .hero-image {
@@ -213,6 +212,10 @@
   margin-block: 1rem;
 }
 
+.about-text a:first-of-type {
+  margin-block-start: 3rem;
+}
+
 .about-text__heading img {
   height: 2rem;
 }
@@ -233,38 +236,47 @@
   grid-row: 4;
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 20rem auto;
-  margin-block: 4rem;
+  grid-template-rows: 40rem auto;
+  margin-block: 0rem;
 }
 
 .concept-deco {
   display: grid;
 }
 
-.concept-deco img {
+.concept-deco img,
+.concept-deco__div {
   grid-row: 1;
   grid-column: 1;
   place-self: center;
   width: 100vw;
   height: 20rem;
+  object-fit: cover;
 }
 
-.concept-deco img:nth-child(3) {
+.concept-deco__div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.concept-deco__div img:nth-child(2) {
   position: relative;
-  top: 3rem;
-  width: 20rem;
+  width: 25rem;
+  object-fit: contain;
 }
 
-.concept-deco p {
+.concept-deco__div p {
   font-size: 4rem;
   font-family: var(--font-title);
-  grid-row: 1;
-  grid-column: 1;
-  place-self: center;
   color: var(--color-green);
-  top: -4rem;
-  right: 3rem;
+  left: 2rem;
+  top: 3.5rem;
   position: relative;
+  line-height: 1;
+  margin-block: 0;
+  z-index: 1;
 }
 
 .concept-text {
@@ -664,7 +676,7 @@
     width: 33vw;
   }
 
-  .workshops {
+  .home .workshops {
     color: var(--color-white);
     background-color: var(--color-black);
     width: 100vw;
@@ -674,7 +686,7 @@
     grid-template-columns: 50vw 50vw;
   }
 
-  .workshops-text {
+  .home .workshops-text {
     grid-column: 2;
     grid-row: 1;
     width: 35vw;
@@ -684,7 +696,7 @@
     justify-content: start;
   }
 
-  .workshops-deco {
+  .home .workshops-deco {
     grid-column: 1;
     grid-row: 1;
   }
@@ -696,5 +708,19 @@
     position: relative;
     top: -3rem;
     left: -3rem;
+  }
+
+  .home .workshops .button-secondary {
+    background-color: var(--color-green);
+    color: var(--color-black);
+  }
+
+  .home .workshops .button-secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  .home .workshops .button-secondary svg path {
+    fill: var(--color-black);
   }
 }

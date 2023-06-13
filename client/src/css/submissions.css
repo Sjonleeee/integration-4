@@ -1,0 +1,100 @@
+.banner {
+  z-index: -10;
+  width: 95vw;
+  background-image: url(../assets/img/Submission.jpg);
+  background-size: 95vw;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}
+
+.banner__name {
+  font-size: 200px;
+  font-family: var(--font-title);
+  line-height: 1;
+  margin-block: 0.5rem;
+  color: #40ff99;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .banner {
+    margin-top: 100px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner__name {
+    font-size: 120px;
+  }
+  .submissions {
+    margin-top: 30vh;
+  }
+}
+
+/* submissions */
+
+.submission {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border: #000000 2px solid;
+  width: 30vw;
+  padding: 2vw;
+}
+
+.submission__img {
+  grid-area: submission__img;
+  background-color: gray;
+  width: max-content;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.submission__img img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+}
+.submission__like {
+  grid-area: submission__like;
+}
+.submission__text {
+  grid-area: submission__text;
+}
+
+.submissions {
+  width: 95vw;
+  display: grid;
+  margin-left: 10vw;
+  grid-template-columns: 30vw 30vw;
+  gap: 10vw;
+}
+.submission__title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.submission__invisible {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .submissions {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    margin: 10vh 5vw;
+  }
+  .submission {
+    width: 80vw;
+    margin: 0;
+    padding: 5vw;
+  }
+  .submission__img {
+    width: 100%;
+  }
+}

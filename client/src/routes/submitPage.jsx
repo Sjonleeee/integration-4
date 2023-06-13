@@ -20,6 +20,7 @@ export default function SubmitPage() {
   // const [files, setFiles] = useState([]);
   const navigate = useNavigate();
   const [imageJSON, setImageJSON] = useState();
+  const [step, setStep] = useState(0);
   console.log(imageJSON);
 
   const imageInfo = imageJSON;
@@ -45,17 +46,6 @@ export default function SubmitPage() {
         context.drawImage(image, 0, 0);
         const image64 = canvas.toDataURL("image");
         setImageJSON(image64);
-
-        // const imageData = context.getImageData(
-        //   0,
-        //   0,
-        //   canvas.width,
-        //   canvas.height
-        // );
-
-        // console.log(imageData);
-        // const imageDataArray = Array.from(imageData.data);
-        // setImageJSON(imageDataArray);
       };
 
       image.src = base64image;
@@ -77,59 +67,62 @@ export default function SubmitPage() {
   // const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <section className="submission">
-      <div className="submission-design">
+    <section className="submit">
+      <div className="submit-design">
         <h1 className="hidden">Design submission</h1>
-        <p>Now you</p>
-        {/* SVG */}
-        <p>
+        <p className="mobile-hidden">Now you</p>
+        <img
+          className="submit-image"
+          src="../src/assets/img/submitpage.jpg"
+          alt="submit"
+        />
+        <img
+          className="submit-svg"
+          src="../src/assets/img/submit.svg"
+          alt="map icon"
+        />
+        <img
+          className="submit-add desktop-hidden"
+          src="../src/assets/img/add-button.svg"
+          onClick={() => {
+            setStep(1);
+          }}
+          alt=""
+        />
+        <style>
+          {`
+          .submit{
+            transform: translateX(${step * -100}vw);
+            transition: ease-in-out 0.5s all;
+          }
+        `}
+        </style>
+        <p className="submit-cta">Add a JPG of your design here</p>
+        <p className="submit-text">
           Submit your design and share your unique perspective on Kortrijk's
           culture. Let your creativity take flight, for this is where your
           vision becomes part of the fabric that weaves our city's story.{" "}
         </p>
       </div>
-      <div className="submission-drop">
-        <h2>Drag and drop your design underneath</h2>
+      <div className="submit-drop">
+        <h2 className="mobile-hidden">Drag and drop your design underneath</h2>
         <p>Pssst, upload your front and back design in JPG</p>
 
         <Form method="post" onSubmit={handleSubmit}>
           <input
             type="file"
             accept="image/jpg"
+            name="design"
             onChange={(e) => {
               handleImageChange(e);
-              // if (e.target.files  length > 1048576) {
-              //   alert("File is too big!");
-              //   e.target.value = "";
-              // }
-
-              // (e) => {
-              // const file = e.target.files[0];
-              // const reader = new FileReader();
-              // reader.onload = (event) => {
-              //   const base64image = event.target.result;
-              //   const image = new Image();
-              //   image.onload = () => {
-              //     const canvas = document.createElement("canvas");
-              //     canvas.width = image.width;
-              //     canvas.height = image.height;
-              //     const context = canvas.getContext("2d");
-              //     context.drawImage(image, 0, 0);
-              //     const image64 = canvas.toDataURL("image");
-              //     setImageJSON(image64);
-              //   };
-
-              //   image.src = base64image;
-              // };
-              // reader.readAsDataURL(file);
             }}
           />
           <label htmlFor="designAuthor">Your name</label>
           <input type="text" name="designAuthor" id="designAuthor" />
+          <label htmlFor="email">E-mail</label>
+          <input type="email" name="email" id="email" />
           <label htmlFor="title">Title</label>
           <input type="text" name="title" id="title" />
-          {/* <label htmlFor="email">E-mail</label>
-          <input type="email" name="email" id="email" /> */}
           <label htmlFor="story">Story</label>
           <textarea name="story" id="story" cols="30" rows="10"></textarea>
           <button type="submit">Submit your design</button>

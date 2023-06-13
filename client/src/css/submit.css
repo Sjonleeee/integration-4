@@ -1,0 +1,132 @@
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 200vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.submit-design {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.submit-image {
+  grid-row: 1;
+  grid-column: 1;
+  height: 35rem;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.submit-svg {
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
+  position: relative;
+  bottom: 6rem;
+}
+
+.submit-add {
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
+  position: relative;
+  top: 8rem;
+}
+
+.submit-cta {
+  grid-row: 1;
+  grid-column: 1;
+  place-self: center;
+  position: relative;
+  top: 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.submit-text {
+  width: calc(100vw - 3rem);
+  font-size: 1.125rem;
+  height: calc(100vh - 35rem);
+  place-self: center;
+}
+
+.submit-drop {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-start: 6rem;
+}
+
+.submit-drop h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  justify-self: center;
+  margin-block: 1rem;
+}
+
+.submit-drop p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  justify-self: center;
+  margin-block: 1rem;
+  text-align: ;
+  width: 55vw;
+  padding-inline: 22.5vw;
+}
+
+.submit-drop form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-block-start: 3rem;
+  width: calc(100vw - 3rem);
+  margin-inline: 1.5rem;
+  height: 100vh;
+}
+
+.submit-drop input {
+  border: none;
+  border: 1px solid var(--color-black);
+  padding: 0.5rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-text);
+  font-weight: 400;
+  margin-block-end: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.submit-drop form input:first-of-type {
+  border-block: 1px solid var(--color-black);
+  border-inline: none;
+  padding-block: 2rem;
+  background-color: var(--color-white);
+  padding-inline-start: 7rem;
+}
+
+.submit-drop input:first-of-type::before {
+  content: " ";
+  display: block;
+  background-image: url("../assets/img/add-button.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  scale: 2;
+  position: relative;
+  right: 5rem;
+  top: 1rem;
+}
+
+input::file-selector-button {
+  display: none;
+}

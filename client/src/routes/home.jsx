@@ -73,7 +73,7 @@ export default function Home() {
             <a className="desktop-hidden arrow-button-white" href="">
               <img src="../src/assets/img/arrow_button.svg" alt="arrow down" />
             </a>
-            <a href="../workshops">
+            <a className="mobile-hidden" href="../workshops">
               <div className="button-primary">
                 Dive into our competition
                 <svg
@@ -299,7 +299,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            <div className="workshop-deco">
+            <div className="workshop-deco mobile-hidden">
               <img src="../src/assets/img/workshops-home.jpg" alt="workshops" />
               {/* svg */}
             </div>

@@ -49,22 +49,28 @@ export default function Submissions() {
   console.log(submissions);
   return (
     <div>
-      <h1>SubmitPage</h1>
-      {submissions.map((submission) => (
-        <div key={submission.id}>
-          <p className="hidden">{submission.id}</p>
-          <Submission
-            title={submission.title}
-            designAuthor={submission.designAuthor}
-            story={submission.story}
-            designLinks={submission.designLinks}
-          />
-          <button onClick={handleLike}>
-            {submission.likeAmount}
-            <div className="hidden">{submission.id}</div>
-          </button>
-        </div>
-      ))}
+      <div className="banner">
+        <h1 className="banner__name">Submissions</h1>
+      </div>
+      <div className="submissions">
+        {submissions.map((submission) => (
+          <div className="submission" key={submission.id}>
+            <p className="hidden">{submission.id}</p>
+            <div className="submission__under">
+              <Submission
+                designLinks={submission.designLinks}
+                title={submission.title}
+                designAuthor={submission.designAuthor}
+                story={submission.story}
+              />
+              <button className="submission__like" onClick={handleLike}>
+                {submission.likeAmount}
+                <div className="hidden">{submission.id}</div>
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
