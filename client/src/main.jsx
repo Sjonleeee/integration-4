@@ -12,6 +12,10 @@ import Workshops, { loader as workshopsLoader } from "./routes/workshops";
 import Request, { action as requestAction } from "./routes/workshopRequest";
 import SubmitPage, { action as submitAction } from "./routes/submitPage";
 import LastCollection from "./routes/lastCollection";
+import Biniru from "./routes/articles/biniru";
+import Unknown from "./routes/articles/unknown";
+import Senju from "./routes/articles/senju";
+
 import Confirmation from "./routes/confirmation";
 import Home from "./routes/home";
 import "./index.css";
@@ -61,6 +65,18 @@ const router = createBrowserRouter([
       {
         path: "/last-collection",
         element: <LastCollection />,
+      },
+      {
+        path: "/workshops/biniru",
+        element: <Biniru />,
+      },
+      {
+        path: "/workshops/unknown",
+        element: <Unknown />,
+      },
+      {
+        path: "/workshops/senju",
+        element: <Senju />,
       },
     ],
   },

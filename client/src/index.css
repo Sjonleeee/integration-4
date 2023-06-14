@@ -4,6 +4,7 @@
 @import url(css/requirements.css);
 @import url(css/submissions.css);
 @import url(css/submit.css);
+@import url(css/lastCollection.css);
 
 :root {
   font-family: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
@@ -28,6 +29,10 @@
   --font-title: Superline-Regular, Inter;
   --font-text: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
+}
+
+a {
+  cursor: pointer;
 }
 
 body {

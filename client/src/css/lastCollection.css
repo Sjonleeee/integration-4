@@ -1,0 +1,337 @@
+.last-collection__hero {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 30vh calc(70vh - 5rem) 5rem;
+}
+
+.last-collection__hero video {
+  grid-row: 1 / span 3;
+  grid-column: 1;
+}
+
+.last-collection__hero h2 {
+  grid-row: 1;
+  grid-column: 1;
+  font-family: var(--font-title);
+  font-size: 5rem;
+  line-height: 0.85;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.last-collection__hero h2 span:nth-of-type(2) {
+  font-style: italic;
+  font-size: 6rem;
+}
+
+.last-collection__hero a {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.last-collection__banner {
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-green);
+  height: 5rem;
+  font-family: var(--font-title);
+  font-size: 3rem;
+  font-style: italic;
+  margin-block: 0;
+  line-height: 0;
+  width: 200vw;
+}
+
+.last-collection__banner {
+  fill: var(--color-black);
+}
+
+.last-collection__info {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto auto auto;
+}
+
+.last-collection__info p {
+  width: calc(100vw - 3rem);
+  padding-inline: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.last-collection__info-text p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.last-collection__articles {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.last-collection__article {
+  margin-block-start: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+.last-collection__article > img {
+  width: calc(100vw - 6rem);
+  height: auto;
+}
+
+.last-collection__article h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  margin-block-end: 0rem;
+}
+
+.last-collection__article > div:first-of-type {
+  display: grid;
+  width: 100vw;
+  justify-self: center;
+}
+
+.last-collection__article > div:first-of-type img {
+  grid-row: 1;
+  width: 3rem;
+  height: 3rem;
+  justify-self: end;
+}
+
+.last-collection__article > div:first-of-type p {
+  grid-row: 1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  width: auto;
+  justify-self: start;
+}
+
+.collection-detail {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 100vh;
+}
+
+.collection-detail__scroll {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.collection-detail__scroll img {
+  width: 100vw;
+  height: auto;
+}
+
+.collection-detail__scroll .scroll-name {
+  width: calc(100vw - 3rem);
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-black);
+  color: var(--color-green);
+}
+
+.collection-detail__scroll .scroll-name > p {
+  font-size: 1.5rem;
+  padding-inline: 0;
+}
+
+.collection-detail__scroll p {
+  font-size: 1.125rem;
+  width: calc(100vw - 3rem);
+  padding-inline: 1.5rem;
+}
+
+.white-text {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding-block: 1rem;
+}
+
+.collection-detail__mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: var(--color-white);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-inline-start: 2rem;
+  padding-block: 1rem;
+  align-items: center;
+}
+
+.collection-detail__mobile-nav p {
+  padding-inline-start: 2rem;
+  margin-block: 0.75rem;
+}
+
+.collection-detail .arrow-button-black-hor img {
+  border: 1px solid var(--color-black);
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .last-collection {
+  }
+
+  .last-collection__hero {
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: calc(100vh - 5rem) 5rem;
+  }
+
+  .last-collection__hero video {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  .last-collection__hero h2 {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: end;
+  }
+
+  .last-collection__banner {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    width: 150vw;
+  }
+
+  .last-collection__hero a {
+    grid-row: 1;
+    grid-column: 2;
+    align-self: end;
+    justify-self: center;
+    margin-block-end: 4rem;
+  }
+
+  .last-collection__info {
+    grid-template-columns: 10rem auto;
+    grid-template-rows: auto;
+  }
+
+  .last-collection__info-img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 10rem;
+    height: 100vh;
+    object-fit: cover;
+    object-position: -10rem;
+  }
+
+  .last-collection__info-img img {
+    width: 10rem;
+    height: 100vh;
+    object-fit: cover;
+    object-position: -10rem;
+  }
+
+  .last-collection__info-text {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .last-collection__info-text p {
+    width: 55vw;
+  }
+
+  .last-collection__articles {
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    width: 65rem;
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .last-collection__article {
+    margin-block-start: 3rem;
+    margin-inline-start: 3rem;
+    width: 14rem;
+    height: 70vh;
+  }
+
+  .last-collection__article img {
+    margin-block-start: 0;
+    width: 15rem;
+    height: auto;
+    object-fit: contain;
+    transition: 0.3s ease-in-out all;
+  }
+
+  .last-collection__article:hover img {
+    scale: 1.1;
+  }
+
+  .last-collection__article a div {
+    margin-block-start: 0;
+    width: 15rem;
+    height: auto;
+  }
+
+  .collection-detail {
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh;
+  }
+
+  .collection-detail__scroll {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .collection-detail__noscroll {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 50vw;
+    grid-template-rows: auto;
+    width: 50vw;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .noscroll-title {
+    grid-row: 1;
+  }
+
+  .collection-detail__noscroll .noscroll-title h1 {
+    line-height: 1;
+    margin-block: 0;
+  }
+
+  .collection-detail__noscroll .noscroll-title p {
+    margin-block: 0;
+  }
+
+  .collection-detail__noscroll > a:first-of-type {
+    margin: 3rem;
+    align-self: start;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .collection-detail__noscroll > img {
+    width: 20rem;
+    margin-block: 3rem;
+  }
+}
