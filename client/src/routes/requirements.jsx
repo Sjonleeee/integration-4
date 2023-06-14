@@ -99,7 +99,7 @@ export default function Requirements() {
               <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
             </div>
             <div
-              className="arrow-button-black"
+              className="arrow-button-black-hor"
               onClick={() => {
                 console.log("click");
                 setStep(3);

@@ -1,0 +1,43 @@
+fieldLayouts:
+  c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: c25ca99b-8c76-4a8f-9560-8204bcf4161a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d871469d-71eb-4b01-8ad5-89a8a3a328ac
+        userCondition: null
+fs: designs
+handle: designUploads
+name: 'design uploads'
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

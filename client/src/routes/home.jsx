@@ -179,9 +179,9 @@ export default function Home() {
           <div className="concept-text">
             <h2 className="hidden">Concept</h2>
 
-            <p>A Challenge</p>
+            <p>your story</p>
             <img src="../src/assets/img/challenge.svg" alt="illustration" />
-            <p>Made for you!</p>
+            <p>join our challenge!</p>
             <a className="arrow-button-black" href="">
               <img src="../src/assets/img/arrow_button_black.svg" alt="" />
             </a>

@@ -27,10 +27,10 @@ export default function SubmitPage() {
 
   imageData = JSON.stringify(imageInfo);
 
-  const handleSubmit = async () => {
-    await submitDesign();
-    navigate("/submissions");
-  };
+  // const handleSubmit = async () => {
+  //   await submitDesign();
+  //   navigate("/submissions");
+  // };
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -44,7 +44,7 @@ export default function SubmitPage() {
         canvas.height = image.height;
         const context = canvas.getContext("2d");
         context.drawImage(image, 0, 0);
-        const image64 = canvas.toDataURL("image");
+        const image64 = canvas.toDataURL("image/png");
         setImageJSON(image64);
       };
 
@@ -70,14 +70,14 @@ export default function SubmitPage() {
     <section className="submit">
       <div className="submit-design">
         <h1 className="hidden">Design submission</h1>
-        <p className="mobile-hidden">Now you</p>
+        <p className="mobile-hidden green-text">Now you</p>
         <img
           className="submit-image"
           src="../src/assets/img/submitpage.jpg"
           alt="submit"
         />
         <img
-          className="submit-svg"
+          className="submit-svg desktop-hidden"
           src="../src/assets/img/submit.svg"
           alt="map icon"
         />
@@ -89,6 +89,11 @@ export default function SubmitPage() {
           }}
           alt=""
         />
+        <img
+          className="mobile-hidden"
+          src="../src/assets/img/submit-now.svg"
+          alt="world"
+        />
         <style>
           {`
           .submit{
@@ -97,7 +102,9 @@ export default function SubmitPage() {
           }
         `}
         </style>
-        <p className="submit-cta">Add a JPG of your design here</p>
+        <p className="submit-cta desktop-hidden">
+          Add a JPG of your design here
+        </p>
         <p className="submit-text">
           Submit your design and share your unique perspective on Kortrijk's
           culture. Let your creativity take flight, for this is where your
@@ -108,7 +115,7 @@ export default function SubmitPage() {
         <h2 className="mobile-hidden">Drag and drop your design underneath</h2>
         <p>Pssst, upload your front and back design in JPG</p>
 
-        <Form method="post" onSubmit={handleSubmit}>
+        <Form method="post">
           <input
             type="file"
             accept="image/jpg"
@@ -125,7 +132,9 @@ export default function SubmitPage() {
           <input type="text" name="title" id="title" />
           <label htmlFor="story">Story</label>
           <textarea name="story" id="story" cols="30" rows="10"></textarea>
-          <button type="submit">Submit your design</button>
+          <button className="button-primary" type="submit">
+            Submit your design
+          </button>
         </Form>
       </div>
     </section>
