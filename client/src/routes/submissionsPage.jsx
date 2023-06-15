@@ -22,26 +22,18 @@ export default function Submissions() {
   // const [likeCount, setLikeCount] = useState(likeAmount);
 
   const handleLike = async (e) => {
-    // setLikeCount(likeCount + 1);
-    // likeAmount = likeCount;
     const idPartOne = e.target.innerHTML;
-    // console.log(idPartOne);
-
     const splitId = idPartOne.split(">");
-    // console.log(splitId);
-
     const firstSplit = splitId[0].split("<");
-    // console.log(firstSplit[0]);
-
     const secondSplit = splitId[1].split("<");
-    // console.log(secondSplit[0]);
-
     const amountLikes = Number(firstSplit[0]);
     console.log(amountLikes, "amountLikes");
-
     const updatedLikes = amountLikes + 1;
     console.log(updatedLikes, "updatedLikes");
-
+    const button = document.getElementById(e.target.id);
+    button.style.backgroundColor = "#40ff99";
+    button.innerHTML =
+      updatedLikes + `<img src="../src/assets/img/like.svg" alt="" />`;
     const id = Number(secondSplit[0]);
     console.log(id, "id");
     await addLike(id, updatedLikes);
@@ -52,22 +44,29 @@ export default function Submissions() {
       <div className="banner">
         <h1 className="banner__name">Submissions</h1>
       </div>
+      <div className="submissions-sort"></div>
+      <div className="submissions-sort"></div>
       <div className="submissions">
         {submissions.map((submission) => (
           <div className="submission" key={submission.id}>
             <p className="hidden">{submission.id}</p>
-            <div className="submission__under">
-              <Submission
-                designLinks={submission.designLinks}
-                title={submission.title}
-                designAuthor={submission.designAuthor}
-                story={submission.story}
-              />
-              <button className="submission__like" onClick={handleLike}>
-                {submission.likeAmount}
-                <div className="hidden">{submission.id}</div>
-              </button>
-            </div>
+            <Submission
+              designLinks={submission.designLinks}
+              title={submission.title}
+              designAuthor={submission.designAuthor}
+              story={submission.story}
+              datecreated={submission.dateCreated}
+              id={submission.id}
+            />
+            <button
+              className="submission__like"
+              id={submission.id}
+              onClick={handleLike}
+            >
+              {submission.likeAmount}
+              <div className="hidden">{submission.id}</div>
+              <img src="../src/assets/img/like.svg" alt="" />
+            </button>
           </div>
         ))}
       </div>

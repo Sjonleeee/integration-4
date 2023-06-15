@@ -1,16 +1,16 @@
-dateModified: 1686659133
+dateModified: 1686820417
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   designs:
-    hasUrls: false
+    hasUrls: true
     name: designs
     settings:
       path: '@webroot'
     type: craft\fs\Local
-    url: null
+    url: '@web'
 meta:
   __names__:
     0bb6061c-1bb2-4fdf-8a94-f5d5837760b1: 'design uploads' # design uploads

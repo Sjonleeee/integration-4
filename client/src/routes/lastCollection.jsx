@@ -4,7 +4,12 @@ export default function LastCollection() {
       <h1 className="hidden">Last collection</h1>
 
       <div className="last-collection__hero">
-        <video src=""></video>
+        <video
+          autoPlay={true}
+          controls={false}
+          loop={true}
+          src="../src/assets/vid/3D_render_catwalk_-_Compressed.mp4"
+        ></video>
         <h2>
           <span className="green-text">Last</span> year's <br />
           <span className="italic">collection</span>

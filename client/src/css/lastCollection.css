@@ -1,3 +1,13 @@
+@keyframes banner {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-45vw);
+  }
+}
+
 .last-collection__hero {
   display: grid;
   grid-template-columns: 100vw;
@@ -7,6 +17,10 @@
 .last-collection__hero video {
   grid-row: 1 / span 3;
   grid-column: 1;
+  width: 100vw;
+  height: calc(100vh - 5rem);
+  object-fit: cover;
+  object-position: -100vw 0;
 }
 
 .last-collection__hero h2 {
@@ -27,6 +41,12 @@
 .last-collection__hero a {
   grid-row: 2;
   grid-column: 1;
+  width: 1rem;
+  text-align: center;
+  height: 1.5rem;
+  justify-self: center;
+  align-self: end;
+  margin-block-end: 2rem;
 }
 
 .last-collection__banner {
@@ -43,7 +63,8 @@
   font-style: italic;
   margin-block: 0;
   line-height: 0;
-  width: 200vw;
+  width: 160vw;
+  animation: banner 3s linear infinite;
 }
 
 .last-collection__banner {
@@ -203,6 +224,7 @@
   .last-collection__hero video {
     grid-row: 1;
     grid-column: 1 / span 3;
+    object-position: 0 0;
   }
 
   .last-collection__hero h2 {
@@ -214,7 +236,7 @@
   .last-collection__banner {
     grid-row: 2;
     grid-column: 1 / span 3;
-    width: 150vw;
+    width: 160vw;
   }
 
   .last-collection__hero a {

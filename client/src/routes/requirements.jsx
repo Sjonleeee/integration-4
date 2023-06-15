@@ -20,11 +20,45 @@ export default function Requirements() {
             generation to share their story, visualise the story of Kortrijk and
             leave your mark in the world of design
           </p>
-          {/* <button></button>
-            <button></button> */}
+        </div>
+        <div className="requirements-hero-buttons">
+          <a href="#requirements-info">
+            <div className="button-primary">
+              Start designing
+              <svg
+                width="41"
+                height="15"
+                viewBox="0 0 41 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
+                  fill="#101010"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="../workshops">
+            <div className="button-secondary">
+              Workshops
+              <svg
+                width="41"
+                height="15"
+                viewBox="0 0 41 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
+                  fill="#101010"
+                />
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
-      <div className="requirements-info">
+      <div id="requirements-info" className="requirements-info">
         <div className="requirements-info-text">
           <img src="../src/assets/img/requirements.svg" alt="" />
           <div>
@@ -126,8 +160,29 @@ export default function Requirements() {
               Explore options and get ready to see your designs come alive on
               wearable art.
             </p>
-            <div className="step-process step-process__three"></div>
+
             <Link to={"/mockupdownloads"}>Download our mockups</Link>
+          </div>
+          <div className="step-process step-process__three">
+            <div></div>
+            <div
+              className="arrow-button-black-hor"
+              onClick={() => {
+                console.log("click");
+                setStep(2);
+              }}
+            >
+              <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            </div>
+            <div
+              className="arrow-button-black-hor"
+              onClick={() => {
+                console.log("click");
+                setStep(4);
+              }}
+            >
+              <img src="../src/assets/img/arrow.svg" alt=" arrow" />
+            </div>
           </div>
           <div className="requirements-step-deco requirements-steps-three__deco">
             <img src="" alt="" />
@@ -151,6 +206,21 @@ export default function Requirements() {
           <div className="requirements-step-deco requirements-steps-four__deco">
             <img src="" alt="" />
             {/* svg */}
+          </div>
+          <div className="step-process step-process__three">
+            <div></div>
+            <div
+              className="arrow-button-black-hor"
+              onClick={() => {
+                console.log("click");
+                setStep(3);
+              }}
+            >
+              <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            </div>
+            <div className="arrow-button-black-hor">
+              <a href="../submit">Submit your design</a>
+            </div>
           </div>
         </div>
         <style>

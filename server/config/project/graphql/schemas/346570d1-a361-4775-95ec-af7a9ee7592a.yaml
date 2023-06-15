@@ -11,6 +11,7 @@ scope:
   - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:read' # Default
   - 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:read' # workshops
   - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:read' # Default
+  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:read' # design uploads
   - 'usergroups.everyone:read'
   - 'productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7:read' # shirts
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit' # designs
@@ -28,3 +29,7 @@ scope:
   - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:create' # Default
   - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:save' # Default
   - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:delete' # Default
+  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:edit' # design uploads
+  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:create' # design uploads
+  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:save' # design uploads
+  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:delete' # design uploads

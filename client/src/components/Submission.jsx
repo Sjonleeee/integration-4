@@ -1,4 +1,13 @@
-const Submission = ({ title, story, designAuthor, designLinks }) => {
+import { Link } from "react-router-dom";
+
+const Submission = ({
+  title,
+  story,
+  designAuthor,
+  designLinks,
+  datecreated,
+  id,
+}) => {
   const design = JSON.parse(designLinks);
   console.log(design);
   return (
@@ -7,10 +16,14 @@ const Submission = ({ title, story, designAuthor, designLinks }) => {
         <img src={design} alt="design" width={600} />
       </div>
       <div className="submission__text">
-        <h2 className="submission__title">{title}</h2>
-        <p className="submission__invisible"> {story}</p>
+        <Link to={"../submissions/".id}>
+          <h2 className="submission__title">
+            {title} <img src="../src/assets/img/arrow.svg" alt="" />
+          </h2>
+        </Link>
         <p>submitted by {designAuthor}</p>
-        <p>22/06/2023</p>
+        <p className="submission__story"> {story}</p>
+        <p>{datecreated}</p>
       </div>
     </>
   );

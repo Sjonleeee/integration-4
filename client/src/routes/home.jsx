@@ -70,10 +70,10 @@ export default function Home() {
                 }`}
             </style>
 
-            <a className="desktop-hidden arrow-button-white" href="">
+            <a className="desktop-hidden arrow-button-white" href="#about">
               <img src="../src/assets/img/arrow_button.svg" alt="arrow down" />
             </a>
-            <a className="mobile-hidden" href="../workshops">
+            <a className="mobile-hidden" href="#about">
               <div className="button-primary">
                 Dive into our competition
                 <svg
@@ -111,7 +111,7 @@ export default function Home() {
             <p>Volumes</p>
           </div>
         </div>
-        <div className="about">
+        <div id="about" className="about">
           <div className="about-img">
             <img src="../src/assets/img/about.png" alt="about" />
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
               achieve this by creating a clothing line created by you!
             </p>
 
-            <a href="../workshops">
+            <a href="#concept">
               <div className="button-primary">
                 How can I join?
                 <svg
@@ -149,9 +149,9 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="../workshops">
+            <a href="../last-collection">
               <div className="button-secondary">
-                See last collection
+                Stories from last year
                 <svg
                   width="41"
                   height="15"
@@ -176,32 +176,7 @@ export default function Home() {
               <img src="../src/assets/img/journey.svg" alt="journey" />
             </div>
           </div>
-          <div className="concept-text">
-            <h2 className="hidden">Concept</h2>
-
-            <p>your story</p>
-            <img src="../src/assets/img/challenge.svg" alt="illustration" />
-            <p>join our challenge!</p>
-            <a className="arrow-button-black" href="">
-              <img src="../src/assets/img/arrow_button_black.svg" alt="" />
-            </a>
-            {/* <p>
-              Each year we try to guide the community to use a certain style to
-              create a coherent clothing line.{" "}
-            </p>
-            <p>
-              <span>How do we pick the designs?</span> <br /> Well actually, we
-              don’t ... You do! We provide a list of submissions where you can
-              pick your favourite story and design!
-            </p> */}
-            {/* <Button></Button>
-          <Button></Button> */}
-            <div className="concept-text__deco">
-              <img src="" alt="" />
-              {/* svg */}
-            </div>
-          </div>
-          <div className="concept-items">
+          <div id="concept" className="concept-items">
             <div className="concept-item concept-one">
               <img src="../src/assets/img/one.jpg" alt="concept-item image" />
               <img src="../src/assets/img/one.svg" alt="concept-item image" />
@@ -281,7 +256,7 @@ export default function Home() {
                   </svg>
                 </div>
               </a>
-              <a href="../workshops">
+              <a href="../workshops/request">
                 <div className="button-secondary">
                   Request a workshop
                   <svg

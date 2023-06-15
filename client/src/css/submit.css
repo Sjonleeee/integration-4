@@ -18,7 +18,7 @@
 .submit-image {
   grid-row: 1;
   grid-column: 1;
-  height: 35rem;
+  height: 70vh;
   width: 100vw;
   object-fit: cover;
 }
@@ -53,7 +53,6 @@
 .submit-text {
   width: calc(100vw - 3rem);
   font-size: 1.125rem;
-  height: calc(100vh - 35rem);
   place-self: center;
 }
 
@@ -137,6 +136,7 @@ input::file-selector-button {
   font-family: var(--font-text);
   height: 15vh;
   margin-block-end: 1rem;
+  color: var(--color-black);
 }
 
 @media screen and (min-width: 1280px) {

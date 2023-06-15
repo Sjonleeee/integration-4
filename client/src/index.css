@@ -5,6 +5,7 @@
 @import url(css/submissions.css);
 @import url(css/submit.css);
 @import url(css/lastCollection.css);
+@import url(css/error.css);
 
 :root {
   font-family: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,

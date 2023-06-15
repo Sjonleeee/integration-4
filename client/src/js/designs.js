@@ -11,6 +11,7 @@ export const getSubmissions = async () => {
       designLinks
       designAuthor
       likeAmount
+      dateCreated
     }
   }
 }
@@ -20,10 +21,36 @@ export const getSubmissions = async () => {
   return data.designsEntries;
 };
 
+//     mutation MyMutation($title: String, $story: String, $designAuthor: String, $designdata: String) {
+//   save_designs_default_Entry(
+//     authorId: "1"
+//     slug: "-"
+//     designAuthor: $designAuthor
+//     title: $title
+//     story: $story
+//     design: $design
+//   ) {
+//     id
+//     designAuthor
+//     title
+//     story
+//     designLinks
+//     design(filename: $title) {
+//       ... on designUploads_Asset {
+//         id
+//       }
+//     }
+//   }
+//   save_designUploads_Asset(_file: {fileData: $designdata, filename: $title}) {
+//     id
+//     filename
+//   }
+// }
+
 export const submitDesign = async (updates, designLinks) => {
   const { data } = await graphQLRequest(
     `
-    mutation MyMutation ($title: String, $story: String, $designAuthor: String, $designLinks: String) {
+    mutation MyMutation($title: String, $story: String, $designAuthor: String, $designLinks: String) {
   save_designs_default_Entry(
     authorId: "1"
     slug: "-"
@@ -39,6 +66,8 @@ export const submitDesign = async (updates, designLinks) => {
     designLinks
   }
 }
+
+
 `,
     { designLinks: designLinks, ...updates }
   );

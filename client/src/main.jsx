@@ -15,7 +15,7 @@ import LastCollection from "./routes/lastCollection";
 import Biniru from "./routes/articles/biniru";
 import Unknown from "./routes/articles/unknown";
 import Senju from "./routes/articles/senju";
-
+import Error from "./routes/error";
 import Confirmation from "./routes/confirmation";
 import Home from "./routes/home";
 import "./index.css";
@@ -24,6 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
