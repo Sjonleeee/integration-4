@@ -13,8 +13,9 @@
 }
 
 @font-face {
-  font-family: Superline-Italic;
+  font-family: Superline-Regular;
   src: url(../src/assets/fonts/Superline-Italic.woff2);
+  font-style: italic;
 }
 @font-face {
   font-family: Superline-Line;
@@ -25,12 +26,14 @@
   src: url(../src/assets/fonts/Superline-Outline.woff2);
 }
 @font-face {
-  font-family: Superline-OutlineItalic;
+  font-family: Superline-Outline;
   src: url(../src/assets/fonts/Superline-OutlineItalic.woff2);
+  font-style: italic;
 }
 @font-face {
-  font-family: Superline-LineItalic;
+  font-family: Superline-Line;
   src: url(../src/assets/fonts/Superline-LineItalic.woff2);
+  font-style: italic;
 }
 
 :root {
