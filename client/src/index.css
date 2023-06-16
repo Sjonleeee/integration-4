@@ -7,6 +7,32 @@
 @import url(css/lastCollection.css);
 @import url(css/error.css);
 
+@font-face {
+  font-family: Superline-Regular;
+  src: url(../src/assets/fonts/Superline-Regular.woff2);
+}
+
+@font-face {
+  font-family: Superline-Italic;
+  src: url(../src/assets/fonts/Superline-Italic.woff2);
+}
+@font-face {
+  font-family: Superline-Line;
+  src: url(../src/assets/fonts/Superline-Line.woff2);
+}
+@font-face {
+  font-family: Superline-Outline;
+  src: url(../src/assets/fonts/Superline-Outline.woff2);
+}
+@font-face {
+  font-family: Superline-OutlineItalic;
+  src: url(../src/assets/fonts/Superline-OutlineItalic.woff2);
+}
+@font-face {
+  font-family: Superline-LineItalic;
+  src: url(../src/assets/fonts/Superline-LineItalic.woff2);
+}
+
 :root {
   font-family: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
