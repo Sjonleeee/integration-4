@@ -23,6 +23,8 @@ export default function SubmitPage() {
   const [step, setStep] = useState(0);
   console.log(imageJSON);
 
+  const FormValidation = () => {};
+
   const imageInfo = imageJSON;
 
   imageData = JSON.stringify(imageInfo);

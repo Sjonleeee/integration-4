@@ -2,13 +2,6 @@ import { useRef } from "react";
 
 export default function Home() {
   const text = useRef();
-  window.onload = function () {
-    //hide the preloader
-    console.log("window loaded");
-    setTimeout(function () {
-      document.querySelector(".preloader").classList.add("hide-preloader");
-    }, 2000);
-  };
 
   const changingText = () => {
     const words = ["PLORE", "PERIENCE", "PRESS"];
@@ -26,9 +19,6 @@ export default function Home() {
 
   return (
     <>
-      <div className="preloader">
-        <img src="./src/assets/img/Spiral.gif" />
-      </div>
       <div className="home">
         <h1 className="hidden">KLTR X</h1>
         <div className="hero">
@@ -113,7 +103,13 @@ export default function Home() {
         </div>
         <div id="about" className="about">
           <div className="about-img">
-            <img src="../src/assets/img/about.png" alt="about" />
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              controls={false}
+              src="../src/assets/vid/3D_360.mov"
+            ></video>
           </div>
           <div className="about-text">
             {/* svg */}
@@ -181,7 +177,9 @@ export default function Home() {
               <img src="../src/assets/img/one.jpg" alt="concept-item image" />
               <img src="../src/assets/img/one.svg" alt="concept-item image" />
               <div className="concept-one__text">
+                <p>#1</p>
                 <h3 className="concept-slide__title">Each year</h3>
+                <p>Turn your story into fashion</p>
                 <p className="concept-slide__text">
                   We invite you to design your own fashion collection item
                   that’s reflecting your vision on the city's culture.{" "}
@@ -192,15 +190,22 @@ export default function Home() {
               <img src="../src/assets/img/two.jpg" alt="concept-item image" />
               <img src="../src/assets/img/two.svg" alt="concept-item image" />
               <div className="concept-two__text">
+                <p>#2</p>
                 <h3 className="concept-slide__title">Unique perspectives</h3>
-                <p className="concept-slide__text"></p>
+                <p>Your perspective is important</p>
+                <p className="concept-slide__text">
+                  We invite you to design your own fashion collection item
+                  that’s reflecting your vision on the city's culture.{" "}
+                </p>
               </div>
             </div>
             <div className="concept-item concept-three">
               <img src="../src/assets/img/three.jpg" alt="concept-item image" />
               <img src="../src/assets/img/three.svg" alt="concept-item image" />
               <div className="concept-three__text">
+                <p>#3</p>
                 <h3 className="concept-slide__title">Participate</h3>
+                <p>Participate, enjoy, exceed, succeed</p>
                 <p className="concept-slide__text">
                   When you participate, you receive professional guidance in our
                   workshops to tell your story through art and an opportunity to
@@ -212,18 +217,51 @@ export default function Home() {
               <img src="../src/assets/img/four.jpg" alt="concept-item image" />
               <img src="../src/assets/img/four.svg" alt="concept-item image" />
               <div className="concept-four__text">
+                <p>#4</p>
                 <h3 className="concept-slide__title">
                   Are you the next winner?
                 </h3>
+                <p>Inspire others by telling your story</p>
                 <p className="concept-slide__text">
                   We highlight 3 people every year and you get to decide who
                   wins! Winners will be showcased on our site and can sell their
                   designs.
                 </p>
+                <div className="concept-slide__extra">
+                  <a href="../last-collection">Check out the last winners</a>
+                  <div className="concept-slide__profiles">
+                    <a href="../last-collection/unknown">
+                      <img src="../src/assets/img/flava-pfp.png" alt="flava" />
+                    </a>
+                    <a href="../last-collection/biniru">
+                      <img src="../src/assets/img/warre-pfp.png" alt="warre" />
+                    </a>
+                    <a href="../last-collection/senju">
+                      <img src="../src/assets/img/senju-pfp.png" alt="senju" />
+                    </a>
+                  </div>
+                  <a href="#workshops">
+                    <div className="button-secondary">
+                      Request a workshop
+                      <svg
+                        width="41"
+                        height="15"
+                        viewBox="0 0 41 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
+                          fill="#FFFFFF"
+                        />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="workshops">
+          <div id="workshops" className="workshops">
             <div className="workshops-text">
               <h2 className="title">Workshops</h2>
               <p>
@@ -239,40 +277,42 @@ export default function Home() {
                 <br />
                 Join or request a workshop as a group!
               </p>
-              <a href="../workshops">
-                <div className="button-primary">
-                  Join a workshop
-                  <svg
-                    width="41"
-                    height="15"
-                    viewBox="0 0 41 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
-                      fill="#101010"
-                    />
-                  </svg>
-                </div>
-              </a>
-              <a href="../workshops/request">
-                <div className="button-secondary">
-                  Request a workshop
-                  <svg
-                    width="41"
-                    height="15"
-                    viewBox="0 0 41 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
-                      fill="#FFFFFF"
-                    />
-                  </svg>
-                </div>
-              </a>
+              <div>
+                <a href="../workshops">
+                  <div className="button-primary">
+                    Join a workshop
+                    <svg
+                      width="41"
+                      height="15"
+                      viewBox="0 0 41 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
+                        fill="#101010"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <a href="../workshops/request">
+                  <div className="button-secondary">
+                    Request a workshop
+                    <svg
+                      width="41"
+                      height="15"
+                      viewBox="0 0 41 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM40.2071 8.20711C40.5976 7.81658 40.5976 7.18342 40.2071 6.79289L33.8431 0.428932C33.4526 0.0384078 32.8195 0.0384078 32.4289 0.428932C32.0384 0.819457 32.0384 1.45262 32.4289 1.84315L38.0858 7.5L32.4289 13.1569C32.0384 13.5474 32.0384 14.1805 32.4289 14.5711C32.8195 14.9616 33.4526 14.9616 33.8431 14.5711L40.2071 8.20711ZM1 8.5H39.5V6.5H1V8.5Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
             </div>
             <div className="workshop-deco mobile-hidden">
               <img src="../src/assets/img/workshops-home.jpg" alt="workshops" />

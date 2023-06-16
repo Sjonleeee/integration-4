@@ -245,6 +245,13 @@
     align-self: end;
     justify-self: center;
     margin-block-end: 4rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: ease 0.3s all;
+  }
+
+  .last-collection__hero a:hover {
+    scale: 1.2;
   }
 
   .last-collection__info {

@@ -68,15 +68,15 @@ const router = createBrowserRouter([
         element: <LastCollection />,
       },
       {
-        path: "/workshops/biniru",
+        path: "/last-collection/biniru",
         element: <Biniru />,
       },
       {
-        path: "/workshops/unknown",
+        path: "/last-collection/unknown",
         element: <Unknown />,
       },
       {
-        path: "/workshops/senju",
+        path: "/last-collection/senju",
         element: <Senju />,
       },
     ],

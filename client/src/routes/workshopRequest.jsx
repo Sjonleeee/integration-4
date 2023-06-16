@@ -20,6 +20,8 @@ export default function WorkshopRequest() {
     setSecondStep(!secondStep);
   };
 
+  const FormValidation = () => {};
+
   const navigate = useNavigate();
   const handleSubmit = async () => {
     await submitRequest();

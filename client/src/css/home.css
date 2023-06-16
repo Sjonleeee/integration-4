@@ -175,10 +175,10 @@
   background-color: #f6f6f6;
 }
 
-.about-img img {
+.about-img video {
   width: 100vw;
   height: 40vh;
-  object-fit: contain;
+  object-fit: cover;
   object-position: 50%;
   justify-self: center;
 }
@@ -333,34 +333,47 @@
 
 .concept-item {
   display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-row: 100vh;
+  grid-template-columns: 100vw;
+  grid-template-rows: calc(100vh - 18rem) 18rem;
+  height: 100vh;
 }
 
 .concept-item img {
   grid-column: 1;
-  grid-row: 1;
-  width: 50vw;
-  height: 100vh;
+  grid-row: 2;
+  height: 18rem;
+  width: 100vw;
   object-fit: cover;
+  align-self: end;
 }
 
 .concept-item img:nth-child(1) {
-  object-position: -6rem;
+  object-position: 0rem;
 }
 
 .concept-item img:nth-child(2) {
-  width: 30vw;
+  height: 10rem;
   object-fit: contain;
-  justify-self: center;
+  place-self: center;
+}
+
+.concept-one > img:nth-child(2) {
+  height: 8rem;
+}
+
+.concept-item div p:first-of-type {
+  font-family: var(--font-title);
+  font-size: 8rem;
+  line-height: 1;
+  margin-block: 0;
 }
 
 .concept-item div {
-  width: calc(50vw - 4rem);
+  width: calc(100vw - 3rem);
   display: flex;
   flex-direction: column;
   grid-row: 1;
-  grid-column: 2;
+  grid-column: 1;
   place-self: center;
 }
 
@@ -370,15 +383,49 @@
   font-size: 3rem;
   text-align: left;
   line-height: 1.1;
+  margin-block-end: 0.5rem;
+}
+
+.concept-item div > p:nth-of-type(2) {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .concept-item div .concept-slide__text {
   font-family: var(--font-text);
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-align: left;
   margin: 0;
   left: 0;
   line-height: 1.4;
+}
+
+.concept-item div .concept-slide__extra > a:first-of-type {
+  margin-block: 0.5rem;
+  text-decoration: underline;
+}
+
+.concept-item div .concept-slide__profiles {
+  display: flex;
+  flex-direction: row;
+}
+
+.concept-item div .concept-slide__profiles a {
+  width: 4rem;
+  height: 4rem;
+  margin-inline-end: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.concept-item div .concept-slide__profiles a img {
+  overflow: visible;
+  width: 4rem;
+  height: 4rem;
+  margin-inline-end: 1rem;
+  margin-block: 1rem;
+  z-index: 2;
+  object-position: 0;
 }
 
 .workshops p {
@@ -511,9 +558,10 @@
     display: grid;
   }
 
-  .about-img img {
+  .about-img video {
     width: 55vw;
     height: 100vh;
+    object-fit: cover;
   }
 
   .about-text {
@@ -650,15 +698,34 @@
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 100vh;
     margin-block: 0;
+    align-self: start;
   }
 
-  .concept-item img:nth-child(1) {
+  .concept-item div {
+    grid-column: 2;
+    grid-row: 1;
+    width: 50vw;
+    object-fit: cover;
+    display: grid;
+    margin-inline-start: 3rem;
+  }
+
+  .concept-item div p {
+    grid-column: 1;
+  }
+
+  .concept-item img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .concept-item > img:nth-child(1) {
     width: 50vw;
     height: 100vh;
     object-position: 0px;
   }
 
-  .concept-item img:nth-child(2) {
+  .concept-item > img:nth-child(2) {
     width: auto;
     height: 20vh;
     justify-self: center;
@@ -666,14 +733,63 @@
   }
 
   .concept-item .concept-slide__title {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-block: 1rem;
-    width: 15ch;
+    width: 30ch;
   }
 
   .concept-item div .concept-slide__text {
     font-size: 1.25rem;
     width: 33vw;
+  }
+
+  .concept-item .concept-slide__extra {
+    grid-column: 1;
+    grid-row: 5;
+    width: ;
+    display: flex;
+    margin-inline-start: 0;
+  }
+
+  .concept-item div .concept-slide__profiles {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1;
+  }
+
+  .concept-item div .concept-slide__profiles a {
+    width: 4rem;
+    height: 4rem;
+    margin-inline-end: 1rem;
+    z-index: 2;
+    position: relative;
+  }
+
+  .concept-item div .concept-slide__profiles a img {
+    overflow: visible;
+    width: 4rem;
+    height: 4rem;
+    margin-inline-end: 1rem;
+    margin-block: 1rem;
+    z-index: 2;
+    object-position: 0;
+    transition: ease-in-out 0.2s all;
+  }
+
+  .concept-item div .concept-slide__profiles a:hover img {
+    scale: 1.1;
+  }
+
+  .concept-item div .button-secondary {
+    width: 18rem;
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 3rem;
+    margin-inline-start: 0;
+  }
+
+  .concept-item div .button-secondary:hover svg path {
+    fill: var(--color-black);
   }
 
   .home .workshops {
@@ -694,6 +810,7 @@
     display: grid;
     align-items: start;
     justify-content: start;
+    font-size: 1.125rem;
   }
 
   .home .workshops-deco {
@@ -709,10 +826,15 @@
     top: -3rem;
     left: -3rem;
   }
+  .home .workshops-text > a {
+    margin-block-start: 0;
+    font-size: 1rem;
+  }
 
   .home .workshops .button-secondary {
     background-color: var(--color-green);
     color: var(--color-black);
+    margin-block-start: 1rem;
   }
 
   .home .workshops .button-secondary:hover {

@@ -244,6 +244,7 @@ export default function Navbar() {
             <li>Contact</li>
           </NavLink>
         </div>
+        <div className="countdown"></div>
       </div>
       <style>
         {`

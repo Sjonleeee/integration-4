@@ -69,19 +69,14 @@ export default function Workshops() {
           <br /> Join a workshop and get inspired! Want to request a workshop at
           your school or youth movement? Click the button below!
         </p>
-        <Link
-          className="button-primary desktop-hidden"
-          onClick={() => {
-            window.scrollTo(0, 800);
-          }}
-        >
+        <a href="#join" className="button-primary desktop-hidden">
           Join a workshop
-        </Link>
+        </a>
         <Link className="button-secondary" to="../workshops/request">
           Request a workshop
         </Link>
       </div>
-      <div id="workshops" className="workshops-join">
+      <div id="join" className="workshops-join">
         <h2>Upcoming workshops</h2>
         {workshops.map((workshop) => (
           <div className="workshop-item" key={workshop.id}>

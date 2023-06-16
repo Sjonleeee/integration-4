@@ -14,7 +14,7 @@ export default function LastCollection() {
           <span className="green-text">Last</span> year's <br />
           <span className="italic">collection</span>
         </h2>
-        <a className=" arrow-button-white" href="">
+        <a className=" arrow-button-white" href="#collection">
           <img src="../src/assets/img/arrow_button.svg" alt="arrow down" />
         </a>
         <div className="last-collection__banner">
@@ -69,6 +69,7 @@ export default function LastCollection() {
               />
             </g>
           </svg>
+
           <p>2022 </p>
           <svg
             width="51"
@@ -94,6 +95,7 @@ export default function LastCollection() {
               />
             </g>
           </svg>
+
           <p>2022 </p>
           <svg
             width="51"
@@ -121,7 +123,7 @@ export default function LastCollection() {
           </svg>
         </div>
       </div>
-      <div className="last-collection__info">
+      <div id="collection" className="last-collection__info">
         <div className="mobile-hidden last-collection__info-img">
           <img src="../src/assets/img/last-1.png" alt="" />
         </div>
@@ -143,7 +145,7 @@ export default function LastCollection() {
                 <img src="../src/assets/img/flava-pfp.png" alt="pfp" />
                 <p>Flava Flaviuq x Thomas</p>
               </div>
-              <a href="../workshops/unknown">
+              <a href="../last-collection/unknown">
                 <div className="button-primary">
                   Read my story
                   <svg
@@ -168,7 +170,7 @@ export default function LastCollection() {
                 <img src="../src/assets/img/warre-pfp.png" alt="pfp" />
                 <p>Warre Warrior x Senne</p>
               </div>
-              <a href="../workshops/biniru">
+              <a href="../last-collection/biniru">
                 <div className="button-primary">
                   Read my story
                   <svg
@@ -193,7 +195,7 @@ export default function LastCollection() {
                 <img src="../src/assets/img/senju-pfp.png" alt="pfp" />
                 <p>Senju Cyphercat x Minh Tri</p>
               </div>
-              <a href="../workshops/senju">
+              <a href="../last-collection/senju">
                 <div className="button-primary">
                   Read my story
                   <svg
