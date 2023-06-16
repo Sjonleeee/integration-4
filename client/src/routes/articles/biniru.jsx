@@ -23,7 +23,7 @@ export default function Biniru() {
           <p>by Warre Warrior</p>
         </div>
         <img src="../src/assets/img/biniru.png" alt="foto van tshirt" />
-        <a href="../workshops">
+        <a href="https://kltrx.myshopify.com">
           <div className="button-primary">
             Get your very own
             <svg
@@ -42,38 +42,73 @@ export default function Biniru() {
         </a>
       </div>
       <div className="collection-detail__scroll">
-        <img src="" alt="person" />
+        <img src="../src/assets/img/warre-story-one.png" alt="person" />
         <div className="scroll-name">
           <p>Warre Warrior, 21</p>
-          <a href="">Insta logo</a>
+          <a target="_blank" href="">
+            <img
+              className="insta-logo"
+              src="../src/assets/img/instagram.svg"
+              alt="instagram logo"
+            />
+          </a>
         </div>
-        <p>Bunch of text</p>
-        <img src="" alt="bijpassende img" />
-        <p className="white-text">More text</p>
-        <p>More text</p>
-        <p>More text</p>
+        <p>
+          I believe the (urban) culture in Kortrijk has genuinely improved in
+          recent years, with expanded offerings for young people. The renovation
+          of Luxaplast skatepark is a fantastic addition, and I feel that urban
+          culture is experiencing a revival among the youth. Places like De
+          Stroate play a crucial and positive role in this transformation.
+        </p>
+        <img
+          src="../src/assets/img/warre-story-two.png"
+          alt="bijpassende img"
+        />
+        <p className="white-text">
+          However, from a critical standpoint (not suitable for a t-shirt), it
+          would be beneficial to have more involvement in certain projects. For
+          example, the continuous repainting of graffiti on the non-concrete
+          parts and barriers at Luxaplast seems counterproductive.{" "}
+        </p>
+        <p>
+          It would be cool if the city embraced and preserved this art form
+          instead of erasing it repeatedly. Moreover, although there were
+          promises of additional skatepark expansions, it's unlikely that they
+          will materialize. The participation and communication with the youth
+          could be improved in some places and projects.
+        </p>
+        <p>
+          In summary, Kortrijk's culture has shown genuine improvement, with an
+          expanded focus on the urban scene and increased opportunities for
+          young people. The renovation of Luxaplast skatepark and the presence
+          of places like De Stroate are instrumental in this positive shift.
+          However, it is important to address concerns such as better
+          involvement in decision-making processes, preserving graffiti art, and
+          improving youth participation and communication.
+        </p>
         <p className="scroll-design">The Design</p>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/warre-story-three.png" alt="" />
+          <p>
+            I’ve always been a big skateboarding fan. This is one of the most
+            important things for me in this city. I’ve connected with a lot of
+            my best friends through skating.
+          </p>
         </div>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/warre-story-four.png" alt="" />
+          <p>
+            I feel like I also do my part for the urban culture, I am vinyl DJ
+            and perform often on the events of the urban culture.
+          </p>
         </div>
       </div>
+      <style>
+        {`
+        .footer {
+          display: none;
+        }`}
+      </style>
     </div>
   );
 }

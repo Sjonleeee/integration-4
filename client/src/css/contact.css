@@ -61,10 +61,15 @@
 }
 
 .contact-info a {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 400;
   color: var(--color-black);
   transition: ease 0.2s color;
+}
+
+.contact-info div:first-child {
+  position: relative;
+  top: -2rem;
 }
 
 .contact-info a:hover {
@@ -73,6 +78,8 @@
 
 .contact-info li {
   list-style: none;
+  margin-block: 0.5rem;
+  margin-inline-start: 1rem;
 }
 
 .contact-partners {

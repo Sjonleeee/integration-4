@@ -1,17 +1,71 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Requirements() {
   const [step, setStep] = useState(1);
+  const title = useRef(null);
+
+  useLayoutEffect(() => {
+    let hero = gsap.context(() => {
+      gsap.fromTo(
+        ".neon",
+        { x: -200, opacity: 0 },
+        { x: 0, delay: 1, opacity: 1, duration: 1 }
+      );
+      gsap.fromTo(
+        ".circle",
+        { opacity: 0, scale: 0, rotation: 120 },
+        {
+          opacity: 1,
+          scale: 1,
+          rotation: 0,
+          duration: 1,
+          delay: 1.5,
+          ease: "power2",
+        }
+      );
+      gsap.fromTo(
+        ".title",
+        { y: -100 },
+        { y: 0, duration: 0.5, ease: "power2" }
+      );
+      gsap.fromTo(
+        ".revolution",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 1.5, ease: "power2" }
+      );
+      gsap.fromTo(
+        ".requirements-hero-text",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 2, ease: "power2" }
+      );
+      gsap.fromTo(
+        ".requirements-hero-buttons",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 2.5, ease: "power2" }
+      );
+      return () => {
+        hero.revert();
+      };
+    });
+  });
+
   return (
     <div className="requirements">
       <h1 className="hidden">Requirements</h1>
       <div className="requirements-hero">
-        <div className="requirements-hero-title">
+        <div ref={title} className="requirements-hero-title">
           <h2 className="title">This year's theme</h2>
-          <p>Neon</p>
-          <p>Revolution</p>
-          <img src="../src/assets/img/submissions.svg" alt="" />
+          <p className="neon">Neon</p>
+          <p className="revolution">Revolution</p>
+          <img
+            className="circle"
+            src="../src/assets/img/submissions.svg"
+            alt=""
+          />
         </div>
         <div className="requirements-hero-text">
           <p>
@@ -105,7 +159,8 @@ export default function Requirements() {
             </div>
           </div>
           <div className="requirements-step-deco requirements-steps-one__deco">
-            <img src="../src/assets/img/requirements.jpg" alt="image" />
+            <img src="../src/assets/img/requirements-one.jpg" alt="image" />
+            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
           </div>
         </div>
         <div className="requirements-step requirements-steps-two">
@@ -143,8 +198,8 @@ export default function Requirements() {
             </div>
           </div>
           <div className="requirements-step-deco requirements-steps-two__deco">
-            <img src="" alt="" />
-            {/* svg */}
+            <img src="../src/assets/img/requirements-two.jpg" alt="picture" />
+            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
           </div>
         </div>
         <div className="requirements-step requirements-steps-three">
@@ -185,8 +240,11 @@ export default function Requirements() {
             </div>
           </div>
           <div className="requirements-step-deco requirements-steps-three__deco">
-            <img src="" alt="" />
-            {/* svg */}
+            <img
+              src="../src/assets/img/requirements-three.jpg"
+              alt="descriptive picture"
+            />
+            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
           </div>
         </div>
         <div className="requirements-step requirements-steps-four">
@@ -204,8 +262,11 @@ export default function Requirements() {
           </div>
           <div className="step-process step-process__four"></div>
           <div className="requirements-step-deco requirements-steps-four__deco">
-            <img src="" alt="" />
-            {/* svg */}
+            <img
+              src="../src/assets/img/requirements-four.jpg"
+              alt="descriptive pic"
+            />
+            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
           </div>
           <div className="step-process step-process__three">
             <div></div>
@@ -237,7 +298,7 @@ export default function Requirements() {
             content: "";
             display: block;
             position: relative;
-            width: calc( ${step}*2.5rem);
+            width: calc( ${step}*1.5rem);
             background-color: var(--color-green);
             height: 1rem;
             border-radius: 1rem;

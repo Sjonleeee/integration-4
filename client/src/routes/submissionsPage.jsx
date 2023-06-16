@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import { addLike, getSubmissions } from "../js/designs.js";
 import Submission from "../components/Submission.jsx";
 import React, { useState } from "react";

@@ -207,7 +207,7 @@
 }
 
 .step-process div:nth-child(1) {
-  width: 10rem;
+  width: 6rem;
   background-color: #b9b9b9;
   height: 1rem;
   border-radius: 1rem;
@@ -367,19 +367,35 @@
     width: 50vw;
     overflow: hidden;
     height: 100vh;
+    display: grid;
   }
 
   .requirements-step-deco img {
+    grid-row: 1;
+    grid-column: 1;
     position: relative;
     width: 50vw;
     height: 100vh;
+    object-fit: cover;
     z-index: 1;
+  }
+
+  .requirements-step-deco img:nth-child(2) {
+    width: 12rem;
+    height: auto;
+    place-self: center;
   }
 
   .requirements-step-text {
     grid-row: 1;
     grid-column: 2;
     margin-inline-start: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .requirements-step-text h3 {
+    align-self: start;
   }
 
   .requirements-step h3 {
@@ -396,6 +412,12 @@
     grid-column: 1;
     grid-row: 1;
     width: 35vw;
+  }
+
+  .requirements-step-text a {
+    align-self: start;
+    justify-self: start;
+    margin-block-start: 2rem;
   }
 
   .requirements-step p:nth-child(3) {

@@ -40,6 +40,15 @@
   border-block-end: 1px solid black;
 }
 
+.submission__story {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.125rem;
+  margin-block: 1rem;
+  width: 50vw;
+}
+
 .submission__img {
   align-items: center;
   width: calc(100vw);
@@ -123,12 +132,19 @@
 
   .submission__img img {
     width: 35vw;
+    height: 20rem;
+    object-fit: contain;
     animation: none;
     position: relative;
     right: 1.5vw;
+    padding-block-end: 3rem;
   }
 
   .submission__title {
     border: none;
+  }
+
+  .submission__story {
+    width: calc(35vw - 6rem);
   }
 }

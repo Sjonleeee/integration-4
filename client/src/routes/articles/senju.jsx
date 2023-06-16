@@ -1,16 +1,29 @@
-export default function Senju() {
+export default function Biniru() {
   return (
-    <div className="collection-detail senju">
+    <div className="collection-detail biniru">
+      <div className="desktop-hidden collection-detail__mobile-nav">
+        <a href="../last-collection">
+          <div className="arrow-button-black-hor">
+            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+          </div>
+        </a>
+        <div className="detail__nav-title">
+          <p>Senju</p>
+          <p>by Senju Cyphercat</p>
+        </div>
+      </div>
       <div className="collection-detail__noscroll">
-        <div className="arrow-button-black-hor">
-          <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
-        </div>
-        <div className="noscroll-title">
+        <a href="../last-collection" className="mobile-hidden">
+          <div className="arrow-button-black-hor">
+            <img src="../src/assets/img/arrow_left.svg" alt="arrow" />
+          </div>
+        </a>
+        <div className="mobile-hidden noscroll-title">
           <h1>Senju</h1>
-          <p></p>
+          <p>by Senju Cyphercat</p>
         </div>
-        <img src="" alt="" />
-        <a className="mobile-hidden" href="../workshops">
+        <img src="../src/assets/img/senju.png" alt="foto van tshirt" />
+        <a href="../workshops">
           <div className="button-primary">
             Get your very own
             <svg
@@ -29,28 +42,96 @@ export default function Senju() {
         </a>
       </div>
       <div className="collection-detail__scroll">
-        <img src="" alt="person" />
+        <img src="../src/assets/img/senju-story-two.png" alt="person" />
         <div className="scroll-name">
-          <p>Warre Warrior, 21</p>
-          <a href="">Insta logo</a>
+          <p>Senju Cyphercat, 23</p>
+          <a target="_blank" href="">
+            <img
+              className="insta-logo"
+              src="../src/assets/img/instagram.svg"
+              alt="instagram logo"
+            />
+          </a>
         </div>
-        <p>Bunch of text</p>
-        <img src="" alt="bijpassende img" />
-        <p className="white-text">More text</p>
+        <p>
+          I'm an international student, so my view of Kortrijk might be
+          different from the locals.
+          <br />
+          <br />
+          What I find really cool is that Kortrijk has awesome parties like the
+          ones at Bolwerk Funky Fridays, where they have DJ sets by Ubunto, and
+          they also have breakdance jams and sessions.
+        </p>
+        <img
+          src="../src/assets/img/senju-story-one.png"
+          alt="bijpassende img"
+        />
+        <p className="white-text">
+          I feel in Kortrijk, evenings are usually calm and offer a chance to
+          rest. While it's nice to have occasional events, I sometimes wish
+          there were more lively happenings.  I enjoy the breakdance scene and
+          appreciate the city's small size, which makes it easy to get around
+          quickly.
+        </p>
         <p className="scroll-design">The Design</p>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/senju-story-three.png" alt="" />
+          <p>
+            Japanese letters stance for Unity because I feel a good unity in the
+            break culture of Kortrijk. It's really nice to have people around
+            with a same vision and want to express themselves through dance.
+            Fingerprint stance for letting a print behind in breakscene so that
+            we can inspire the new generation.
+          </p>
         </div>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/senju-story-four.png" alt="" />
+          <p>
+            I want to make my mark and leave a fingerprint that inspires the new
+            generation and people around me.
+          </p>
         </div>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/senju-story-five.png" alt="" />
+          <p>
+            The two abstract pictures actually pictures of me breaking in
+            Kortrijk and it’s creatively represented through abstract shapes.
+          </p>
+        </div>
+        <div className="scroll-design__step">
+          <img src="../src/assets/img/senju-story-six.png" alt="" />
+          <p>
+            The global represent me as an International student in Kortrijk
+            City.
+          </p>
+        </div>
+        <div className="scroll-design__step">
+          <img src="../src/assets/img/senju-story-seven.png" alt="" />
+          <p>
+            This represents the leieboorden. In general, Kortrijk is a calm
+            place in the evenings, offering a peaceful environment where you can
+            relax and enjoy some quality time for yourself.
+          </p>
+        </div>
+        <div className="scroll-design__step">
+          <img
+            className="funky"
+            src="../src/assets/img/senju-story-eight.png"
+            alt=""
+          />
+          <p>
+            I feel like Kortrijk has hidden gems partys, so like a place called
+            Bolwerk they organise funky fridays and other events. You have to
+            search for the good stuff!
+          </p>
         </div>
       </div>
+      <style>
+        {`
+        .footer {
+          display: none;
+        }`}
+      </style>
     </div>
   );
 }

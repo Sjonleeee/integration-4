@@ -29,7 +29,11 @@ export default function Contact() {
           <p>our socials:</p>
           <ul>
             <li>
-              <a target="_blank" rel="noreferrer" href="https://instagram.com">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/kulturex2023"
+              >
                 instagram
               </a>
             </li>

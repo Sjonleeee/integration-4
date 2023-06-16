@@ -16,7 +16,7 @@ const Submission = ({
         <img src={design} alt="design" width={600} />
       </div>
       <div className="submission__text">
-        <Link to={"../submissions/".id}>
+        <Link to={`/submissions/${id}`}>
           <h2 className="submission__title">
             {title} <img src="../src/assets/img/arrow.svg" alt="" />
           </h2>

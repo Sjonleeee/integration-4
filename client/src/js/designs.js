@@ -21,31 +21,26 @@ export const getSubmissions = async () => {
   return data.designsEntries;
 };
 
-//     mutation MyMutation($title: String, $story: String, $designAuthor: String, $designdata: String) {
-//   save_designs_default_Entry(
-//     authorId: "1"
-//     slug: "-"
-//     designAuthor: $designAuthor
-//     title: $title
-//     story: $story
-//     design: $design
-//   ) {
-//     id
-//     designAuthor
-//     title
-//     story
-//     designLinks
-//     design(filename: $title) {
-//       ... on designUploads_Asset {
-//         id
-//       }
-//     }
-//   }
-//   save_designUploads_Asset(_file: {fileData: $designdata, filename: $title}) {
-//     id
-//     filename
-//   }
-// }
+export const getSubmission = async (id) => {
+  const { data } = await graphQLRequest(
+    `query MyQuery {
+  designsEntries(id: "${id}") {
+    ... on designs_default_Entry {
+      id
+      title
+      story
+      designLinks
+      designAuthor
+      likeAmount
+      dateCreated
+    }
+  }
+}
+    `
+  );
+  console.log(data.designsEntries);
+  return data.designsEntries;
+};
 
 export const submitDesign = async (updates, designLinks) => {
   const { data } = await graphQLRequest(

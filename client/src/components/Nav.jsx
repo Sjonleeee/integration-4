@@ -253,7 +253,7 @@ export default function Navbar() {
             background-color: ${showMenu ? "white" : "transparent"};
             mix-blend-mode: ${showMenu ? "normal" : "difference"};
             height: ${showMenu ? "100vh" : "3rem"};
-            position: ${showMenu ? "fixed" : "absolute"};
+            position: fixed;
             width: calc(100vw - 48px);
             z-index: 5;
           }

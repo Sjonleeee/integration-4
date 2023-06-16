@@ -2,13 +2,15 @@
   display: grid;
   flex-direction: column;
   grid-template-columns: repeat(auto, 100vw);
-  grid-template-rows: repeat(auto, 100vh);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .hero {
   display: grid;
   grid-column: 1;
   grid-row: 1;
+  overflow: hidden;
 }
 
 .hero-image {
@@ -16,6 +18,7 @@
   grid-column: 1;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .hero-image img {
@@ -336,6 +339,9 @@
   grid-template-columns: 100vw;
   grid-template-rows: calc(100vh - 10rem) 10rem;
   height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-white);
+  z-index: 1;
 }
 
 .concept-item img {
@@ -375,6 +381,7 @@
   grid-row: 1;
   grid-column: 1;
   place-self: center;
+  overflow: hidden;
 }
 
 .concept-slide__title {
@@ -398,6 +405,14 @@
   margin: 0;
   left: 0;
   line-height: 1.4;
+}
+
+.concept-four {
+  z-index: 2;
+}
+
+.concept-four img {
+  z-index: 5;
 }
 
 .concept-item div .concept-slide__extra > a:first-of-type {
@@ -434,7 +449,18 @@
   object-position: 0;
 }
 
-.workshops p {
+.home .workshops {
+  z-index: 0;
+  background-color: var(--color-white);
+  width: calc(100vw - 3rem);
+  padding-inline: 1.5rem;
+  position: relative;
+  left: -1.5rem;
+  height: 80vh;
+  padding-block: 3rem;
+}
+
+.home .workshops p {
   margin-block-end: 2rem;
 }
 
@@ -548,7 +574,7 @@
   }
 
   .about {
-    grid-template-columns: 45vw 55vw;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: 100vh;
     margin-block-start: 0px;
     padding-block-start: 0;
@@ -565,7 +591,7 @@
   }
 
   .about-img video {
-    width: 55vw;
+    width: 50vw;
     height: 100vh;
     object-fit: cover;
   }

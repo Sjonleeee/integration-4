@@ -15,6 +15,9 @@ import LastCollection from "./routes/lastCollection";
 import Biniru from "./routes/articles/biniru";
 import Unknown from "./routes/articles/unknown";
 import Senju from "./routes/articles/senju";
+import SubmissionPage, {
+  loader as submissionLoader,
+} from "./routes/submission";
 import Error from "./routes/error";
 import Confirmation from "./routes/confirmation";
 import Home from "./routes/home";
@@ -78,6 +81,11 @@ const router = createBrowserRouter([
       {
         path: "/last-collection/senju",
         element: <Senju />,
+      },
+      {
+        path: "/submissions/:id",
+        element: <SubmissionPage />,
+        loader: submissionLoader,
       },
     ],
   },

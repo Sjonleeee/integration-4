@@ -31,6 +31,7 @@
   line-height: 0.85;
   text-align: center;
   color: var(--color-white);
+  padding-block: 4rem;
 }
 
 .last-collection__hero h2 span:nth-of-type(2) {
@@ -75,6 +76,7 @@
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: auto auto auto;
+  padding-block: 3rem;
 }
 
 .last-collection__info p {
@@ -122,6 +124,7 @@
   display: grid;
   width: 100vw;
   justify-self: center;
+  align-items: center;
 }
 
 .last-collection__article > div:first-of-type img {
@@ -142,7 +145,7 @@
 .collection-detail {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: auto 100vh;
+  grid-template-rows: auto 75vh;
 }
 
 .collection-detail__scroll {
@@ -151,6 +154,10 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+}
+
+.collection-detail__scroll p {
+  padding-block: 2rem;
 }
 
 .collection-detail__scroll img {
@@ -180,10 +187,40 @@
   padding-inline: 1.5rem;
 }
 
+.scroll-design__step {
+  width: calc(100vw - 3rem);
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+}
+
+.scroll-design__step p {
+  width: calc(100vw - 3rem);
+  padding-inline: 0rem;
+}
+
+.collection-detail .scroll-design__step > img:first-of-type {
+  width: 6rem;
+  height: auto;
+  object-position: 0 0;
+}
+
+.collection-detail__scroll > .scroll-design {
+  font-family: var(--font-title);
+  font-size: 6rem;
+}
+
 .white-text {
   color: var(--color-white);
   background-color: var(--color-black);
   padding-block: 1rem;
+}
+
+.scroll-name a img:first-of-type {
+  width: 2rem;
+  height: 2rem;
+  margin-inline-end: 4rem;
+  object-fit: contain;
+  object-position: 0 0;
 }
 
 .collection-detail__mobile-nav {
@@ -210,6 +247,22 @@
   border: 1px solid var(--color-black);
   padding: 1rem;
   border-radius: 30px;
+}
+
+.collection-detail__noscroll {
+  height: auto;
+}
+
+.collection-detail__noscroll img {
+  width: calc(100vw - 6rem);
+  padding: 3rem;
+  height: auto;
+}
+
+.collection-detail__noscroll a div {
+  width: calc(100vw - 6rem);
+  margin-inline: 1.5rem;
+  height: auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -255,7 +308,7 @@
   }
 
   .last-collection__info {
-    grid-template-columns: 10rem auto;
+    grid-template-columns: 10rem calc(100vw - 15rem);
     grid-template-rows: auto;
   }
 
@@ -278,6 +331,7 @@
   .last-collection__info-text {
     grid-row: 1;
     grid-column: 2;
+    justify-self: center;
   }
 
   .last-collection__info-text p {
@@ -320,11 +374,16 @@
   .collection-detail {
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .collection-detail__scroll {
     grid-row: 1;
     grid-column: 2;
+    width: calc(50vw - 5rem);
   }
 
   .collection-detail__noscroll {
@@ -337,6 +396,10 @@
     width: 50vw;
     height: 100vh;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
   }
 
   .noscroll-title {
@@ -362,5 +425,57 @@
   .collection-detail__noscroll > img {
     width: 20rem;
     margin-block: 3rem;
+  }
+
+  .collection-detail__scroll img:first-of-type {
+    width: 50vw;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0 -20rem;
+  }
+
+  .collection-detail__scroll img:nth-of-type(2) {
+    width: 50vw;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  .collection-detail__scroll .scroll-name {
+    width: calc(50vw - 5rem);
+  }
+
+  . .scroll-design__step img {
+    width: 50vw;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  .scroll-design__step p {
+    width: 35vw;
+    margin-block: 0;
+  }
+
+  .collection-detail__scroll p {
+    width: 35vw;
+    padding-inline-end: 15vw;
+  }
+
+  .collection-detail__noscroll img {
+    width: 3rem;
+    padding: 3rem;
+    height: auto;
+  }
+
+  .collection-detail__noscroll > img {
+    width: 15rem;
+    height: auto;
+  }
+
+  .collection-detail__noscroll a div {
+    width: 320px;
+    margin-inline: 1.5rem;
+    height: auto;
   }
 }

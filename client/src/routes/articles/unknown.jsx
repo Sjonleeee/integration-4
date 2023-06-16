@@ -42,38 +42,69 @@ export default function Unknown() {
         </a>
       </div>
       <div className="collection-detail__scroll">
-        <img src="" alt="person" />
+        <img src="../src/assets/img/flava-story-one.png" alt="person" />
         <div className="scroll-name">
-          <p>Warre Warrior, 21</p>
-          <a href="">Insta logo</a>
+          <p>Flava Flaviuq, 20</p>
+          <a target="_blank" href="">
+            <img
+              className="insta-logo"
+              src="../src/assets/img/instagram.svg"
+              alt="instagram logo"
+            />
+          </a>
         </div>
-        <p>Bunch of text</p>
-        <img src="" alt="bijpassende img" />
-        <p className="white-text">More text</p>
-        <p>More text</p>
-        <p>More text</p>
+        <p>
+          The way I see the culture of Kortrijk is a little bit of everything.
+          I've gotten to experience lots of things that I haven't encountered
+          before like the Paas foor and Sinksen.{" "}
+        </p>
+        <img
+          src="../src/assets/img/flava-story-two.png"
+          alt="bijpassende img"
+        />
+        <p className="white-text">
+          Kortrijk seems to always find ways to maintain the community engaged
+          and not bored of the daily life. There's always something to do in
+          Kortrijk, even if at first look it doesn't seem like it.{" "}
+        </p>
+        <p>
+          I will say, the only think the culture of Kortrijk is missing is more
+          engagement with the international community and accessibility for the
+          youths such as access to events that are not insanely overpriced and
+          spaces where students can express themselves ( like De Stroate, Ajko,
+          etc)
+        </p>
         <p className="scroll-design">The Design</p>
-        <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+        <div className="white-text scroll-design__step">
+          <img src="../src/assets/img/flava-story-three.png" alt="picture" />
+          <p>
+            In my design I really wanted to emphesize the hidden spots of
+            Kortrijk. The picture in the magnifying glass is of a urban place
+            called Bolwerk.
+          </p>
         </div>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/flava-story-four.png" alt="picture" />
+          <p>
+            The chinese letters symbolize the different cultures in Kortrijk.
+            I’m from Romenia myself, so the international community really
+            speaks to me.
+          </p>
         </div>
         <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
-        </div>
-        <div className="scroll-design__step">
-          <img src="" alt="" />
-          <p></p>
+          <img src="../src/assets/img/flava-story-five.png" alt="picture" />
+          <p>
+            The globe represents the opportunity for Kortrijk to leave a real
+            impact on the world, more specifically Europe.
+          </p>
         </div>
       </div>
+      <style>
+        {`
+        .footer {
+          display: none;
+        }`}
+      </style>
     </div>
   );
 }
