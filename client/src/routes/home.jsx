@@ -229,14 +229,23 @@ export default function Home() {
                 </p>
                 <div className="concept-slide__extra">
                   <a href="../last-collection">Check out the last winners</a>
-                  <div className="concept-slide__profiles">
-                    <a href="../last-collection/unknown">
+                  <div className=" concept-slide__profiles">
+                    <a
+                      className="mobile-hidden"
+                      href="../last-collection/unknown"
+                    >
                       <img src="../src/assets/img/flava-pfp.png" alt="flava" />
                     </a>
-                    <a href="../last-collection/biniru">
+                    <a
+                      className="mobile-hidden"
+                      href="../last-collection/biniru"
+                    >
                       <img src="../src/assets/img/warre-pfp.png" alt="warre" />
                     </a>
-                    <a href="../last-collection/senju">
+                    <a
+                      className="mobile-hidden"
+                      href="../last-collection/senju"
+                    >
                       <img src="../src/assets/img/senju-pfp.png" alt="senju" />
                     </a>
                   </div>
