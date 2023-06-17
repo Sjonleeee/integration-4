@@ -1,4 +1,4 @@
-dateModified: 1686820417
+dateModified: 1686996328
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
@@ -48,47 +48,6 @@ meta:
     ee9b1680-d7fc-47ea-a3ec-691fe2dc77e3: New # New
     f0b5c27b-685c-4e55-b113-7569e0f3301a: 'company name' # company name
 plugins:
-  commerce:
-    edition: lite
-    enabled: true
-    licenseKey: 6R4O7N9Y66GW5IQUXG523KMF
-    schemaVersion: 4.2.3
-    settings:
-      activeCartDuration: 3600
-      allowCheckoutWithoutPayment: false
-      allowEmptyCartOnCheckout: false
-      allowPartialPaymentOnCheckout: false
-      autoSetCartShippingMethodOption: false
-      autoSetNewCartAddresses: true
-      autoSetPaymentSource: false
-      cartVariable: cart
-      defaultView: commerce/products
-      dimensionUnits: mm
-      emailSenderAddress: null
-      emailSenderAddressPlaceholder: null
-      emailSenderName: null
-      emailSenderNamePlaceholder: null
-      freeOrderPaymentStrategy: complete
-      gatewayPostRedirectTemplate: ''
-      loadCartRedirectUrl: null
-      minimumTotalPriceStrategy: default
-      orderReferenceFormat: '{{number[:7]}}'
-      paymentCurrency: null
-      pdfAllowRemoteImages: false
-      pdfPaperOrientation: portrait
-      pdfPaperSize: letter
-      purgeInactiveCarts: true
-      purgeInactiveCartsDuration: 7776000
-      requireBillingAddressAtCheckout: false
-      requireShippingAddressAtCheckout: false
-      requireShippingMethodSelectionAtCheckout: false
-      showEditUserCommerceTab: true
-      updateBillingDetailsUrl: ''
-      updateCartSearchIndexes: true
-      useBillingAddressForTax: false
-      validateBusinessTaxIdAsVatId: false
-      validateCartCustomFieldsOnSubmission: false
-      weightUnits: g
   commerce-stripe:
     edition: standard
     enabled: true
@@ -97,17 +56,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
-  shopify:
-    edition: standard
-    enabled: true
-    schemaVersion: 4.0.6
-    settings:
-      accessToken: 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
-      apiKey: bd26d916b6bf1e2ba191fa4e824b32f6
-      apiSecretKey: 20f2bc0a7c3b672ea8a726a889a1c70c
-      hostName: d66a59-2.myshopify.com
-      template: ''
-      uriFormat: ''
   vite:
     edition: standard
     enabled: true

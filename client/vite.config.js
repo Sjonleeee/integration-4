@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://integration.minhtriha.com",
+        target: "http://localhost:5173",
         changeOrigin: true,
         secure: false,
       },
