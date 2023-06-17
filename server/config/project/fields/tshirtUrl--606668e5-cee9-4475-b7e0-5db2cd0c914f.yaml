@@ -1,0 +1,14 @@
+columnSuffix: xiiqfdrl
+contentColumnType: string(255)
+fieldGroup: 35c69e63-d07d-4933-ac1c-4bcfdee0632e # Common
+handle: tshirtUrl
+instructions: null
+name: tshirt-url
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

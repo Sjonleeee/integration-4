@@ -1,0 +1,19 @@
+columnSuffix: cpmuzsje
+contentColumnType: text
+fieldGroup: a4bb78bd-ba2e-42df-82c6-c3498c1d4623 # workshops
+handle: workshopInfo
+instructions: null
+name: 'workshop Info'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

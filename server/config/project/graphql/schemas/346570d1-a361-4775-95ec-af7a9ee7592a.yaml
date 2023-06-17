@@ -7,29 +7,28 @@ scope:
   - 'elements.inactive:read'
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:read' # designs
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:read' # Default
-  - 'sections.96175363-fb95-400e-81ca-6e4da39ee2ea:read' # workshop Requests
-  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:read' # Default
-  - 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:read' # workshops
-  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:read' # Default
-  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:read' # design uploads
+  - 'sections.6364d90b-f6c2-4321-b8de-3905634d24af:read' # workshop Requests
+  - 'entrytypes.0d04ab93-2676-4032-b1f7-b03c2d16708a:read' # Default
+  - 'sections.04609018-8bab-40f1-8455-a12c7fc950e5:read' # workshops
+  - 'entrytypes.2b192ae7-68a4-4fcb-ac74-adee628d325d:read' # Default
+  - 'volumes.d036df59-6e14-44aa-9ee5-26bd4f9b97ca:read' # design uploads
   - 'usergroups.everyone:read'
-  - 'productTypes.17688985-a8f9-4bcf-b2e8-131053d1f7d7:read' # shirts
   - 'sections.098bf40a-4116-4672-b3b5-303b57a938cd:edit' # designs
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:edit' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:create' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:save' # Default
   - 'entrytypes.97163395-0194-4622-850e-b48d3d65be82:delete' # Default
-  - 'sections.96175363-fb95-400e-81ca-6e4da39ee2ea:edit' # workshop Requests
-  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:edit' # Default
-  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:create' # Default
-  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:save' # Default
-  - 'entrytypes.ba2edcfe-d94b-49e8-be03-c5c84a940211:delete' # Default
-  - 'sections.a961ce14-1fcb-4209-92db-aa58b55893ba:edit' # workshops
-  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:edit' # Default
-  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:create' # Default
-  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:save' # Default
-  - 'entrytypes.46e1db37-d739-48ee-b1d3-b5bf55496a2e:delete' # Default
-  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:edit' # design uploads
-  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:create' # design uploads
-  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:save' # design uploads
-  - 'volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1:delete' # design uploads
+  - 'sections.6364d90b-f6c2-4321-b8de-3905634d24af:edit' # workshop Requests
+  - 'entrytypes.0d04ab93-2676-4032-b1f7-b03c2d16708a:edit' # Default
+  - 'entrytypes.0d04ab93-2676-4032-b1f7-b03c2d16708a:create' # Default
+  - 'entrytypes.0d04ab93-2676-4032-b1f7-b03c2d16708a:save' # Default
+  - 'entrytypes.0d04ab93-2676-4032-b1f7-b03c2d16708a:delete' # Default
+  - 'sections.04609018-8bab-40f1-8455-a12c7fc950e5:edit' # workshops
+  - 'entrytypes.2b192ae7-68a4-4fcb-ac74-adee628d325d:edit' # Default
+  - 'entrytypes.2b192ae7-68a4-4fcb-ac74-adee628d325d:create' # Default
+  - 'entrytypes.2b192ae7-68a4-4fcb-ac74-adee628d325d:save' # Default
+  - 'entrytypes.2b192ae7-68a4-4fcb-ac74-adee628d325d:delete' # Default
+  - 'volumes.d036df59-6e14-44aa-9ee5-26bd4f9b97ca:edit' # design uploads
+  - 'volumes.d036df59-6e14-44aa-9ee5-26bd4f9b97ca:create' # design uploads
+  - 'volumes.d036df59-6e14-44aa-9ee5-26bd4f9b97ca:save' # design uploads
+  - 'volumes.d036df59-6e14-44aa-9ee5-26bd4f9b97ca:delete' # design uploads
