@@ -8,7 +8,7 @@ export const getSubmissions = async () => {
       id
       title
       story
-      designLinks
+      tshirtUrl
       designAuthor
       likeAmount
       dateCreated
@@ -29,7 +29,7 @@ export const getSubmission = async (id) => {
       id
       title
       story
-      designLinks
+      tshirtUrl
       designAuthor
       likeAmount
       dateCreated
@@ -42,29 +42,65 @@ export const getSubmission = async (id) => {
   return data.designsEntries;
 };
 
-export const submitDesign = async (updates, designLinks) => {
+export const uploadImage = async (file) => {
+  console.log(file);
   const { data } = await graphQLRequest(
     `
-    mutation MyMutation($title: String, $story: String, $designAuthor: String, $designLinks: String) {
-  save_designs_default_Entry(
-    authorId: "1"
-    slug: "-"
-    designAuthor: $designAuthor
-    title: $title
-    story: $story
-    designLinks: $designLinks
-  ) {
-    id
-    designAuthor
-    title
-    story
-    designLinks
+mutation SaveImage($document: FileInput, $title: String) {
+    save_designUploads_Asset(_file: $document, title: $title) {
+      id
+      filename
+      title
+    }
+  }
+`,
+    { document: file, title: file.filename }
+  );
+  console.log(data);
+  return data.save_designs_default_Entry;
+};
+
+export const getImage = async () => {
+  const { data } = await graphQLRequest(
+    `query MyQuery {
+  assets(limit: 1) {
+    ... on designUploads_Asset {
+      id
+      filename
+      title
+      url
+    }
   }
 }
 
+    `
+  );
+  console.log(data.assets);
+  return data.assets[0];
+};
+
+export const submitDesign = async (updates, document) => {
+  const { data } = await graphQLRequest(
+    `
+mutation SaveEntry($title: String, $story: String, $designAuthor: String, $document: String) {
+      save_designs_default_Entry(
+        authorId: "1"
+        slug: "-"
+        designAuthor: $designAuthor
+        title: $title
+        story: $story
+        tshirtUrl: $document
+      ) {
+        id
+        designAuthor
+        title
+        story 
+        tshirtUrl 
+      }
+    }
 
 `,
-    { designLinks: designLinks, ...updates }
+    { document: document, ...updates }
   );
   console.log(data);
   return data.save_designs_default_Entry;

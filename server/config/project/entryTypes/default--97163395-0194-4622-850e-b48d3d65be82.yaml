@@ -32,13 +32,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9bab4509-fd86-4432-9349-b485ad305ff7 # like Amount
+            fieldUid: 25548588-7d50-453b-a303-b7f2f55ad45e # design Author
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c2aa09ad-53ee-4789-b00b-9b5feea2113e
+            uid: b57d2408-b389-45d9-bad2-d2a95fa7c8e0
             userCondition: null
             warning: null
             width: 100
@@ -56,37 +56,25 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 1afb17a2-eda3-40e4-bb7d-22cf4912fd95 # designAuthor
+            fieldUid: 606668e5-cee9-4475-b7e0-5db2cd0c914f # tshirt-url
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: da55c5a5-7519-4c07-9958-86460d127422
+            uid: e6837596-feda-4c5e-b868-a58b2bc18d5d
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: adcd0013-3c46-48ce-ae66-481c77721f0c # design
+            fieldUid: d9971e81-3d61-46a9-bc6e-accdc289e797 # like Amount
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 16551939-2507-4b5f-a970-2f4cf96a526e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 296c3e3c-1354-4114-a2ba-86e0b4e9a8cd # design Links
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e57e0415-09a2-4080-af8e-6697ff8b4f65
+            uid: d8b085cb-f558-4071-890f-9d612b1ef3d0
             userCondition: null
             warning: null
             width: 100

@@ -1,0 +1,20 @@
+columnSuffix: koncrnya
+contentColumnType: integer(10)
+fieldGroup: a4bb78bd-ba2e-42df-82c6-c3498c1d4623 # workshops
+handle: workshopAttendees
+instructions: null
+name: 'workshop Attendees'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

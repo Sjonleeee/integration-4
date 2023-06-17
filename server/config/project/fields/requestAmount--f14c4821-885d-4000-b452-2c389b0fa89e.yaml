@@ -1,0 +1,19 @@
+columnSuffix: uzpcqwra
+contentColumnType: text
+fieldGroup: 3f687b4a-27f7-4066-bc76-55032f478541 # workshopRequests
+handle: requestAmount
+instructions: null
+name: 'request Amount'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

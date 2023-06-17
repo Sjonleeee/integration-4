@@ -8,12 +8,10 @@ const Submission = ({
   datecreated,
   id,
 }) => {
-  const design = JSON.parse(designLinks);
-  console.log(design);
   return (
     <>
       <div className="submission__img">
-        <img src={design} alt="design" width={600} />
+        <img src={designLinks} alt="design" width={600} />
       </div>
       <div className="submission__text">
         <Link to={`/submissions/${id}`}>

@@ -1,52 +1,52 @@
-dateModified: 1686820417
+dateModified: 1687007925
 email:
   fromEmail: minh.tri.ha@student.howest.be
   fromName: kultureX
   transportType: craft\mail\transportadapters\Sendmail
 fs:
-  designs:
+  uploads:
     hasUrls: true
-    name: designs
+    name: uploads
     settings:
       path: '@webroot'
     type: craft\fs\Local
     url: '@web'
 meta:
   __names__:
-    0bb6061c-1bb2-4fdf-8a94-f5d5837760b1: 'design uploads' # design uploads
-    1ae0f66c-bba8-4e6c-80bd-35c854fa0105: 'request amount' # request amount
-    1afb17a2-eda3-40e4-bb7d-22cf4912fd95: designAuthor # designAuthor
-    2ef94ed5-de0e-4808-a2f1-0a3a181f1f1a: 'company telephone' # company telephone
-    2fa98a8a-0943-4d4e-bdff-ae4f55e124c5: 'workshop place' # workshop place
+    0d04ab93-2676-4032-b1f7-b03c2d16708a: Default # Default
+    2b192ae7-68a4-4fcb-ac74-adee628d325d: Default # Default
     3c3816f3-e10f-4183-beae-7ab3f1fbc5e6: kultureX # kultureX
-    8d96726f-8744-4b23-a6a5-49432ca9008e: 'workshop attendees' # workshop attendees
-    9bab4509-fd86-4432-9349-b485ad305ff7: 'like Amount' # like Amount
-    22cbf7f0-abdf-473d-9ff8-5bd634f5f69c: workshopRequests # workshopRequests
+    3f687b4a-27f7-4066-bc76-55032f478541: workshopRequests # workshopRequests
+    7b8d9845-0911-4773-9780-8d815de965e7: 'workshop Date' # workshop Date
+    9d98e25c-74ac-4eaf-87bc-12801dc1c5ae: 'company Mail' # company Mail
     35c69e63-d07d-4933-ac1c-4bcfdee0632e: Common # Common
-    46e1db37-d739-48ee-b1d3-b5bf55496a2e: Default # Default
+    47f6e445-399d-4b85-a62e-d616f9995a88: 'company Postcode' # company Postcode
+    089dc85a-6074-4086-aca2-9ffb8cbf436a: 'request Date' # request Date
     098bf40a-4116-4672-b3b5-303b57a938cd: designs # designs
-    99dbc7e2-7d04-4ae9-ae0b-c6a737b851fb: 'company country' # company country
-    296c3e3c-1354-4114-a2ba-86e0b4e9a8cd: 'design Links' # design Links
-    7065b1b6-c2b2-4332-99e5-82d8f4f134c2: 'workshop date' # workshop date
-    13306b01-989a-4391-a419-3b3ca7585bf4: 'request Date' # request Date
+    609eb92c-57bd-4999-b1ef-94c97ed1a8f7: 'company Adres' # company Adres
+    6364d90b-f6c2-4321-b8de-3905634d24af: 'workshop Requests' # workshop Requests
     346570d1-a361-4775-95ec-af7a9ee7592a: 'Public Schema' # Public Schema
-    17523622-6584-47f3-8426-d00a43c29d3d: 'company postcode' # company postcode
-    17688985-a8f9-4bcf-b2e8-131053d1f7d7: shirts # shirts
-    96175363-fb95-400e-81ca-6e4da39ee2ea: 'workshop Requests' # workshop Requests
+    606668e5-cee9-4475-b7e0-5db2cd0c914f: tshirt-url # tshirt-url
+    04609018-8bab-40f1-8455-a12c7fc950e5: workshops # workshops
+    17688985-a8f9-4bcf-b2e8-131053d1f7d7: Senne # Senne
+    25548588-7d50-453b-a303-b7f2f55ad45e: 'design Author' # design Author
+    70004032-9fbc-4b20-89b3-93b4647a2244: 'workshop Attendees' # workshop Attendees
     97163395-0194-4622-850e-b48d3d65be82: Default # Default
-    a961ce14-1fcb-4209-92db-aa58b55893ba: workshops # workshops
-    adcd0013-3c46-48ce-ae66-481c77721f0c: design # design
-    b0dd6f1c-00ba-4436-bc05-84297ddd81de: 'workshop info' # workshop info
+    a0c3b8a5-3d7a-42a9-92cc-952786751245: 'workshop Place' # workshop Place
+    a4bb78bd-ba2e-42df-82c6-c3498c1d4623: workshops # workshops
+    a111acb4-f77e-4390-99c6-8453dbcbb8ab: 'request Duration' # request Duration
+    a52452f8-8e9e-403e-b9aa-196220177fe4: 'workshop Info' # workshop Info
     b0fe49ca-cc76-423d-85b1-5114b12dad38: Dummy # Dummy
-    b3df38ff-3ab6-4601-9413-4c28908cbd3b: 'company mail' # company mail
-    ba2edcfe-d94b-49e8-be03-c5c84a940211: Default # Default
-    bc48d364-fd3d-48d8-be8a-aca32725088f: workshops # workshops
-    bdd34b2e-e240-4da6-a874-7c96ddcc2ac2: 'request duration' # request duration
-    c43f9a04-8dfc-49b0-8677-12bd4f3bf04a: 'company adres' # company adres
+    bc830422-6413-440b-9ea9-7607f4129d76: tshirt # tshirt
     ca98a93c-411a-4bbc-9174-0e0b3a88fb5e: kultureX # kultureX
+    d036df59-6e14-44aa-9ee5-26bd4f9b97ca: 'design uploads' # design uploads
     d5b7ca04-6137-41bf-ab70-95818c16f640: story # story
+    d302d6aa-2069-43e5-b566-4dfe643783b4: 'company Name' # company Name
+    d9971e81-3d61-46a9-bc6e-accdc289e797: 'like Amount' # like Amount
+    de9bdcfb-66db-46aa-a23f-4ddcf0496932: 'company Telephone' # company Telephone
     ee9b1680-d7fc-47ea-a3ec-691fe2dc77e3: New # New
-    f0b5c27b-685c-4e55-b113-7569e0f3301a: 'company name' # company name
+    f14c4821-885d-4000-b452-2c389b0fa89e: 'request Amount' # request Amount
+    f879a9e3-ad1e-48f5-b1a3-22469eb0b849: 'company Country' # company Country
 plugins:
   commerce:
     edition: lite
@@ -97,24 +97,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
-  shopify:
-    edition: standard
-    enabled: true
-    schemaVersion: 4.0.6
-    settings:
-      accessToken: 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
-      apiKey: bd26d916b6bf1e2ba191fa4e824b32f6
-      apiSecretKey: 20f2bc0a7c3b672ea8a726a889a1c70c
-      hostName: d66a59-2.myshopify.com
-      template: ''
-      uriFormat: ''
   vite:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-shopify:
-  productFieldLayout:
-    c04ceaac-4b04-491c-ad67-ce2518691fc9: null
 system:
   edition: pro
   live: true
