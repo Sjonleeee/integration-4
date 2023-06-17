@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
+        target: "https://integration4.ddev.site",
         changeOrigin: true,
         secure: false,
       },
