@@ -26,6 +26,7 @@
   height: 101vh;
   object-fit: cover;
   object-position: -100px;
+  filter: brightness(0.5);
 }
 
 .hero-text {
@@ -528,6 +529,7 @@
     object-position: -5vh -5vh;
     grid-row: 1;
     grid-column: 1;
+    filter: brightness(1);
   }
 
   .hero-image > img:nth-child(2) {

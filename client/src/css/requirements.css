@@ -237,11 +237,13 @@
 
   .requirements-hero-title p {
     font-size: 8rem;
-    width: calc(40vw - 6rem);
+    width: 15ch;
+    text-align: left;
   }
 
   .requirements-hero-title p:nth-child(3) {
     font-size: 12rem;
+    width: 10ch;
   }
 
   .requirements-hero-title img {

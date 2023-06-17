@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -6,10 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const text = useRef();
   const home = useRef();
+  const [height, setHeight] = useState(0);
+  const conceptItem = useRef();
+
+  useEffect(() => {
+    setHeight(conceptItem.current.clientHeight / 4);
+  }, []);
+  console.log(height);
 
   useLayoutEffect(() => {
-    const height = window.innerHeight;
-    console.log(height);
     let hero = gsap.context(() => {
       gsap.from(".stories-gsap", { opacity: 0, scale: 0.5, delay: 0.5 });
       gsap.to(".stories-gsap", { opacity: 1, scale: 1, delay: 0.5 });
@@ -19,6 +24,26 @@ export default function Home() {
       gsap.to(".n-one", { opacity: 1, delay: 1, x: 0 });
       gsap.from(".n-two", { opacity: 0, x: -100, delay: 1.5 });
       gsap.to(".n-two", { opacity: 1, delay: 1.5, x: 0 });
+      gsap.fromTo(
+        ".hero-cta",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 2.5, ease: "power2" }
+      );
+      gsap.fromTo(
+        ".kltr-x",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 2, ease: "power2" }
+      );
+      gsap.fromTo(
+        ".hero-text-gsap",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 2, ease: "power2" }
+      );
+      gsap.fromTo(
+        ".hero-image-gsap",
+        { y: +100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, delay: 0, ease: "power2" }
+      );
       return () => hero.revert();
     });
 
@@ -110,11 +135,11 @@ export default function Home() {
               <img className="n-one" src="../src/assets/img/n.svg" alt="" />
               <img className="n-two" src="../src/assets/img/n.svg" alt="" />
             </div>
-            <p>
+            <p className="hero-text-gsap">
               Compete and be a part of a unique clothing line inspired by the
               KULTURE X of <span className="green-text">Kortrijk</span>
             </p>
-            <p>
+            <p className="kltr-x">
               KULTURE X
               <span ref={text} className="changing-text green-text">
                 PLORE
@@ -140,10 +165,13 @@ export default function Home() {
                 }`}
             </style>
 
-            <a className="desktop-hidden arrow-button-white" href="#about">
+            <a
+              className="desktop-hidden arrow-button-white hero-cta"
+              href="#about"
+            >
               <img src="../src/assets/img/arrow_button.svg" alt="arrow down" />
             </a>
-            <a className="mobile-hidden" href="#about">
+            <a className="mobile-hidden hero-cta" href="#about">
               <div className="button-primary">
                 Dive into our competition
                 <svg
@@ -252,7 +280,7 @@ export default function Home() {
               <img src="../src/assets/img/journey.svg" alt="journey" />
             </div>
           </div>
-          <div id="concept" className="concept-items">
+          <div id="concept" className="concept-items" ref={conceptItem}>
             <div className="concept-one-gsap">
               <div className="concept-item concept-one">
                 <img src="../src/assets/img/one.jpg" alt="concept-item image" />

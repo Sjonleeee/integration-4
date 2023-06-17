@@ -102,6 +102,78 @@
   display: none;
 }
 
+.submission-detail {
+  display: grid;
+  width: calc(100vw - 3rem);
+  padding-inline: 1.5rem;
+  margin-block: 3rem;
+}
+
+.submission-detail__title {
+  width: calc(100vw - 3rem);
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-block-start: 1rem;
+}
+
+.submission-detail p {
+  width: calc(100vw - 3rem);
+  margin-block: 0.5rem;
+  text-align: center;
+}
+
+.submission-detail__date {
+  padding-block-end: 1rem;
+  border-block-end: solid 1px var(--color-black);
+}
+
+.submission-detail__author span {
+  font-weight: 500;
+}
+
+.submission-detail__image {
+  width: calc(100vw - 3rem);
+  height: auto;
+  overflow: hidden;
+  margin-block: 1rem;
+}
+
+.submission-detail .submission-detail__story {
+  text-align: left;
+}
+
+.submission-detail__actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-block: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--color-white);
+  z-index: 2;
+  padding-block: 1rem;
+  margin-block: 0;
+  border-block-start: 1px solid var(--color-black);
+}
+
+.submission-detail .submission__like {
+  flex-direction: row;
+  height: 3rem;
+  width: 6rem;
+  color: var(--color-black);
+  align-items: center;
+  padding-block-start: 1.5rem;
+}
+
+.submission-detail__actions a img {
+  padding: 1rem;
+  border: solid 2px var(--color-black);
+  border-radius: 5rem;
+}
+
 @media screen and (min-width: 1280px) {
   .banner__name {
     font-size: 14rem;
