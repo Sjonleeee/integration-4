@@ -45,7 +45,10 @@ export default function Biniru() {
         <img src="../src/assets/img/warre-story-one.png" alt="person" />
         <div className="scroll-name">
           <p>Warre Warrior, 21</p>
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://instagram.com/warrewarrior?igshid=MzRlODBiNWFlZA=="
+          >
             <img
               className="insta-logo"
               src="../src/assets/img/instagram.svg"

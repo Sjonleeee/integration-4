@@ -29,6 +29,10 @@
   align-self: start;
 }
 
+.workshops-info p {
+  margin-block-end: 2rem;
+}
+
 .workshops-info a:first-child {
   margin-block-start: 4rem;
 }

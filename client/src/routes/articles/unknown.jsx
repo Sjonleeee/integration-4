@@ -45,7 +45,10 @@ export default function Unknown() {
         <img src="../src/assets/img/flava-story-one.png" alt="person" />
         <div className="scroll-name">
           <p>Flava Flaviuq, 20</p>
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://instagram.com/flaviuq?igshid=MzRlODBiNWFlZA=="
+          >
             <img
               className="insta-logo"
               src="../src/assets/img/instagram.svg"

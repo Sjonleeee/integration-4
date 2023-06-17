@@ -97,6 +97,7 @@
 .submission__text {
   grid-row: 2;
   grid-column: 2;
+  padding-block-end: 2rem;
 }
 .submission__invisible {
   display: none;
@@ -218,5 +219,99 @@
 
   .submission__story {
     width: calc(35vw - 6rem);
+  }
+
+  .submission-detail {
+    width: calc(100vw - 11rem);
+    grid-template-columns: 40vw 40vw;
+    padding-inline: 3rem;
+    margin-block: 3rem;
+  }
+
+  .submission-detail__title {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 30vw;
+    text-align: start;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-block-start: 1rem;
+  }
+
+  .submission-detail p {
+    width: calc(40vw - 3rem);
+    margin-block: 0.5rem;
+    text-align: center;
+  }
+
+  .submission-detail__date {
+    padding-block-end: 1rem;
+    border-block-end: solid 1px var(--color-black);
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+  }
+
+  .submission-detail__author {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+  }
+
+  .submission-detail__author span {
+    font-weight: 500;
+  }
+
+  .submission-detail__image {
+    width: 35rem;
+    height: 20rem;
+    height: auto;
+    overflow: hidden;
+    margin-block: 1rem;
+    grid-row: 3 / span 2;
+    grid-column: 1;
+  }
+
+  .submission-detail .submission-detail__story {
+    text-align: left;
+  }
+
+  .submission-detail__actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-block: 1rem;
+    position: relative;
+    width: 40vw;
+    background-color: none;
+    z-index: 0;
+    padding-block: 0rem;
+    margin-block: 0;
+    border-block-start: 1px solid var(--color-black);
+    grid-row: 4;
+    grid-column: 2;
+    height: 6rem;
+    align-self: end;
+  }
+
+  .submission-detail .submission__like {
+    flex-direction: row;
+    height: 3rem;
+    width: 6rem;
+    color: var(--color-black);
+    align-items: center;
+    padding-block-start: 1.5rem;
+    cursor: pointer;
+  }
+
+  .submission-detail__actions a img {
+    padding: 1rem;
+    border: solid 2px var(--color-black);
+    border-radius: 5rem;
+  }
+
+  .submission-detail__story {
+    height: 20rem;
+    overflow-y: scroll;
   }
 }

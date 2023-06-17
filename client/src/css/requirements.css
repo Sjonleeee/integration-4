@@ -1,7 +1,8 @@
 .requirements-hero {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: auto 60vh;
+  grid-template-rows: auto 22rem;
+  margin-block-end: 6rem;
 }
 
 .requirements-hero-title {
@@ -34,6 +35,7 @@
   margin-block: 0;
   color: var(--color-green);
   justify-self: center;
+  width: 17.56rem;
   align-self: end;
 }
 
@@ -41,22 +43,25 @@
   grid-row: 3;
   grid-column: 1;
   position: relative;
-  font-size: 9rem;
+  font-size: 8rem;
   top: 1rem;
   color: var(--color-black);
   font-style: normal;
   align-self: start;
   line-height: 0.2;
+  width: 17.56rem;
+  justify-self: center;
 }
 
 .requirements-hero-title img {
   grid-row: 3;
   grid-column: 1;
   position: relative;
-  right: 3rem;
   bottom: 5rem;
   scale: 0.7;
   z-index: 1;
+  width: 20rem;
+  justify-self: center;
 }
 
 .requirements-hero-text {
@@ -66,6 +71,19 @@
   justify-self: center;
   text-align: center;
   align-self: start;
+}
+
+.requirements-step a {
+  text-decoration: underline;
+  text-align: left;
+  display: block;
+  margin-block-start: 1rem;
+}
+
+@media screen and (max-height: 700px) {
+  .requirements-hero-text {
+    margin-block-start: 3rem;
+  }
 }
 
 .requirements-info-text {
@@ -106,15 +124,26 @@
   width: calc(100vw - 3rem);
 }
 
+.requirements-info a .button-secondary {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  border: none;
+  margin-inline: 1.5rem;
+  width: calc(100vw - 5rem);
+}
+
+.requirements-info a .button-secondary svg path {
+  fill: var(--color-black);
+}
+
 .requirements-hero-buttons {
-  grid-row: 2;
   display: flex;
   flex-direction: column;
-  grid-column: 1;
   justify-self: center;
-  align-self: start;
-  margin-block-start: 15rem;
+  align-self: end;
   justify-content: space-between;
+  grid-row: 2;
+  grid-column: 1;
 }
 
 .requirements-hero-buttons .button-secondary {
@@ -296,6 +325,7 @@
     margin-block: 1rem;
     line-height: 1;
   }
+
   .requirements-info-text {
     height: 100vh;
     width: 40vw;
@@ -355,6 +385,26 @@
     justify-self: center;
     text-align: center;
     width: calc(100vw - 3rem);
+  }
+
+  .requirements-info a .button-secondary {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    margin-inline: 3rem;
+    width: 320px;
+  }
+
+  .requirements-info a .button-secondary svg path {
+    fill: var(--color-black);
+  }
+
+  .requirements-info a:hover .button-secondary {
+    background-color: var(--color-green);
+    color: var(--color-black);
+    border: 2px solid var(--color-green);
+    margin-inline: 3rem;
+    width: 320px;
   }
 
   .requirements-step {

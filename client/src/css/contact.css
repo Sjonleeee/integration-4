@@ -69,7 +69,11 @@
 
 .contact-info div:first-child {
   position: relative;
-  top: -2rem;
+  top: 0rem;
+}
+.contact-info div:nth-child(2) {
+  position: relative;
+  top: 2rem;
 }
 
 .contact-info a:hover {

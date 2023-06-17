@@ -17,6 +17,7 @@ import Unknown from "./routes/articles/unknown";
 import Senju from "./routes/articles/senju";
 import SubmissionPage, {
   loader as submissionLoader,
+  action as sumbissionlikeAction,
 } from "./routes/submission";
 import Error from "./routes/error";
 import Confirmation from "./routes/confirmation";
@@ -86,6 +87,7 @@ const router = createBrowserRouter([
         path: "/submissions/:id",
         element: <SubmissionPage />,
         loader: submissionLoader,
+        action: sumbissionlikeAction,
       },
     ],
   },

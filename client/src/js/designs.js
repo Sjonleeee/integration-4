@@ -126,27 +126,27 @@ export const addLike = async (id, likeAmount) => {
 export const submitRequest = async (updates) => {
   const { data } = await graphQLRequest(
     `
-    mutation MyMutation($title: String, $companyMail: String, $companyTelephone: String, $companyAdres: String, $companyPostcode: String, $companyCountry: String, $requestAmount: String, $requestDate: String, $requestDuration: String) {
+    mutation MyMutation($title: String, $companyMail: String, $companyTelephone: String, $companyAdres: String, $companyCountry: String, $companyPostcode: String, $requestAmount: String, $requestDate: String, $requestDuration: String) {
   save_workshopRequests_default_Entry(
     authorId:"1"
     slug:"-"
+    title: $title
+    companyMail: $companyMail
+    companyTelephone: $companyTelephone
     companyAdres: $companyAdres
     companyCountry: $companyCountry
-    companyMail: $companyMail
-    title: $title
     companyPostcode: $companyPostcode
-    companyTelephone: $companyTelephone
     requestAmount: $requestAmount
     requestDate: $requestDate
     requestDuration: $requestDuration
   ) {
     id
     title
+    companyMail
+    companyTelephone
     companyAdres
     companyCountry
-    companyMail
     companyPostcode
-    companyTelephone
     requestAmount
     requestDate
     requestDuration

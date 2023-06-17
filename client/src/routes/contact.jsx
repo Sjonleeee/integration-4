@@ -55,7 +55,7 @@ export default function Contact() {
           </ul>
         </div>
       </div>
-      <div className="contact-partners">
+      {/* <div className="contact-partners">
         <p>
           Check out our <span>partners</span>
         </p>
@@ -67,7 +67,7 @@ export default function Contact() {
             <img src="" alt="" />
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

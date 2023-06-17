@@ -13,13 +13,16 @@ export const action = async ({ request }) => {
   console.log("Submit action");
   const formData = await request.formData();
   const updates = Object.fromEntries(formData);
-  console.log(imageData);
+  console.log(formData);
   const image = await uploadImage(imageData);
   const imageInfo = await getImage();
   console.log(imageInfo);
   const imageUrl = imageInfo.url;
   const result = await submitDesign(updates, imageUrl);
   console.log(result);
+  if (result) {
+    window.location.href = "/submissions";
+  }
   return result;
 };
 
@@ -145,6 +148,13 @@ export default function SubmitPage() {
           </button>
         </Form>
       </div>
+      <style>
+        {`
+        .submit {
+          height: ${step === 1 ? "53rem" : "45rem"};
+        }
+        `}
+      </style>
     </section>
   );
 }

@@ -8,6 +8,7 @@ export default function Confirmation() {
         <p>
           We’ll be in contact with you soon after we have reviewed your request!
         </p>
+        <a href=".">Go back home</a>
       </div>
     </div>
   );

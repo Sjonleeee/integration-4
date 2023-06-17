@@ -68,18 +68,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d302d6aa-2069-43e5-b566-4dfe643783b4 # company Name
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: fc15eed4-02ee-45aa-9fbd-667016aa5102
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 47f6e445-399d-4b85-a62e-d616f9995a88 # company Postcode
             instructions: null
             label: null

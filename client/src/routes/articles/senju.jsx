@@ -45,7 +45,10 @@ export default function Biniru() {
         <img src="../src/assets/img/senju-story-two.png" alt="person" />
         <div className="scroll-name">
           <p>Senju Cyphercat, 23</p>
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://instagram.com/senju_cyphercat?igshid=MzRlODBiNWFlZA=="
+          >
             <img
               className="insta-logo"
               src="../src/assets/img/instagram.svg"

@@ -3,22 +3,25 @@
   flex-direction: row;
   justify-content: start;
   width: 200vw;
-  height: 100vh;
   /* overflow: hidden; */
+  height: 45rem;
+  margin: 0;
 }
 
 .submit-design {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: auto;
-  height: 100vh;
+  grid-template-rows: 30rem 15rem;
   width: 100vw;
+  height: 45rem;
+  overflow: hidden;
+  margin: 0;
 }
 
 .submit-image {
   grid-row: 1;
   grid-column: 1;
-  height: 70vh;
+  height: 30rem;
   width: 100vw;
   object-fit: cover;
 }
@@ -28,7 +31,7 @@
   grid-column: 1;
   place-self: center;
   position: relative;
-  bottom: 6rem;
+  bottom: 8rem;
 }
 
 .submit-add {
@@ -36,7 +39,7 @@
   grid-column: 1;
   place-self: center;
   position: relative;
-  top: 8rem;
+  top: 6rem;
 }
 
 .submit-cta {
@@ -44,13 +47,15 @@
   grid-column: 1;
   place-self: center;
   position: relative;
-  top: 2rem;
+  top: 0.5rem;
   font-size: 1.125rem;
   font-weight: 500;
   color: var(--color-white);
 }
 
 .submit-text {
+  grid-row: 2;
+  grid-column: 1;
   width: calc(100vw - 3rem);
   font-size: 1.125rem;
   place-self: center;

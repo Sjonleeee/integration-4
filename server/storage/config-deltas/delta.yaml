@@ -1,17 +1,53 @@
-dateApplied: '2023-06-17 07:19:30'
+dateApplied: '2023-06-17 09:20:13'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1687007925
-        to: 1687011570
+        from: 1687018802
+        to: 1687018813
   -
-    message: 'Save the “uploads” filesystem'
+    removed:
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.elementCondition: null
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.fieldUid: 089dc85a-6074-4086-aca2-9ffb8cbf436a
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.instructions: null
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.label: null
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.required: false
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.tip: null
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.type: craft\fieldlayoutelements\CustomField
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.uid: 1a24a5f5-f400-4ab7-980f-4b7e35ef52cb
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.userCondition: null
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.warning: null
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.9.width: 100
+    message: 'Save entry type “default”'
     changed:
-      fs.uploads.settings.path:
-        from: '@webroot'
-        to: $ASSET_BASE_PATH
-      fs.uploads.url:
-        from: '@web'
-        to: $ASSET_BASE_URL
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.4.fieldUid:
+        from: d302d6aa-2069-43e5-b566-4dfe643783b4
+        to: 47f6e445-399d-4b85-a62e-d616f9995a88
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.4.uid:
+        from: fc15eed4-02ee-45aa-9fbd-667016aa5102
+        to: 0163f245-38ff-41d0-957b-d0236ac5cdf9
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.5.fieldUid:
+        from: 47f6e445-399d-4b85-a62e-d616f9995a88
+        to: a111acb4-f77e-4390-99c6-8453dbcbb8ab
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.5.uid:
+        from: 0163f245-38ff-41d0-957b-d0236ac5cdf9
+        to: a4827656-f7a7-4ef1-b406-8508355ede5d
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.6.fieldUid:
+        from: a111acb4-f77e-4390-99c6-8453dbcbb8ab
+        to: de9bdcfb-66db-46aa-a23f-4ddcf0496932
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.6.uid:
+        from: a4827656-f7a7-4ef1-b406-8508355ede5d
+        to: 6994ccfa-59d3-44ad-b6f7-f18d023e02ae
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.7.fieldUid:
+        from: de9bdcfb-66db-46aa-a23f-4ddcf0496932
+        to: f14c4821-885d-4000-b452-2c389b0fa89e
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.7.uid:
+        from: 6994ccfa-59d3-44ad-b6f7-f18d023e02ae
+        to: 2baeb3bc-1f5e-4bf3-8f28-cee8986ae9a1
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.8.fieldUid:
+        from: f14c4821-885d-4000-b452-2c389b0fa89e
+        to: 089dc85a-6074-4086-aca2-9ffb8cbf436a
+      entryTypes.0d04ab93-2676-4032-b1f7-b03c2d16708a.fieldLayouts.f31d9f29-0ce6-405d-b937-07b583f88bea.tabs.0.elements.8.uid:
+        from: 2baeb3bc-1f5e-4bf3-8f28-cee8986ae9a1
+        to: 1a24a5f5-f400-4ab7-980f-4b7e35ef52cb

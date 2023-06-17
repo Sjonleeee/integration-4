@@ -38,7 +38,7 @@
 }
 
 :root {
-  font-family: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
+  font-family: roc-grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -58,7 +58,7 @@
   --color-green: #40ff99;
 
   --font-title: Superline-Regular, Inter;
-  --font-text: Roc Grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
+  --font-text: roc-grotesk, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
 }
 
@@ -72,6 +72,10 @@ body {
 html,
 body {
   overflow: visible;
+}
+
+video::-webkit-media-controls {
+  display: none;
 }
 
 #root {
@@ -280,6 +284,15 @@ button {
 .footer {
   background-color: var(--color-green);
   padding: 2rem;
+  padding-block: 2rem;
+}
+
+.footer .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-block: 2rem;
 }
 
 @media screen and (min-width: 1280px) {
@@ -326,6 +339,7 @@ button {
     margin-inline-start: 2rem;
     font-size: 2.5rem;
     letter-spacing: -0.25rem;
+    font-weight: 600;
   }
 
   .navigation-logo svg path {

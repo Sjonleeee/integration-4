@@ -53,6 +53,10 @@
   top: 1.25rem;
 }
 
+.hero-text a {
+  margin-top: 3rem;
+}
+
 .moving-title {
   display: flex;
   flex-direction: row;

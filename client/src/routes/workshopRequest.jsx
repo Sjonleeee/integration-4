@@ -7,9 +7,14 @@ import { useState } from "react";
 export const action = async ({ request }) => {
   console.log("Submit action");
   const formData = await request.formData();
+  console.log(formData);
   const updates = Object.fromEntries(formData);
   const result = await submitRequest(updates);
-  console.log(result);
+
+  if (result) {
+    window.location.href = "request/confirmation";
+  }
+
   return result;
 };
 
@@ -20,13 +25,6 @@ export default function WorkshopRequest() {
     setSecondStep(!secondStep);
   };
 
-  const FormValidation = () => {};
-
-  const navigate = useNavigate();
-  const handleSubmit = async () => {
-    await submitRequest();
-    navigate("/workshops/request/confirmation");
-  };
   return (
     <div className="request">
       <h1 className="hidden">Workshop Request</h1>
@@ -41,7 +39,7 @@ export default function WorkshopRequest() {
           possible
         </p>
       </div>
-      <Form className="request-form" method="post" onSubmit={handleSubmit}>
+      <Form className="request-form" method="post">
         <div className="form-one">
           <p>General info</p>
           <label htmlFor="companyName">Company Name</label>
@@ -141,7 +139,7 @@ export default function WorkshopRequest() {
             </svg>
             General info
           </div>
-          <div className="button-secondary" onClick={handleSubmit}>
+          <div className="button-secondary">
             <button type="submit">Submit request</button>
             <svg
               width="41"

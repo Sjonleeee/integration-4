@@ -137,6 +137,10 @@ export default function LastCollection() {
             <br />
             Scroll through the designs!
           </p>
+          <div className="desktop-hidden last-collection__arrows">
+            <img src="../src/assets/img/arrow_left.svg" alt="" />
+            <img src="../src/assets/img/arrow.svg" alt="" />
+          </div>
           <div className="last-collection__articles">
             <div className="last-collection__article">
               <img src="../src/assets/img/unknown.png" alt="shirt" />
