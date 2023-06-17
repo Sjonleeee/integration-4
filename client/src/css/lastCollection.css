@@ -276,6 +276,7 @@
 
 .collection-detail__noscroll {
   height: auto;
+  margin-block-end: 3rem;
 }
 
 .collection-detail__noscroll img {
@@ -442,6 +443,7 @@
 
   .collection-detail__noscroll > a:first-of-type {
     margin: 3rem;
+    margin-block-end: 0;
     align-self: start;
     grid-row: 1;
     grid-column: 1;
@@ -470,7 +472,7 @@
     width: calc(50vw - 5rem);
   }
 
-  . .scroll-design__step img {
+  .scroll-design__step img {
     width: 50vw;
     height: 20rem;
     object-fit: cover;
@@ -494,7 +496,7 @@
   }
 
   .collection-detail__noscroll > img {
-    width: 15rem;
+    width: 20rem;
     height: auto;
   }
 

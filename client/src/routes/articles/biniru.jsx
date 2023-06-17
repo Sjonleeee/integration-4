@@ -23,7 +23,7 @@ export default function Biniru() {
           <p>by Warre Warrior</p>
         </div>
         <img src="../src/assets/img/biniru.png" alt="foto van tshirt" />
-        <a href="https://kltrx.myshopify.com">
+        <a target="_blank" href="https://kltrx.myshopify.com/products/biniru">
           <div className="button-primary">
             Get your very own
             <svg

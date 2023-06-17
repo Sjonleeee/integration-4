@@ -23,7 +23,10 @@ export default function Unknown() {
           <p>by Flava Flaviuq</p>
         </div>
         <img src="../src/assets/img/unknown.png" alt="foto van tshirt" />
-        <a href="../workshops">
+        <a
+          target="_blank"
+          href="https://kltrx.myshopify.com/products/the-unknown"
+        >
           <div className="button-primary">
             Get your very own
             <svg

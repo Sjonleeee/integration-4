@@ -428,6 +428,7 @@
 .concept-item div .concept-slide__profiles {
   display: flex;
   flex-direction: row;
+  overflow: visible;
 }
 
 .concept-item div .concept-slide__profiles a {

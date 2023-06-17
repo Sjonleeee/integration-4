@@ -23,7 +23,7 @@ export default function Biniru() {
           <p>by Senju Cyphercat</p>
         </div>
         <img src="../src/assets/img/senju.png" alt="foto van tshirt" />
-        <a href="../workshops">
+        <a target="_blank" href="https://kltrx.myshopify.com/products/senju">
           <div className="button-primary">
             Get your very own
             <svg
