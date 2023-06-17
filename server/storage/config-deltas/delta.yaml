@@ -1,14 +1,29 @@
-dateApplied: '2023-06-17 03:05:28'
+dateApplied: '2023-06-15 02:13:37'
 changes:
   -
     message: 'Update timestamp for project config'
     changed:
       dateModified:
-        from: 1686996220
-        to: 1686996328
+        from: 1686820336
+        to: 1686820417
   -
     added:
-      plugins.vite.edition: standard
-      plugins.vite.enabled: true
-      plugins.vite.schemaVersion: 1.0.0
-    message: 'Install plugin “vite”'
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.elementCondition: null
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.fieldUid: adcd0013-3c46-48ce-ae66-481c77721f0c
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.instructions: null
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.label: null
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.required: false
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.tip: null
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.type: craft\fieldlayoutelements\CustomField
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.uid: 305b7779-016c-429a-a676-b9c06139974c
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.userCondition: null
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.warning: null
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.fieldLayouts.c9535c35-c8e2-45f5-9a4c-4a4c5dd26bd2.tabs.0.elements.1.width: 100
+    message: 'Save the “designUploads” volume'
+    changed:
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.transformFs:
+        from: null
+        to: ''
+      volumes.0bb6061c-1bb2-4fdf-8a94-f5d5837760b1.transformSubpath:
+        from: null
+        to: ''
