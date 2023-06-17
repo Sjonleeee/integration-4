@@ -1,9 +1,12 @@
 import { Form, useNavigate } from "react-router-dom";
 import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
-import { submitDesign } from "../js/designs";
+import { getImage, submitDesign, uploadImage } from "../js/designs";
 
-let imageData;
+let imageData = {
+  fileData: "",
+  filename: "",
+};
 
 // // Action
 export const action = async ({ request }) => {
@@ -11,7 +14,11 @@ export const action = async ({ request }) => {
   const formData = await request.formData();
   const updates = Object.fromEntries(formData);
   console.log(imageData);
-  const result = await submitDesign(updates, imageData);
+  const image = await uploadImage(imageData);
+  const imageInfo = await getImage();
+  console.log(imageInfo);
+  const imageUrl = imageInfo.url;
+  const result = await submitDesign(updates, imageUrl);
   console.log(result);
   return result;
 };
@@ -21,13 +28,12 @@ export default function SubmitPage() {
   const navigate = useNavigate();
   const [imageJSON, setImageJSON] = useState();
   const [step, setStep] = useState(0);
-  console.log(imageJSON);
+  // console.log(imageJSON);
 
   const FormValidation = () => {};
 
   const imageInfo = imageJSON;
-
-  imageData = JSON.stringify(imageInfo);
+  imageData.fileData = imageInfo;
 
   // const handleSubmit = async () => {
   //   await submitDesign();

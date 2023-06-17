@@ -51,7 +51,7 @@ export default function Submissions() {
           <div className="submission" key={submission.id}>
             <p className="hidden">{submission.id}</p>
             <Submission
-              designLinks={submission.designLinks}
+              designLinks={submission.tshirtUrl}
               title={submission.title}
               designAuthor={submission.designAuthor}
               story={submission.story}
