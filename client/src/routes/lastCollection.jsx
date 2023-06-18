@@ -1,4 +1,8 @@
+import { useLayoutEffect, useRef } from "react";
+
 export default function LastCollection() {
+  const deco = useRef(null);
+
   return (
     <div className="last-collection">
       <h1 className="hidden">Last collection</h1>
@@ -126,7 +130,12 @@ export default function LastCollection() {
       </div>
       <div id="collection" className="last-collection__info">
         <div className="mobile-hidden last-collection__info-img">
-          <img src="../src/assets/img/last-1.png" alt="" />
+          <img
+            ref={deco}
+            className="outfit-image"
+            src="../src/assets/img/last-1.png"
+            alt=""
+          />
         </div>
         <div className="last-collection__info-text">
           <h2 className="hidden">Winners</h2>
@@ -143,7 +152,15 @@ export default function LastCollection() {
             <img src="../src/assets/img/arrow.svg" alt="" />
           </div>
           <div className="last-collection__articles">
-            <div className="last-collection__article">
+            <div
+              className="last-collection__article"
+              onMouseEnter={() => {
+                deco.current.src = "../src/assets/img/last-3.png";
+              }}
+              onMouseLeave={() => {
+                deco.current.src = "../src/assets/img/last-3.png";
+              }}
+            >
               <img src="../src/assets/img/unknown.png" alt="shirt" />
               <h3>The unknown</h3>
               <div>
@@ -168,7 +185,15 @@ export default function LastCollection() {
                 </div>
               </a>
             </div>
-            <div className="last-collection__article">
+            <div
+              className="last-collection__article"
+              onMouseEnter={() => {
+                deco.current.src = "../src/assets/img/last-2.png";
+              }}
+              onMouseLeave={() => {
+                deco.current.src = "../src/assets/img/last-2.png";
+              }}
+            >
               <img src="../src/assets/img/biniru.png" alt="shirt" />
               <h3>BINIRU</h3>
               <div>
@@ -193,7 +218,17 @@ export default function LastCollection() {
                 </div>
               </a>
             </div>
-            <div className="last-collection__article">
+            <div
+              className="last-collection__article"
+              onMouseEnter={() => {
+                console.log(deco);
+                deco.current.src = "../src/assets/img/last-1.png";
+              }}
+              onMouseLeave={() => {
+                console.log(deco);
+                deco.current.src = "../src/assets/img/last-1.png";
+              }}
+            >
               <img src="../src/assets/img/senju.png" alt="shirt" />
               <h3>Senju</h3>
               <div>

@@ -386,9 +386,9 @@ export default function Home() {
                         />
                       </a>
                     </div>
-                    <a href="#workshops">
+                    <a href="../requirements">
                       <div className="button-secondary">
-                        Request a workshop
+                        Start designing!
                         <svg
                           width="41"
                           height="15"
