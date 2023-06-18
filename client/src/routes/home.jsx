@@ -152,12 +152,12 @@ export default function Home() {
                     width: 0;
                   }
                   to {
-                    width: 8ch ;
+                    width: 6ch ;
                   }
                 }
 
                 .changing-text {
-                  animation: typing 1.5s steps(8, end) infinite alternate;
+                  animation: typing 1.5s steps(6, end) infinite alternate;
                   display: inline-block;
                   overflow: hidden;
                   line-height: 0.8;
@@ -216,6 +216,7 @@ export default function Home() {
               loop={true}
               muted={true}
               controls={false}
+              playsInline={true}
               src="../src/assets/vid/3D_360.mov"
             ></video>
           </div>

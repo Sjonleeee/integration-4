@@ -1,7 +1,57 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const CountdownTimer = () => {
+    const countdownDate = new Date("2023-07-31T00:00:00").getTime();
+    const [currentTime, setCurrentTime] = useState(new Date().getTime());
+
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setCurrentTime(new Date().getTime());
+      }, 1000);
+
+      return () => clearInterval(timer);
+    }, []);
+
+    const calculateTimeRemaining = () => {
+      const timeDifference = countdownDate - currentTime;
+
+      if (timeDifference <= 0) {
+        return {
+          months: 0,
+          days: 0,
+          hours: 0,
+        };
+      }
+
+      const months = Math.floor(timeDifference / (30 * 24 * 60 * 60 * 1000));
+      const days = Math.floor(
+        (timeDifference % (30 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000)
+      );
+      const hours = Math.floor(
+        (timeDifference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)
+      );
+
+      return {
+        months,
+        days,
+        hours,
+      };
+    };
+
+    const { months, days, hours } = calculateTimeRemaining();
+    return (
+      <div className="countdown">
+        <span>
+          {months}M {days}D {hours}H
+        </span>{" "}
+        <span className="thin">until</span>{" "}
+        <span className="green-text"> Deadline</span>
+      </div>
+    );
+  };
+  CountdownTimer();
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenu = () => {
@@ -244,7 +294,7 @@ export default function Navbar() {
             <li>Contact</li>
           </NavLink>
         </div>
-        <div className="countdown"></div>
+        <CountdownTimer />
       </div>
       <style>
         {`
@@ -280,6 +330,10 @@ export default function Navbar() {
           .navigation-links { 
             opacity: ${showMenu ? "1" : "0"};
             transform: translateY(${showMenu ? "0" : "-200%"});
+          }
+
+          .countdown {
+            opacity: ${showMenu ? "1" : "0"};
           }
         }
         `}

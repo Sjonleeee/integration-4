@@ -42,17 +42,68 @@ export default function WorkshopRequest() {
       <Form className="request-form" method="post">
         <div className="form-one">
           <p>General info</p>
-          <label htmlFor="companyName">Company Name</label>
-          <input type="text" id="companyName" name="title" required />
-          <label htmlFor="companyEmail">Company Email</label>
-          <input type="email" id="companyEmail" name="companyMail" required />
-          <label htmlFor="companyPhone">Company Phone</label>
+          <label htmlFor="companyName">Name</label>
+          <input
+            type="text"
+            id="companyName"
+            name="title"
+            required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 4) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML = "Fill in your name";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          />
+          <p></p>
+          <label htmlFor="companyEmail">Email</label>
+          <input
+            type="email"
+            id="companyEmail"
+            name="companyMail"
+            required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 4 || !e.target.value.includes("@")) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML =
+                  "Fill in a valid email address";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          />
+          <p></p>
+          <label htmlFor="companyPhone">Phone number</label>
           <input
             type="tel"
             id="companyPhone"
             name="companyTelephone"
             required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 4) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML =
+                  "Add a valid phone number";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
           />
+          <p></p>
           <label htmlFor="companyAddress">Your Address</label>
           <input type="text" id="companyAddress" name="companyAdres" required />
           <div className="two-fields">
@@ -63,7 +114,27 @@ export default function WorkshopRequest() {
                 id="companyPostal"
                 name="companyPostcode"
                 required
+                onChange={(e) => {
+                  console.log(e.target);
+                  const pattern = /\d/g;
+
+                  if (
+                    e.target.value.length < 4 ||
+                    !e.target.value.includes(",") ||
+                    !e.target.value.match(pattern)
+                  ) {
+                    e.target.style.border = "1px solid red";
+                    e.target.nextElementSibling.style.color = "red";
+                    e.target.nextElementSibling.innerHTML = "Postal code, city";
+                  } else {
+                    e.target.style.border = "1px solid var(--color-black)";
+                    e.target.nextElementSibling.style.color =
+                      "var(--color-black)";
+                    e.target.nextElementSibling.innerHTML = "";
+                  }
+                }}
               />
+              <p></p>
             </div>
             <div className="country">
               <label htmlFor="companyCountry">Country</label>
@@ -72,7 +143,22 @@ export default function WorkshopRequest() {
                 id="companyCountry"
                 name="companyCountry"
                 required
+                onChange={(e) => {
+                  console.log(e.target);
+                  if (e.target.value.length < 4) {
+                    e.target.style.border = "1px solid red";
+                    e.target.nextElementSibling.style.color = "red";
+                    e.target.nextElementSibling.innerHTML =
+                      "Enter a valid country";
+                  } else {
+                    e.target.style.border = "1px solid var(--color-black)";
+                    e.target.nextElementSibling.style.color =
+                      "var(--color-black)";
+                    e.target.nextElementSibling.innerHTML = "";
+                  }
+                }}
               />
+              <p></p>
             </div>
           </div>
           <div onClick={handleSecondStep} className="button-primary">
@@ -93,9 +179,29 @@ export default function WorkshopRequest() {
         </div>
         <div className="form-two">
           <p>Practical info</p>
-          <label htmlFor="requestDate">Preferred date for workshop</label>
+          <label className="workshop-date" htmlFor="requestDate">
+            Preferred date for workshop
+          </label>
           <br />
-          <input type="date" id="requestDate" name="requestDate" required />
+          <input
+            type="date"
+            id="requestDate"
+            name="requestDate"
+            required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 0) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML = "Choose a date";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          />
+          <p></p>
           <p>Duration</p>
           <input
             type="radio"
@@ -113,6 +219,7 @@ export default function WorkshopRequest() {
             required
           />
           <label htmlFor="requestDuration">4 hours</label>
+          <p id="duration_error"></p>
           <br />
           <label htmlFor="requestAmount">Amount of people attending</label>
           <br />
@@ -123,7 +230,22 @@ export default function WorkshopRequest() {
             min="10"
             max="50"
             required
+            onChange={(e) => {
+              const amount = Number(e.target.value);
+              console.log(amount);
+              if (amount < 10 || amount > 50) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML =
+                  "Enter a value between 10 and 50";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
           />
+          <p></p>
           <div onClick={handleSecondStep} className="button-primary">
             <svg
               width="41"

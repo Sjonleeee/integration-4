@@ -57,7 +57,7 @@ export default function SubmissionPage() {
         src={submission[0].tshirtUrl}
         alt=""
       />
-      <p className="submission-detail__story">{submission[0].story}</p>``
+      <p className="submission-detail__story">{submission[0].story}</p>
       <style>
         {`
             .submission-detail__actions button{

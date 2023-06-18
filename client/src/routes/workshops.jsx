@@ -91,7 +91,7 @@ export default function Workshops() {
               className="button-primary"
               onClick={handleClick}
             >
-              {workshop.workshopAttendees}/30 Free Join Workshop
+              {workshop.workshopAttendees}/30 Free: Click to join
               <span className="hidden">{workshop.id}</span>
             </button>
           </div>

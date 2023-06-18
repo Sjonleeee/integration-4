@@ -131,18 +131,107 @@ export default function SubmitPage() {
             type="file"
             accept="image/jpg"
             name="design"
+            required
             onChange={(e) => {
               handleImageChange(e);
+              console.log(e.target);
+              if (e.target.value.length < 0) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML = "Choose your design";
+              } else {
+                e.target.style.border.block = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
             }}
           />
           <label htmlFor="designAuthor">Your name</label>
-          <input type="text" name="designAuthor" id="designAuthor" />
-          <label htmlFor="email">E-mail</label>
-          <input type="email" name="email" id="email" />
-          <label htmlFor="title">Title</label>
-          <input type="text" name="title" id="title" />
-          <label htmlFor="story">Story</label>
-          <textarea name="story" id="story" cols="30" rows="10"></textarea>
+          <input
+            type="text"
+            name="designAuthor"
+            id="designAuthor"
+            required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 1) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML = "Fill in your name";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          />
+          <p></p>
+          <label htmlFor="email">Your e-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 4 || !e.target.value.includes("@")) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML =
+                  "Fill in a valid email address";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          />
+          <p></p>
+          <label htmlFor="title">Title of your design</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            required
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length === 0) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML =
+                  "Give your design a title";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          />
+          <p></p>
+          <label htmlFor="story">Your story</label>
+          <textarea
+            name="story"
+            id="story"
+            cols="30"
+            rows="10"
+            required
+            minLength={150}
+            placeholder=""
+            onChange={(e) => {
+              console.log(e.target);
+              if (e.target.value.length < 150) {
+                e.target.style.border = "1px solid red";
+                e.target.nextElementSibling.style.color = "red";
+                e.target.nextElementSibling.innerHTML =
+                  "Write at least 150 characters";
+              } else {
+                e.target.style.border = "1px solid var(--color-black)";
+                e.target.nextElementSibling.style.color = "var(--color-black)";
+                e.target.nextElementSibling.innerHTML = "";
+              }
+            }}
+          ></textarea>
+          <p></p>
           <button className="button-primary" type="submit">
             Submit your design
           </button>

@@ -275,8 +275,7 @@
 }
 
 .collection-detail__noscroll {
-  height: auto;
-  margin-block-end: 3rem;
+  height: 40rem;
 }
 
 .collection-detail__noscroll img {

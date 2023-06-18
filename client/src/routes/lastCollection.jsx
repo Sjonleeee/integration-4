@@ -8,6 +8,7 @@ export default function LastCollection() {
           autoPlay={true}
           controls={false}
           loop={true}
+          playsInline={true}
           src="../src/assets/vid/3D_render_catwalk_-_Compressed.mp4"
         ></video>
         <h2>

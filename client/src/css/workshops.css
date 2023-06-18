@@ -47,6 +47,7 @@
   width: calc(100vw - 48px);
   font-weight: 500;
   font-size: 2rem;
+  margin-block-end: 2rem;
 }
 
 .workshop-item {
@@ -122,6 +123,10 @@
   transition: ease 0.5s all;
 }
 
+.request-form label {
+  margin-block-end: 0.5rem;
+}
+
 .form-one {
   width: calc(100vw - 5rem);
   margin-inline-end: 5rem;
@@ -175,7 +180,7 @@ input:focus {
 }
 
 .form-two {
-  width: 60vw;
+  width: 20rem;
   margin-inline-end: 5rem;
 }
 

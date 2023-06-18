@@ -258,7 +258,7 @@
   grid-column: 1;
   place-self: center;
   width: 100vw;
-  height: 20rem;
+  height: 40rem;
   object-fit: cover;
 }
 
@@ -280,7 +280,7 @@
   font-family: var(--font-title);
   color: var(--color-green);
   left: 2rem;
-  top: 3.5rem;
+  top: 12rem;
   position: relative;
   line-height: 1;
   margin-block: 0;
