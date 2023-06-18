@@ -1,5 +1,5 @@
-const BASE_URL = "https://integration4.ddev.site";
-// const BASE_URL = import.meta.env.VITE_API_ENDPOINT || "";
+// const BASE_URL = "https://integration4.ddev.site";
+const BASE_URL = import.meta.env.VITE_API_ENDPOINT || "";
 
 console.log(BASE_URL);
 
