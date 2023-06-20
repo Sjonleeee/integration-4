@@ -4,7 +4,7 @@ export default function Biniru() {
       <div className="desktop-hidden collection-detail__mobile-nav">
         <a href="../last-collection">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
           </div>
         </a>
         <div className="detail__nav-title">
@@ -15,14 +15,14 @@ export default function Biniru() {
       <div className="collection-detail__noscroll">
         <a href="../last-collection" className="mobile-hidden">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt="arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt="arrow" />
           </div>
         </a>
         <div className="mobile-hidden noscroll-title">
           <h1>Senju</h1>
           <p>by Senju Cyphercat</p>
         </div>
-        <img src="../src/assets/img/senju.png" alt="foto van tshirt" />
+        <img src="../../assets/img/senju.png" alt="foto van tshirt" />
         <a target="_blank" href="https://kltrx.myshopify.com/products/senju">
           <div className="button-primary">
             Get your very own
@@ -42,7 +42,7 @@ export default function Biniru() {
         </a>
       </div>
       <div className="collection-detail__scroll">
-        <img src="../src/assets/img/senju-story-two.png" alt="person" />
+        <img src="../../assets/img/senju-story-two.png" alt="person" />
         <div className="scroll-name">
           <p>Senju Cyphercat, 23</p>
           <a
@@ -51,7 +51,7 @@ export default function Biniru() {
           >
             <img
               className="insta-logo"
-              src="../src/assets/img/instagram.svg"
+              src="../../assets/img/instagram.svg"
               alt="instagram logo"
             />
           </a>
@@ -65,10 +65,7 @@ export default function Biniru() {
           ones at Bolwerk Funky Fridays, where they have DJ sets by Ubunto, and
           they also have breakdance jams and sessions.
         </p>
-        <img
-          src="../src/assets/img/senju-story-one.png"
-          alt="bijpassende img"
-        />
+        <img src="../../assets/img/senju-story-one.png" alt="bijpassende img" />
         <p className="white-text">
           I feel in Kortrijk, evenings are usually calm and offer a chance to
           rest. While it's nice to have occasional events, I sometimes wish
@@ -78,7 +75,7 @@ export default function Biniru() {
         </p>
         <p className="scroll-design">The Design</p>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/senju-story-three.png" alt="" />
+          <img src="../../assets/img/senju-story-three.png" alt="image" />
           <p>
             Japanese letters stance for Unity because I feel a good unity in the
             break culture of Kortrijk. It's really nice to have people around
@@ -88,28 +85,28 @@ export default function Biniru() {
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/senju-story-four.png" alt="" />
+          <img src="../../assets/img/senju-story-four.png" alt="image" />
           <p>
             I want to make my mark and leave a fingerprint that inspires the new
             generation and people around me.
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/senju-story-five.png" alt="" />
+          <img src="../../assets/img/senju-story-five.png" alt="image" />
           <p>
             The two abstract pictures actually pictures of me breaking in
             Kortrijk and it’s creatively represented through abstract shapes.
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/senju-story-six.png" alt="" />
+          <img src="../../assets/img/senju-story-six.png" alt="image" />
           <p>
             The global represent me as an International student in Kortrijk
             City.
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/senju-story-seven.png" alt="" />
+          <img src="../../assets/img/senju-story-seven.png" alt="image" />
           <p>
             This represents the leieboorden. In general, Kortrijk is a calm
             place in the evenings, offering a peaceful environment where you can
@@ -119,8 +116,8 @@ export default function Biniru() {
         <div className="scroll-design__step">
           <img
             className="funky"
-            src="../src/assets/img/senju-story-eight.png"
-            alt=""
+            src="../../assets/img/senju-story-eight.png"
+            alt="image"
           />
           <p>
             I feel like Kortrijk has hidden gems partys, so like a place called

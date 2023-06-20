@@ -29,7 +29,7 @@ export default function WorkshopRequest() {
     <div className="request">
       <h1 className="hidden">Workshop Request</h1>
       <div className="mobile-hidden request-deco ">
-        <img src="../src/assets/img/requestpage.jpg" alt="" />
+        <img src="../../assets/img/requestpage.jpg" alt="" />
         <p>Requesting...</p>
       </div>
       <div className="request-info">

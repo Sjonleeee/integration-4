@@ -33,7 +33,7 @@ export default function Submissions() {
     const button = document.getElementById(e.target.id);
     button.style.backgroundColor = "#40ff99";
     button.innerHTML =
-      updatedLikes + `<img src="../src/assets/img/like.svg" alt="" />`;
+      updatedLikes + `<img src="../../assets/img/like.svg" alt="" />`;
     const id = Number(secondSplit[0]);
     console.log(id, "id");
     await addLike(id, updatedLikes);
@@ -65,7 +65,7 @@ export default function Submissions() {
             >
               {submission.likeAmount}
               <div className="hidden">{submission.id}</div>
-              <img src="../src/assets/img/like.svg" alt="" />
+              <img src="../../assets/img/like.svg" alt="" />
             </button>
           </div>
         ))}

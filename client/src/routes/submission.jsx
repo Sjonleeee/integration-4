@@ -34,7 +34,7 @@ export default function SubmissionPage() {
       <div className="submission-detail__actions">
         <a href="../submissions">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
           </div>
         </a>
         <button
@@ -42,7 +42,7 @@ export default function SubmissionPage() {
           id={submission.id}
           onClick={handleLike}
         >
-          <img src="../src/assets/img/like.svg" alt="" />
+          <img src="../../assets/img/like.svg" alt="" />
           {likeCount}
           <div className="hidden">{submission.id}</div>
         </button>

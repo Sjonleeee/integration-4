@@ -132,12 +132,13 @@ export default function Home() {
             <p className="stories-gsap">Stories through</p>
             <div className="moving-title">
               <p className="fashion">Fashion</p>
-              <img className="n-one" src="../src/assets/img/n.svg" alt="" />
-              <img className="n-two" src="../src/assets/img/n.svg" alt="" />
+              <img className="n-one" src="../../assets/img/n.svg" alt="" />
+              <img className="n-two" src="../../assets/img/n.svg" alt="" />
             </div>
             <p className="hero-text-gsap">
-              Compete and be a part of a unique clothing line inspired by the
-              KULTURE X of <span className="green-text">Kortrijk</span>
+              Compete and be a part of a unique clothing line inspired by the{" "}
+              <span className="medium">KULTURE X</span> of{" "}
+              <span className="green-text">Kortrijk</span>
             </p>
             <p className="kltr-x">
               KULTURE X
@@ -169,7 +170,7 @@ export default function Home() {
               className="desktop-hidden arrow-button-white hero-cta"
               href="#about"
             >
-              <img src="../src/assets/img/arrow_button.svg" alt="arrow down" />
+              <img src="../../assets/img/arrow_button.svg" alt="arrow down" />
             </a>
             <a className="mobile-hidden hero-cta" href="#about">
               <div className="button-primary">
@@ -190,17 +191,17 @@ export default function Home() {
             </a>
           </div>
           <div className="hero-image hero-image-gsap">
-            <img src="../src/assets/img/home.jpg" alt="tshirt picture" />
+            <img src="../../assets/img/home.jpg" alt="tshirt picture" />
             <img
               className="mobile-hidden hero-image__logo"
-              src="../src/assets/img/logo.svg"
+              src="../../assets/img/logo.svg"
               alt="logo"
             />
           </div>
         </div>
         <div className="hero-seperation">
           <div className="hero-seperation-one">
-            <img src="../src/assets/img/downtown.jpg" alt="downtown" />
+            <img src="../../assets/img/downtown.jpg" alt="downtown" />
             <p>Clothing that speaks</p>
           </div>
           <div className="hero-seperation-two">
@@ -217,22 +218,24 @@ export default function Home() {
               muted={true}
               controls={false}
               playsInline={true}
-              src="../src/assets/vid/3D_360.mov"
+              src="../../assets/vid/3D_360.mov"
             ></video>
           </div>
           <div className="about-text">
             {/* svg */}
             <div className="about-text__heading">
               <p>KLTR X</p>
-              <img src="../src/assets/img/destroatelogo.png" alt="de stroate" />
-              <img src="../src/assets/img/tranzitlogo.png" alt="tranzit" />
+              <img src="../../assets/img/destroatelogo.png" alt="de stroate" />
+              <img src="../../assets/img/tranzitlogo.png" alt="tranzit" />
             </div>
             <h2 className="hidden">About</h2>
             <p>
               Introducing our latest collection, created in collaboration with
-              the cultural hubs Tranzit and De Stroate!
+              the cultural hubs <span className="medium">Tranzit</span> and{" "}
+              <span className="medium">De Stroate!</span>
               <br /> <br />
-              Each year, we join forces to empower the youth of Kortrijk. We
+              <span className="medium">Each year</span>, we join forces to{" "}
+              <span className="medium">empower the youth</span> of Kortrijk. We
               achieve this by creating a clothing line created by you!
             </p>
 
@@ -275,39 +278,42 @@ export default function Home() {
         </div>
         <div className="concept">
           <div className="concept-deco">
-            <img src="../src/assets/img/express.jpg" alt="buildings" />
+            <img src="../../assets/img/express.jpg" alt="buildings" />
             <div className="concept-deco__div">
               <p className="">express your</p>
-              <img src="../src/assets/img/journey.svg" alt="journey" />
+              <img src="../../assets/img/journey.svg" alt="journey" />
             </div>
           </div>
           <div id="concept" className="concept-items" ref={conceptItem}>
             <div className="concept-one-gsap">
               <div className="concept-item concept-one">
-                <img src="../src/assets/img/one.jpg" alt="concept-item image" />
-                <img src="../src/assets/img/one.svg" alt="concept-item image" />
+                <img src="../../assets/img/one.jpg" alt="concept-item image" />
+                <img src="../../assets/img/one.svg" alt="concept-item image" />
                 <div className="concept-one__text">
                   <p>#1</p>
                   <h3 className="concept-slide__title">Each year</h3>
                   <p>Turn your story into fashion</p>
                   <p className="concept-slide__text">
-                    We invite you to design your own fashion collection item
-                    that’s reflecting your vision on the city's culture.{" "}
+                    Every year we create a competition where youth of Kortrijk
+                    can <span className="medium">express their vision</span> in
+                    the form of a fashion item.
                   </p>
                 </div>
               </div>
             </div>
             <div className="concept-two-gsap">
               <div className="concept-item concept-two">
-                <img src="../src/assets/img/two.jpg" alt="concept-item image" />
-                <img src="../src/assets/img/two.svg" alt="concept-item image" />
+                <img src="../../assets/img/two.jpg" alt="concept-item image" />
+                <img src="../../assets/img/two.svg" alt="concept-item image" />
                 <div className="concept-two__text">
                   <p>#2</p>
                   <h3 className="concept-slide__title">Unique perspectives</h3>
                   <p>Your perspective is important</p>
                   <p className="concept-slide__text">
                     We invite you to design your own fashion collection item
-                    that’s reflecting your vision on the city's culture.{" "}
+                    that’s{" "}
+                    <span className="medium">reflecting your vision</span> on
+                    the city's culture.{" "}
                   </p>
                 </div>
               </div>
@@ -315,11 +321,11 @@ export default function Home() {
             <div className="concept-three-gsap">
               <div className="concept-item concept-three">
                 <img
-                  src="../src/assets/img/three.jpg"
+                  src="../../assets/img/three.jpg"
                   alt="concept-item image"
                 />
                 <img
-                  src="../src/assets/img/three.svg"
+                  src="../../assets/img/three.svg"
                   alt="concept-item image"
                 />
                 <div className="concept-three__text">
@@ -328,22 +334,17 @@ export default function Home() {
                   <p>Participate, enjoy, exceed, succeed</p>
                   <p className="concept-slide__text">
                     When you participate, you receive professional guidance in
-                    our workshops to tell your story through art and an
-                    opportunity to print your design on a real shirt!
+                    our <span className="medium">workshops</span> to tell your
+                    story through art and an opportunity to print your design on
+                    a real shirt!
                   </p>
                 </div>
               </div>
             </div>
             <div className="concept-four-gsap">
               <div className="concept-item concept-four">
-                <img
-                  src="../src/assets/img/four.jpg"
-                  alt="concept-item image"
-                />
-                <img
-                  src="../src/assets/img/four.svg"
-                  alt="concept-item image"
-                />
+                <img src="../../assets/img/four.jpg" alt="concept-item image" />
+                <img src="../../assets/img/four.svg" alt="concept-item image" />
                 <div className="concept-four__text">
                   <p>#4</p>
                   <h3 className="concept-slide__title">
@@ -351,9 +352,9 @@ export default function Home() {
                   </h3>
                   <p>Inspire others by telling your story</p>
                   <p className="concept-slide__text">
-                    We highlight 3 people every year and you get to decide who
-                    wins! Winners will be showcased on our site and can sell
-                    their designs.
+                    We highlight <span className="medium">3 people</span> every
+                    year and you get to decide who wins! Winners will be
+                    showcased on our site and can sell their designs.
                   </p>
                   <div className="concept-slide__extra">
                     <a href="../last-collection">Check out the last winners</a>
@@ -362,28 +363,19 @@ export default function Home() {
                         className="mobile-hidden"
                         href="../last-collection/unknown"
                       >
-                        <img
-                          src="../src/assets/img/flava-pfp.png"
-                          alt="flava"
-                        />
+                        <img src="../../assets/img/flava-pfp.png" alt="flava" />
                       </a>
                       <a
                         className="mobile-hidden"
                         href="../last-collection/biniru"
                       >
-                        <img
-                          src="../src/assets/img/warre-pfp.png"
-                          alt="warre"
-                        />
+                        <img src="../../assets/img/warre-pfp.png" alt="warre" />
                       </a>
                       <a
                         className="mobile-hidden"
                         href="../last-collection/senju"
                       >
-                        <img
-                          src="../src/assets/img/senju-pfp.png"
-                          alt="senju"
-                        />
+                        <img src="../../assets/img/senju-pfp.png" alt="senju" />
                       </a>
                     </div>
                     <a href="../requirements">
@@ -416,13 +408,15 @@ export default function Home() {
                 Tranzit and The Palace in Kortrijk, to help you get started!
                 <br />
                 <br />
-                In our workshops we provide a professional who gives you info
-                about starting such a design process and KLTR X provides all the
-                tools necessary to be able to start designing fantastic T-shirt
-                designs.
+                In our workshops we provide a{" "}
+                <span className="medium">professional</span> who gives you info
+                about starting such a design process and KLTR X{" "}
+                <span className="medium">provides</span> all the tools necessary
+                to be able to start designing fantastic T-shirt designs.
                 <br />
                 <br />
-                Join or request a workshop as a group!
+                <span className="medium">Join or request</span> a workshop as a
+                group!
               </p>
               <div>
                 <a href="../workshops">
@@ -462,7 +456,7 @@ export default function Home() {
               </div>
             </div>
             <div className="workshop-deco mobile-hidden">
-              <img src="../src/assets/img/workshops-home.jpg" alt="workshops" />
+              <img src="../../assets/img/workshops-home.jpg" alt="workshops" />
               {/* svg */}
             </div>
           </div>

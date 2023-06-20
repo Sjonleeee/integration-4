@@ -4,7 +4,7 @@ export default function Unknown() {
       <div className="desktop-hidden collection-detail__mobile-nav">
         <a href="../last-collection">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
           </div>
         </a>
         <div className="detail__nav-title">
@@ -15,14 +15,14 @@ export default function Unknown() {
       <div className="collection-detail__noscroll">
         <a href="../last-collection" className="mobile-hidden">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
           </div>
         </a>
         <div className="mobile-hidden noscroll-title">
           <h1>THE UNKNOWN</h1>
           <p>by Flava Flaviuq</p>
         </div>
-        <img src="../src/assets/img/unknown.png" alt="foto van tshirt" />
+        <img src="../../assets/img/unknown.png" alt="foto van tshirt" />
         <a
           target="_blank"
           href="https://kltrx.myshopify.com/products/the-unknown"
@@ -45,7 +45,7 @@ export default function Unknown() {
         </a>
       </div>
       <div className="collection-detail__scroll">
-        <img src="../src/assets/img/flava-story-one.png" alt="person" />
+        <img src="../../assets/img/flava-story-one.png" alt="person" />
         <div className="scroll-name">
           <p>Flava Flaviuq, 20</p>
           <a
@@ -54,7 +54,7 @@ export default function Unknown() {
           >
             <img
               className="insta-logo"
-              src="../src/assets/img/instagram.svg"
+              src="../../assets/img/instagram.svg"
               alt="instagram logo"
             />
           </a>
@@ -64,10 +64,7 @@ export default function Unknown() {
           I've gotten to experience lots of things that I haven't encountered
           before like the Paas foor and Sinksen.{" "}
         </p>
-        <img
-          src="../src/assets/img/flava-story-two.png"
-          alt="bijpassende img"
-        />
+        <img src="../../assets/img/flava-story-two.png" alt="bijpassende img" />
         <p className="white-text">
           Kortrijk seems to always find ways to maintain the community engaged
           and not bored of the daily life. There's always something to do in
@@ -82,7 +79,7 @@ export default function Unknown() {
         </p>
         <p className="scroll-design">The Design</p>
         <div className="white-text scroll-design__step">
-          <img src="../src/assets/img/flava-story-three.png" alt="picture" />
+          <img src="../../assets/img/flava-story-three.png" alt="picture" />
           <p>
             In my design I really wanted to emphesize the hidden spots of
             Kortrijk. The picture in the magnifying glass is of a urban place
@@ -90,7 +87,7 @@ export default function Unknown() {
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/flava-story-four.png" alt="picture" />
+          <img src="../../assets/img/flava-story-four.png" alt="picture" />
           <p>
             The chinese letters symbolize the different cultures in Kortrijk.
             I’m from Romenia myself, so the international community really
@@ -98,7 +95,7 @@ export default function Unknown() {
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/flava-story-five.png" alt="picture" />
+          <img src="../../assets/img/flava-story-five.png" alt="picture" />
           <p>
             The globe represents the opportunity for Kortrijk to leave a real
             impact on the world, more specifically Europe.

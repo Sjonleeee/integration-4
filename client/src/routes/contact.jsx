@@ -55,19 +55,6 @@ export default function Contact() {
           </ul>
         </div>
       </div>
-      {/* <div className="contact-partners">
-        <p>
-          Check out our <span>partners</span>
-        </p>
-        <div>
-          <Link to="tranzit.be">
-            <img src="" alt="" />
-          </Link>
-          <Link to="destroate.be">
-            <img src="" alt="" />
-          </Link>
-        </div>
-      </div> */}
     </div>
   );
 }

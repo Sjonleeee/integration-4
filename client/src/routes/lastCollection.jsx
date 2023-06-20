@@ -13,14 +13,14 @@ export default function LastCollection() {
           controls={false}
           loop={true}
           playsInline={true}
-          src="../src/assets/vid/3D_render_catwalk_-_Compressed.mp4"
+          src="../../assets/vid/3D_render_catwalk_-_Compressed.mp4"
         ></video>
         <h2>
           <span className="green-text">Last</span> year's <br />
           <span className="italic">collection</span>
         </h2>
         <a className=" arrow-button-white" href="#collection">
-          <img src="../src/assets/img/arrow_button.svg" alt="arrow down" />
+          <img src="../../assets/img/arrow_button.svg" alt="arrow down" />
         </a>
         <div className="last-collection__banner">
           <p>2022 </p>
@@ -133,7 +133,7 @@ export default function LastCollection() {
           <img
             ref={deco}
             className="outfit-image"
-            src="../src/assets/img/last-1.png"
+            src="../../assets/img/last-1.png"
             alt=""
           />
         </div>
@@ -148,23 +148,23 @@ export default function LastCollection() {
             Scroll through the designs!
           </p>
           <div className="desktop-hidden last-collection__arrows">
-            <img src="../src/assets/img/arrow_left.svg" alt="" />
-            <img src="../src/assets/img/arrow.svg" alt="" />
+            <img src="../../assets/img/arrow_left.svg" alt="" />
+            <img src="../../assets/img/arrow.svg" alt="" />
           </div>
           <div className="last-collection__articles">
             <div
               className="last-collection__article"
               onMouseEnter={() => {
-                deco.current.src = "../src/assets/img/last-3.png";
+                deco.current.src = "../../assets/img/last-3.png";
               }}
               onMouseLeave={() => {
-                deco.current.src = "../src/assets/img/last-3.png";
+                deco.current.src = "../../assets/img/last-3.png";
               }}
             >
-              <img src="../src/assets/img/unknown.png" alt="shirt" />
+              <img src="../../assets/img/unknown.png" alt="shirt" />
               <h3>The unknown</h3>
               <div>
-                <img src="../src/assets/img/flava-pfp.png" alt="pfp" />
+                <img src="../../assets/img/flava-pfp.png" alt="pfp" />
                 <p>Flava Flaviuq x Thomas</p>
               </div>
               <a href="../last-collection/unknown">
@@ -188,16 +188,16 @@ export default function LastCollection() {
             <div
               className="last-collection__article"
               onMouseEnter={() => {
-                deco.current.src = "../src/assets/img/last-2.png";
+                deco.current.src = "../../assets/img/last-2.png";
               }}
               onMouseLeave={() => {
-                deco.current.src = "../src/assets/img/last-2.png";
+                deco.current.src = "../../assets/img/last-2.png";
               }}
             >
-              <img src="../src/assets/img/biniru.png" alt="shirt" />
+              <img src="../../assets/img/biniru.png" alt="shirt" />
               <h3>BINIRU</h3>
               <div>
-                <img src="../src/assets/img/warre-pfp.png" alt="pfp" />
+                <img src="../../assets/img/warre-pfp.png" alt="pfp" />
                 <p>Warre Warrior x Senne</p>
               </div>
               <a href="../last-collection/biniru">
@@ -222,17 +222,17 @@ export default function LastCollection() {
               className="last-collection__article"
               onMouseEnter={() => {
                 console.log(deco);
-                deco.current.src = "../src/assets/img/last-1.png";
+                deco.current.src = "../../assets/img/last-1.png";
               }}
               onMouseLeave={() => {
                 console.log(deco);
-                deco.current.src = "../src/assets/img/last-1.png";
+                deco.current.src = "../../assets/img/last-1.png";
               }}
             >
-              <img src="../src/assets/img/senju.png" alt="shirt" />
+              <img src="../../assets/img/senju.png" alt="shirt" />
               <h3>Senju</h3>
               <div>
-                <img src="../src/assets/img/senju-pfp.png" alt="pfp" />
+                <img src="../../assets/img/senju-pfp.png" alt="pfp" />
                 <p>Senju Cyphercat x Minh Tri</p>
               </div>
               <a href="../last-collection/senju">

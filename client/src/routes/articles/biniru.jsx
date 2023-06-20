@@ -4,7 +4,7 @@ export default function Biniru() {
       <div className="desktop-hidden collection-detail__mobile-nav">
         <a href="../last-collection">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
           </div>
         </a>
         <div className="detail__nav-title">
@@ -15,14 +15,14 @@ export default function Biniru() {
       <div className="collection-detail__noscroll">
         <a href="../last-collection" className="mobile-hidden">
           <div className="arrow-button-black-hor">
-            <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+            <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
           </div>
         </a>
         <div className="mobile-hidden noscroll-title">
           <h1>Biniru</h1>
           <p>by Warre Warrior</p>
         </div>
-        <img src="../src/assets/img/biniru.png" alt="foto van tshirt" />
+        <img src="../../assets/img/biniru.png" alt="foto van tshirt" />
         <a target="_blank" href="https://kltrx.myshopify.com/products/biniru">
           <div className="button-primary">
             Get your very own
@@ -42,7 +42,7 @@ export default function Biniru() {
         </a>
       </div>
       <div className="collection-detail__scroll">
-        <img src="../src/assets/img/warre-story-one.png" alt="person" />
+        <img src="../../assets/img/warre-story-one.png" alt="person" />
         <div className="scroll-name">
           <p>Warre Warrior, 21</p>
           <a
@@ -51,7 +51,7 @@ export default function Biniru() {
           >
             <img
               className="insta-logo"
-              src="../src/assets/img/instagram.svg"
+              src="../../assets/img/instagram.svg"
               alt="instagram logo"
             />
           </a>
@@ -63,10 +63,7 @@ export default function Biniru() {
           culture is experiencing a revival among the youth. Places like De
           Stroate play a crucial and positive role in this transformation.
         </p>
-        <img
-          src="../src/assets/img/warre-story-two.png"
-          alt="bijpassende img"
-        />
+        <img src="../../assets/img/warre-story-two.png" alt="bijpassende img" />
         <p className="white-text">
           However, from a critical standpoint (not suitable for a t-shirt), it
           would be beneficial to have more involvement in certain projects. For
@@ -91,7 +88,7 @@ export default function Biniru() {
         </p>
         <p className="scroll-design">The Design</p>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/warre-story-three.png" alt="" />
+          <img src="../../assets/img/warre-story-three.png" alt="" />
           <p>
             I’ve always been a big skateboarding fan. This is one of the most
             important things for me in this city. I’ve connected with a lot of
@@ -99,7 +96,7 @@ export default function Biniru() {
           </p>
         </div>
         <div className="scroll-design__step">
-          <img src="../src/assets/img/warre-story-four.png" alt="" />
+          <img src="../../assets/img/warre-story-four.png" alt="" />
           <p>
             I feel like I also do my part for the urban culture, I am vinyl DJ
             and perform often on the events of the urban culture.

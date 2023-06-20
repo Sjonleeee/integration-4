@@ -63,16 +63,21 @@ export default function Requirements() {
           <p className="revolution">Revolution</p>
           <img
             className="circle"
-            src="../src/assets/img/submissions.svg"
+            src="../../assets/img/submissions.svg"
             alt=""
           />
         </div>
         <div className="requirements-hero-text">
           <p>
-            KLTR X is more than just a design competition, it is a celebration
-            of youthful creativity and expression. Become a part of the next
-            generation to share their story, visualise the story of Kortrijk and
-            leave your mark in the world of design
+            KLTR X is<span className="medium"> more than</span> just a{" "}
+            <span className="medium">design competition,</span> it is a
+            <span className="medium">
+              {" "}
+              celebration of youthful creativity and expression.
+            </span>{" "}
+            <span className="medium">Become a part</span> of the next generation
+            to share their story, visualise the story of Kortrijk and leave your
+            mark in the world of design
           </p>
         </div>
         <div className="requirements-hero-buttons">
@@ -114,15 +119,16 @@ export default function Requirements() {
       </div>
       <div id="requirements-info" className="requirements-info">
         <div className="requirements-info-text">
-          <img src="../src/assets/img/requirements.svg" alt="" />
+          <img src="../../assets/img/requirements.svg" alt="" />
           <div>
             <h2>
               Our <span className="green-text">requirements</span>
             </h2>
             <p>Unlocking success through requirements</p>
             <p>
-              Before you start telling your story. We need to go over some
-              requirements that your design must meet when you submit it.
+              <span className="medium">Before you start</span> telling your
+              story. We need to go over some requirements that your design must
+              meet when you submit it.
             </p>
           </div>
           <a href="#steps">
@@ -155,11 +161,12 @@ export default function Requirements() {
             </h3>
             <p>#1 Your story matters !</p>
             <p>
-              Tell us your story about Kortrijk's unique culture. What makes
-              this city special to you? Share your experiences, traditions, and
-              the vibrant essence that sets Kortrijk apart. Let your words paint
-              a picture of the captivating spirit that will guide your design
-              journey.
+              <span className="medium">Tell us your story</span> about
+              Kortrijk's unique culture. What makes this city special to you?
+              <span className="medium">Share your experiences, traditions</span>
+              , and the <span className="medium">vibrant essence</span> that
+              sets Kortrijk apart. Let your words paint a picture of the
+              captivating spirit that will guide your design journey.
             </p>
           </div>
           <div className="step-process step-process__one">
@@ -171,12 +178,12 @@ export default function Requirements() {
                 setStep(2);
               }}
             >
-              <img src="../src/assets/img/arrow.svg" alt=" arrow" />
+              <img src="../../assets/img/arrow.svg" alt=" arrow" />
             </div>
           </div>
           <div className="requirements-step-deco requirements-steps-one__deco">
-            <img src="../src/assets/img/requirements-one.jpg" alt="image" />
-            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
+            <img src="../../assets/img/requirements-one.jpg" alt="image" />
+            <img src="../../assets/img/requirements-icon.svg" alt="svg" />
           </div>
         </div>
         <div className="requirements-step requirements-steps-two">
@@ -187,8 +194,11 @@ export default function Requirements() {
             </h3>
             <p>#2 Your story into a design!</p>
             <p>
-              Now it's time to transform your story into a design. Let your
-              creativity flow as you visually express the culture of Kortrijk.
+              Now it's time to{" "}
+              <span className="medium">transform your story into a design</span>
+              . Let your creativity flow as you{" "}
+              <span className="medium">visually express the culture</span> of
+              Kortrijk.
             </p>
             <Link to={"/workshops"}>Join Culture Hubs for Workshops</Link>
           </div>
@@ -201,7 +211,7 @@ export default function Requirements() {
                 setStep(1);
               }}
             >
-              <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+              <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
             </div>
             <div
               className="arrow-button-black-hor"
@@ -210,12 +220,12 @@ export default function Requirements() {
                 setStep(3);
               }}
             >
-              <img src="../src/assets/img/arrow.svg" alt=" arrow" />
+              <img src="../../assets/img/arrow.svg" alt=" arrow" />
             </div>
           </div>
           <div className="requirements-step-deco requirements-steps-two__deco">
-            <img src="../src/assets/img/requirements-two.jpg" alt="picture" />
-            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
+            <img src="../../assets/img/requirements-two.jpg" alt="picture" />
+            <img src="../../assets/img/requirements-icon.svg" alt="svg" />
           </div>
         </div>
         <div className="requirements-step requirements-steps-three">
@@ -226,14 +236,15 @@ export default function Requirements() {
             </h3>
             <p>#3 Represent your story on T-shirts!</p>
             <p>
-              Download mockups to showcase your designs on shirts. Bring your
-              creations to life by visualizing them on different shirt styles.
-              Explore options and get ready to see your designs come alive on
+              <span className="medium">Download mockups</span> to showcase your
+              designs on shirts. Bring your creations to life by visualizing
+              them on different shirt styles. Explore options and get ready to
+              <span className="medium">see your designs come alive</span> on
               wearable art.
             </p>
 
             <a
-              href="../src/assets/downloads/mockups_download.ai"
+              href="../../assets/downloads/mockups_download.ai"
               download={true}
             >
               Download our mockups
@@ -248,7 +259,7 @@ export default function Requirements() {
                 setStep(2);
               }}
             >
-              <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+              <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
             </div>
             <div
               className="arrow-button-black-hor"
@@ -257,15 +268,15 @@ export default function Requirements() {
                 setStep(4);
               }}
             >
-              <img src="../src/assets/img/arrow.svg" alt=" arrow" />
+              <img src="../../assets/img/arrow.svg" alt=" arrow" />
             </div>
           </div>
           <div className="requirements-step-deco requirements-steps-three__deco">
             <img
-              src="../src/assets/img/requirements-three.jpg"
+              src="../../assets/img/requirements-three.jpg"
               alt="descriptive picture"
             />
-            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
+            <img src="../../assets/img/requirements-icon.svg" alt="svg" />
           </div>
         </div>
         <div className="requirements-step requirements-steps-four">
@@ -276,7 +287,8 @@ export default function Requirements() {
             </h3>
             <p>#4 Inspire the world with your submission!</p>
             <p>
-              Ready to share your masterpiece? Submit your design now! Let your
+              Ready to share your masterpiece?{" "}
+              <span className="medium">Submit your design now!</span> Let your
               creativity shine as you contribute to Kortrijk's vibrant culture.
               We're excited to see and showcase your incredible artwork.
             </p>
@@ -284,10 +296,10 @@ export default function Requirements() {
           <div className="step-process step-process__four"></div>
           <div className="requirements-step-deco requirements-steps-four__deco">
             <img
-              src="../src/assets/img/requirements-four.jpg"
+              src="../../assets/img/requirements-four.jpg"
               alt="descriptive pic"
             />
-            <img src="../src/assets/img/requirements-icon.svg" alt="svg" />
+            <img src="../../assets/img/requirements-icon.svg" alt="svg" />
           </div>
           <div className="step-process step-process__three">
             <div></div>
@@ -298,7 +310,7 @@ export default function Requirements() {
                 setStep(3);
               }}
             >
-              <img src="../src/assets/img/arrow_left.svg" alt=" arrow" />
+              <img src="../../assets/img/arrow_left.svg" alt=" arrow" />
             </div>
             <div className="arrow-button-black-hor">
               <a href="../submit">Submit your design</a>

@@ -1,6 +1,5 @@
 import { Form, useNavigate } from "react-router-dom";
-import React, { useCallback, useState } from "react";
-import { useDropzone } from "react-dropzone";
+import React, { useState } from "react";
 import { getImage, submitDesign, uploadImage } from "../js/designs";
 
 let imageData = {
@@ -84,17 +83,17 @@ export default function SubmitPage() {
         <p className="mobile-hidden green-text">Now you</p>
         <img
           className="submit-image"
-          src="../src/assets/img/submitpage.jpg"
+          src="../../assets/img/submitpage.jpg"
           alt="submit"
         />
         <img
           className="submit-svg desktop-hidden"
-          src="../src/assets/img/submit.svg"
+          src="../../assets/img/submit.svg"
           alt="map icon"
         />
         <img
           className="submit-add desktop-hidden"
-          src="../src/assets/img/add-button.svg"
+          src="../../assets/img/add-button.svg"
           onClick={() => {
             setStep(1);
           }}
@@ -102,7 +101,7 @@ export default function SubmitPage() {
         />
         <img
           className="mobile-hidden"
-          src="../src/assets/img/submit-now.svg"
+          src="../../assets/img/submit-now.svg"
           alt="world"
         />
         <style>
