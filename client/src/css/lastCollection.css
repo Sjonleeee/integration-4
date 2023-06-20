@@ -171,6 +171,7 @@
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: auto 75vh;
+  overflow: hidden;
 }
 
 .collection-detail__scroll {
@@ -179,6 +180,7 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  overflow-y: scroll;
 }
 
 .collection-detail__scroll p {
@@ -261,6 +263,7 @@
   padding-inline-start: 2rem;
   padding-block: 1rem;
   align-items: center;
+  overflow: hidden;
 }
 
 .collection-detail__mobile-nav p {
@@ -276,6 +279,7 @@
 
 .collection-detail__noscroll {
   height: 40rem;
+  overflow: hidden;
 }
 
 .collection-detail__noscroll img {
